@@ -1,0 +1,1847 @@
+{
+  "brand": "Omega",
+  "brand_slug": "omega",
+  "brand_description": "Founded in 1848, Omega is a Swiss luxury watchmaker known for the Speedmaster Moonwatch, Seamaster diver's watches, and as the official timekeeper of the Olympic Games.",
+  "watches": [
+    {
+      "brand": "Omega",
+      "brand_slug": "omega",
+      "collection": "Speedmaster Moonwatch Professional",
+      "collection_slug": "speedmaster-moonwatch-professional",
+      "reference": "310.30.42.50.01.001",
+      "name": "Moonwatch Professional Co-Axial Master Chronometer Chronograph 42 mm",
+      "dimensions": {
+        "diameter_mm": 42.0,
+        "lug_to_lug_mm": 47.5,
+        "thickness_mm": 13.54,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": 134,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Hesalite",
+        "water_resistance_m": 50,
+        "bezel": "Tachymeter (Anodised Aluminium)",
+        "crown": "Push-pull",
+        "caseback": "Solid (Hippocampus medallion)",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "3861",
+        "type": "Manual",
+        "power_reserve_hours": 50,
+        "frequency_vph": 21600
+      },
+      "context": {
+        "msrp_usd": 7800,
+        "production_start": 2021,
+        "production_end": null,
+        "predecessor": "311.30.42.30.01.005",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Omega",
+      "brand_slug": "omega",
+      "collection": "Speedmaster Moonwatch Professional",
+      "collection_slug": "speedmaster-moonwatch-professional",
+      "reference": "310.30.42.50.01.002",
+      "name": "Moonwatch Professional Co-Axial Master Chronometer Chronograph 42 mm (Sapphire Sandwich)",
+      "dimensions": {
+        "diameter_mm": 42.0,
+        "lug_to_lug_mm": 47.5,
+        "thickness_mm": 13.18,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": 138,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire",
+        "water_resistance_m": 50,
+        "bezel": "Tachymeter (Anodised Aluminium)",
+        "crown": "Push-pull",
+        "caseback": "Sapphire display",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "3861",
+        "type": "Manual",
+        "power_reserve_hours": 50,
+        "frequency_vph": 21600
+      },
+      "context": {
+        "msrp_usd": 9000,
+        "production_start": 2021,
+        "production_end": null,
+        "predecessor": "311.30.42.30.01.006",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Omega",
+      "brand_slug": "omega",
+      "collection": "Speedmaster Moonwatch Professional",
+      "collection_slug": "speedmaster-moonwatch-professional",
+      "reference": "310.32.42.50.01.001",
+      "name": "Moonwatch Professional Co-Axial Master Chronometer Chronograph 42 mm (Nylon Strap)",
+      "dimensions": {
+        "diameter_mm": 42.0,
+        "lug_to_lug_mm": 47.5,
+        "thickness_mm": 13.18,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": null,
+        "weight_head_g": 91
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Hesalite",
+        "water_resistance_m": 50,
+        "bezel": "Tachymeter (Anodised Aluminium)",
+        "crown": "Push-pull",
+        "caseback": "Solid (Hippocampus medallion)",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "3861",
+        "type": "Manual",
+        "power_reserve_hours": 50,
+        "frequency_vph": 21600
+      },
+      "context": {
+        "msrp_usd": 7400,
+        "production_start": 2021,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Omega",
+      "brand_slug": "omega",
+      "collection": "Speedmaster Moonwatch Professional",
+      "collection_slug": "speedmaster-moonwatch-professional",
+      "reference": "310.60.42.50.01.001",
+      "name": "Moonwatch Professional Co-Axial Master Chronometer Chronograph 42 mm (Sedna Gold)",
+      "dimensions": {
+        "diameter_mm": 42.0,
+        "lug_to_lug_mm": 47.5,
+        "thickness_mm": 13.18,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": 216,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "18K Sedna Gold",
+        "crystal": "Sapphire",
+        "water_resistance_m": 50,
+        "bezel": "Tachymeter (18K Sedna Gold)",
+        "crown": "Push-pull",
+        "caseback": "Sapphire display",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "3861",
+        "type": "Manual",
+        "power_reserve_hours": 50,
+        "frequency_vph": 21600
+      },
+      "context": {
+        "msrp_usd": 50900,
+        "production_start": 2021,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Omega",
+      "brand_slug": "omega",
+      "collection": "Speedmaster Moonwatch Professional",
+      "collection_slug": "speedmaster-moonwatch-professional",
+      "reference": "310.32.42.50.02.001",
+      "name": "Speedmaster Silver Snoopy Award 50th Anniversary Co-Axial Master Chronometer Chronograph 42 mm",
+      "dimensions": {
+        "diameter_mm": 42.0,
+        "lug_to_lug_mm": 47.5,
+        "thickness_mm": 13.18,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire",
+        "water_resistance_m": 50,
+        "bezel": "Tachymeter (Blue Ceramic with White Enamel)",
+        "crown": "Push-pull",
+        "caseback": "Sapphire display (animated Snoopy medallion)",
+        "dial_color": "Silver/Blue"
+      },
+      "movement": {
+        "caliber": "3861",
+        "type": "Manual",
+        "power_reserve_hours": 50,
+        "frequency_vph": 21600
+      },
+      "context": {
+        "msrp_usd": 11100,
+        "production_start": 2020,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Omega",
+      "brand_slug": "omega",
+      "collection": "Speedmaster Moonwatch Professional",
+      "collection_slug": "speedmaster-moonwatch-professional",
+      "reference": "310.20.42.50.01.001",
+      "name": "Speedmaster Apollo 11 50th Anniversary Co-Axial Master Chronometer Chronograph 42 mm",
+      "dimensions": {
+        "diameter_mm": 42.0,
+        "lug_to_lug_mm": 47.5,
+        "thickness_mm": 13.18,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel / Moonshine Gold",
+        "crystal": "Sapphire",
+        "water_resistance_m": 50,
+        "bezel": "Tachymeter (Polished Black Ceramic)",
+        "crown": "Push-pull",
+        "caseback": "Sapphire display",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "3861",
+        "type": "Manual",
+        "power_reserve_hours": 50,
+        "frequency_vph": 21600
+      },
+      "context": {
+        "msrp_usd": 10800,
+        "production_start": 2019,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Omega",
+      "brand_slug": "omega",
+      "collection": "Seamaster Diver 300M",
+      "collection_slug": "seamaster-diver-300m",
+      "reference": "210.30.42.20.01.001",
+      "name": "Diver 300M Co-Axial Master Chronometer 42 mm (Black, Steel Bracelet)",
+      "dimensions": {
+        "diameter_mm": 42.0,
+        "lug_to_lug_mm": 49.9,
+        "thickness_mm": 13.56,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": 194,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire (domed, AR both sides)",
+        "water_resistance_m": 300,
+        "bezel": "Unidirectional rotating (Black Ceramic with White Enamel)",
+        "crown": "Screw-in",
+        "caseback": "Sapphire display",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "8800",
+        "type": "Automatic",
+        "power_reserve_hours": 55,
+        "frequency_vph": 25200
+      },
+      "context": {
+        "msrp_usd": 6700,
+        "production_start": 2018,
+        "production_end": null,
+        "predecessor": "212.30.41.20.01.003",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Omega",
+      "brand_slug": "omega",
+      "collection": "Seamaster Diver 300M",
+      "collection_slug": "seamaster-diver-300m",
+      "reference": "210.30.42.20.03.001",
+      "name": "Diver 300M Co-Axial Master Chronometer 42 mm (Blue, Steel Bracelet)",
+      "dimensions": {
+        "diameter_mm": 42.0,
+        "lug_to_lug_mm": 49.9,
+        "thickness_mm": 13.56,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": 194,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire (domed, AR both sides)",
+        "water_resistance_m": 300,
+        "bezel": "Unidirectional rotating (Blue Ceramic with White Enamel)",
+        "crown": "Screw-in",
+        "caseback": "Sapphire display",
+        "dial_color": "Blue"
+      },
+      "movement": {
+        "caliber": "8800",
+        "type": "Automatic",
+        "power_reserve_hours": 55,
+        "frequency_vph": 25200
+      },
+      "context": {
+        "msrp_usd": 6700,
+        "production_start": 2018,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Omega",
+      "brand_slug": "omega",
+      "collection": "Seamaster Diver 300M",
+      "collection_slug": "seamaster-diver-300m",
+      "reference": "210.30.42.20.04.001",
+      "name": "Diver 300M Co-Axial Master Chronometer 42 mm (White, Steel Bracelet)",
+      "dimensions": {
+        "diameter_mm": 42.0,
+        "lug_to_lug_mm": 49.9,
+        "thickness_mm": 13.56,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": 192,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire (domed, AR both sides)",
+        "water_resistance_m": 300,
+        "bezel": "Unidirectional rotating (White Ceramic with Blue Rubber)",
+        "crown": "Screw-in",
+        "caseback": "Sapphire display",
+        "dial_color": "White"
+      },
+      "movement": {
+        "caliber": "8800",
+        "type": "Automatic",
+        "power_reserve_hours": 55,
+        "frequency_vph": 25200
+      },
+      "context": {
+        "msrp_usd": 6700,
+        "production_start": 2018,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Omega",
+      "brand_slug": "omega",
+      "collection": "Seamaster Diver 300M",
+      "collection_slug": "seamaster-diver-300m",
+      "reference": "210.22.42.20.01.002",
+      "name": "Diver 300M Co-Axial Master Chronometer 42 mm (Steel / Sedna Gold, Rubber Strap)",
+      "dimensions": {
+        "diameter_mm": 42.0,
+        "lug_to_lug_mm": 49.9,
+        "thickness_mm": 13.56,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": null,
+        "weight_head_g": 115
+      },
+      "case": {
+        "material": "Stainless Steel / 18K Sedna Gold",
+        "crystal": "Sapphire (domed, AR both sides)",
+        "water_resistance_m": 300,
+        "bezel": "Unidirectional rotating (Black Ceramic with Ceragold)",
+        "crown": "Screw-in",
+        "caseback": "Sapphire display",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "8800",
+        "type": "Automatic",
+        "power_reserve_hours": 55,
+        "frequency_vph": 25200
+      },
+      "context": {
+        "msrp_usd": 9600,
+        "production_start": 2018,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Omega",
+      "brand_slug": "omega",
+      "collection": "Seamaster Diver 300M",
+      "collection_slug": "seamaster-diver-300m",
+      "reference": "210.30.42.20.06.001",
+      "name": "Diver 300M Co-Axial Master Chronometer 42 mm (Grey, Steel Bracelet)",
+      "dimensions": {
+        "diameter_mm": 42.0,
+        "lug_to_lug_mm": 49.9,
+        "thickness_mm": 13.56,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": 194,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire (domed, AR both sides)",
+        "water_resistance_m": 300,
+        "bezel": "Unidirectional rotating (Ceramic with White Enamel)",
+        "crown": "Screw-in",
+        "caseback": "Sapphire display",
+        "dial_color": "Grey"
+      },
+      "movement": {
+        "caliber": "8800",
+        "type": "Automatic",
+        "power_reserve_hours": 55,
+        "frequency_vph": 25200
+      },
+      "context": {
+        "msrp_usd": 6700,
+        "production_start": 2018,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Omega",
+      "brand_slug": "omega",
+      "collection": "Seamaster Diver 300M",
+      "collection_slug": "seamaster-diver-300m",
+      "reference": "210.30.42.20.10.001",
+      "name": "Diver 300M Co-Axial Master Chronometer 42 mm (Green, Steel Bracelet)",
+      "dimensions": {
+        "diameter_mm": 42.0,
+        "lug_to_lug_mm": 49.93,
+        "thickness_mm": 13.56,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": 198,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire (domed, AR both sides)",
+        "water_resistance_m": 300,
+        "bezel": "Unidirectional rotating (Green Ceramic with White Enamel)",
+        "crown": "Screw-in",
+        "caseback": "Sapphire display",
+        "dial_color": "Green"
+      },
+      "movement": {
+        "caliber": "8800",
+        "type": "Automatic",
+        "power_reserve_hours": 55,
+        "frequency_vph": 25200
+      },
+      "context": {
+        "msrp_usd": 6700,
+        "production_start": 2020,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Omega",
+      "brand_slug": "omega",
+      "collection": "Seamaster Diver 300M",
+      "collection_slug": "seamaster-diver-300m",
+      "reference": "210.32.42.20.01.001",
+      "name": "Diver 300M Co-Axial Master Chronometer 42 mm (Black, Rubber Strap)",
+      "dimensions": {
+        "diameter_mm": 42.0,
+        "lug_to_lug_mm": 49.9,
+        "thickness_mm": 13.56,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire (domed, AR both sides)",
+        "water_resistance_m": 300,
+        "bezel": "Unidirectional rotating (Black Ceramic with White Enamel)",
+        "crown": "Screw-in",
+        "caseback": "Sapphire display",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "8800",
+        "type": "Automatic",
+        "power_reserve_hours": 55,
+        "frequency_vph": 25200
+      },
+      "context": {
+        "msrp_usd": 6200,
+        "production_start": 2018,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Omega",
+      "brand_slug": "omega",
+      "collection": "Seamaster Diver 300M",
+      "collection_slug": "seamaster-diver-300m",
+      "reference": "210.32.42.20.03.001",
+      "name": "Diver 300M Co-Axial Master Chronometer 42 mm (Blue, Rubber Strap)",
+      "dimensions": {
+        "diameter_mm": 42.0,
+        "lug_to_lug_mm": 49.9,
+        "thickness_mm": 13.56,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire (domed, AR both sides)",
+        "water_resistance_m": 300,
+        "bezel": "Unidirectional rotating (Blue Ceramic with White Enamel)",
+        "crown": "Screw-in",
+        "caseback": "Sapphire display",
+        "dial_color": "Blue"
+      },
+      "movement": {
+        "caliber": "8800",
+        "type": "Automatic",
+        "power_reserve_hours": 55,
+        "frequency_vph": 25200
+      },
+      "context": {
+        "msrp_usd": 6200,
+        "production_start": 2018,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Omega",
+      "brand_slug": "omega",
+      "collection": "Seamaster Diver 300M",
+      "collection_slug": "seamaster-diver-300m",
+      "reference": "210.20.42.20.03.001",
+      "name": "Diver 300M Co-Axial Master Chronometer 42 mm (Blue, Steel / Yellow Gold Bracelet)",
+      "dimensions": {
+        "diameter_mm": 42.0,
+        "lug_to_lug_mm": 49.9,
+        "thickness_mm": 13.56,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel / 18K Yellow Gold",
+        "crystal": "Sapphire (domed, AR both sides)",
+        "water_resistance_m": 300,
+        "bezel": "Unidirectional rotating (Blue Ceramic with Yellow Gold)",
+        "crown": "Screw-in",
+        "caseback": "Sapphire display",
+        "dial_color": "Blue"
+      },
+      "movement": {
+        "caliber": "8800",
+        "type": "Automatic",
+        "power_reserve_hours": 55,
+        "frequency_vph": 25200
+      },
+      "context": {
+        "msrp_usd": 10900,
+        "production_start": 2018,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Omega",
+      "brand_slug": "omega",
+      "collection": "Seamaster Planet Ocean 600M",
+      "collection_slug": "seamaster-planet-ocean-600m",
+      "reference": "215.30.44.21.01.001",
+      "name": "Planet Ocean 600M Co-Axial Master Chronometer 43.5 mm (Black, Steel Bracelet)",
+      "dimensions": {
+        "diameter_mm": 43.5,
+        "lug_to_lug_mm": 49.0,
+        "thickness_mm": 16.09,
+        "lug_width_mm": 21,
+        "weight_bracelet_g": 214,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire (domed, AR both sides)",
+        "water_resistance_m": 600,
+        "bezel": "Unidirectional rotating (Black Ceramic with Liquidmetal)",
+        "crown": "Screw-in with helium escape valve",
+        "caseback": "Screw-in (Alveol)",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "8900",
+        "type": "Automatic",
+        "power_reserve_hours": 60,
+        "frequency_vph": 25200
+      },
+      "context": {
+        "msrp_usd": 7650,
+        "production_start": 2016,
+        "production_end": null,
+        "predecessor": "232.30.46.21.01.001",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Omega",
+      "brand_slug": "omega",
+      "collection": "Seamaster Planet Ocean 600M",
+      "collection_slug": "seamaster-planet-ocean-600m",
+      "reference": "215.30.40.20.01.001",
+      "name": "Planet Ocean 600M Co-Axial Master Chronometer 39.5 mm (Black, Steel Bracelet)",
+      "dimensions": {
+        "diameter_mm": 39.5,
+        "lug_to_lug_mm": 45.6,
+        "thickness_mm": 14.21,
+        "lug_width_mm": 19,
+        "weight_bracelet_g": 188,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire (domed, AR both sides)",
+        "water_resistance_m": 600,
+        "bezel": "Unidirectional rotating (Black Ceramic with Liquidmetal)",
+        "crown": "Screw-in with helium escape valve",
+        "caseback": "Screw-in (Alveol)",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "8800",
+        "type": "Automatic",
+        "power_reserve_hours": 55,
+        "frequency_vph": 25200
+      },
+      "context": {
+        "msrp_usd": 7150,
+        "production_start": 2016,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Omega",
+      "brand_slug": "omega",
+      "collection": "Seamaster Planet Ocean 600M",
+      "collection_slug": "seamaster-planet-ocean-600m",
+      "reference": "215.32.44.21.01.001",
+      "name": "Planet Ocean 600M Co-Axial Master Chronometer 43.5 mm (Black, Rubber Strap)",
+      "dimensions": {
+        "diameter_mm": 43.5,
+        "lug_to_lug_mm": 49.0,
+        "thickness_mm": 16.09,
+        "lug_width_mm": 21,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire (domed, AR both sides)",
+        "water_resistance_m": 600,
+        "bezel": "Unidirectional rotating (Black Ceramic with Liquidmetal)",
+        "crown": "Screw-in with helium escape valve",
+        "caseback": "Screw-in (Alveol)",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "8900",
+        "type": "Automatic",
+        "power_reserve_hours": 60,
+        "frequency_vph": 25200
+      },
+      "context": {
+        "msrp_usd": 7150,
+        "production_start": 2016,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Omega",
+      "brand_slug": "omega",
+      "collection": "Seamaster Planet Ocean 600M",
+      "collection_slug": "seamaster-planet-ocean-600m",
+      "reference": "215.33.40.20.01.001",
+      "name": "Planet Ocean 600M Co-Axial Master Chronometer 39.5 mm (Black, Rubber Strap)",
+      "dimensions": {
+        "diameter_mm": 39.5,
+        "lug_to_lug_mm": 45.6,
+        "thickness_mm": 14.21,
+        "lug_width_mm": 19,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire (domed, AR both sides)",
+        "water_resistance_m": 600,
+        "bezel": "Unidirectional rotating (Black Ceramic with Liquidmetal)",
+        "crown": "Screw-in with helium escape valve",
+        "caseback": "Screw-in (Alveol)",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "8800",
+        "type": "Automatic",
+        "power_reserve_hours": 55,
+        "frequency_vph": 25200
+      },
+      "context": {
+        "msrp_usd": 6650,
+        "production_start": 2016,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Omega",
+      "brand_slug": "omega",
+      "collection": "Seamaster Aqua Terra 150M",
+      "collection_slug": "seamaster-aqua-terra-150m",
+      "reference": "220.10.41.21.01.001",
+      "name": "Aqua Terra 150M Co-Axial Master Chronometer 41 mm (Black, Steel Bracelet)",
+      "dimensions": {
+        "diameter_mm": 41.0,
+        "lug_to_lug_mm": 47.9,
+        "thickness_mm": 13.2,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": 149,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire (domed, AR both sides)",
+        "water_resistance_m": 150,
+        "bezel": "Fixed (Steel)",
+        "crown": "Push-pull",
+        "caseback": "Sapphire display",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "8900",
+        "type": "Automatic",
+        "power_reserve_hours": 60,
+        "frequency_vph": 25200
+      },
+      "context": {
+        "msrp_usd": 7100,
+        "production_start": 2017,
+        "production_end": null,
+        "predecessor": "231.10.42.21.01.003",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Omega",
+      "brand_slug": "omega",
+      "collection": "Seamaster Aqua Terra 150M",
+      "collection_slug": "seamaster-aqua-terra-150m",
+      "reference": "220.10.41.21.03.001",
+      "name": "Aqua Terra 150M Co-Axial Master Chronometer 41 mm (Blue, Steel Bracelet)",
+      "dimensions": {
+        "diameter_mm": 41.0,
+        "lug_to_lug_mm": 47.9,
+        "thickness_mm": 13.2,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": 148,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire (domed, AR both sides)",
+        "water_resistance_m": 150,
+        "bezel": "Fixed (Steel)",
+        "crown": "Push-pull",
+        "caseback": "Sapphire display",
+        "dial_color": "Blue"
+      },
+      "movement": {
+        "caliber": "8900",
+        "type": "Automatic",
+        "power_reserve_hours": 60,
+        "frequency_vph": 25200
+      },
+      "context": {
+        "msrp_usd": 7100,
+        "production_start": 2017,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Omega",
+      "brand_slug": "omega",
+      "collection": "Seamaster Aqua Terra 150M",
+      "collection_slug": "seamaster-aqua-terra-150m",
+      "reference": "220.10.38.20.02.001",
+      "name": "Aqua Terra 150M Co-Axial Master Chronometer 38 mm (Silver, Steel Bracelet)",
+      "dimensions": {
+        "diameter_mm": 38.0,
+        "lug_to_lug_mm": 45.0,
+        "thickness_mm": 12.24,
+        "lug_width_mm": 19,
+        "weight_bracelet_g": 132,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire (domed, AR both sides)",
+        "water_resistance_m": 150,
+        "bezel": "Fixed (Steel)",
+        "crown": "Push-pull",
+        "caseback": "Sapphire display",
+        "dial_color": "Silver"
+      },
+      "movement": {
+        "caliber": "8800",
+        "type": "Automatic",
+        "power_reserve_hours": 55,
+        "frequency_vph": 25200
+      },
+      "context": {
+        "msrp_usd": 6500,
+        "production_start": 2017,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Omega",
+      "brand_slug": "omega",
+      "collection": "Seamaster Aqua Terra 150M",
+      "collection_slug": "seamaster-aqua-terra-150m",
+      "reference": "220.10.38.20.03.001",
+      "name": "Aqua Terra 150M Co-Axial Master Chronometer 38 mm (Blue, Steel Bracelet)",
+      "dimensions": {
+        "diameter_mm": 38.0,
+        "lug_to_lug_mm": 45.0,
+        "thickness_mm": 12.24,
+        "lug_width_mm": 19,
+        "weight_bracelet_g": 131,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire (domed, AR both sides)",
+        "water_resistance_m": 150,
+        "bezel": "Fixed (Steel)",
+        "crown": "Push-pull",
+        "caseback": "Sapphire display",
+        "dial_color": "Blue"
+      },
+      "movement": {
+        "caliber": "8800",
+        "type": "Automatic",
+        "power_reserve_hours": 55,
+        "frequency_vph": 25200
+      },
+      "context": {
+        "msrp_usd": 6500,
+        "production_start": 2017,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Omega",
+      "brand_slug": "omega",
+      "collection": "Seamaster Aqua Terra 150M",
+      "collection_slug": "seamaster-aqua-terra-150m",
+      "reference": "220.10.41.21.06.001",
+      "name": "Aqua Terra 150M Co-Axial Master Chronometer 41 mm (Green, Steel Bracelet)",
+      "dimensions": {
+        "diameter_mm": 41.0,
+        "lug_to_lug_mm": 47.9,
+        "thickness_mm": 13.2,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": 149,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire (domed, AR both sides)",
+        "water_resistance_m": 150,
+        "bezel": "Fixed (Steel)",
+        "crown": "Push-pull",
+        "caseback": "Sapphire display",
+        "dial_color": "Green"
+      },
+      "movement": {
+        "caliber": "8900",
+        "type": "Automatic",
+        "power_reserve_hours": 60,
+        "frequency_vph": 25200
+      },
+      "context": {
+        "msrp_usd": 7100,
+        "production_start": 2021,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Omega",
+      "brand_slug": "omega",
+      "collection": "Seamaster Aqua Terra 150M",
+      "collection_slug": "seamaster-aqua-terra-150m",
+      "reference": "220.12.41.21.03.001",
+      "name": "Aqua Terra 150M Co-Axial Master Chronometer 41 mm (Blue, Leather Strap)",
+      "dimensions": {
+        "diameter_mm": 41.0,
+        "lug_to_lug_mm": 47.9,
+        "thickness_mm": 13.2,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire (domed, AR both sides)",
+        "water_resistance_m": 150,
+        "bezel": "Fixed (Steel)",
+        "crown": "Push-pull",
+        "caseback": "Sapphire display",
+        "dial_color": "Blue"
+      },
+      "movement": {
+        "caliber": "8900",
+        "type": "Automatic",
+        "power_reserve_hours": 60,
+        "frequency_vph": 25200
+      },
+      "context": {
+        "msrp_usd": 6600,
+        "production_start": 2017,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Omega",
+      "brand_slug": "omega",
+      "collection": "Seamaster Aqua Terra 150M",
+      "collection_slug": "seamaster-aqua-terra-150m",
+      "reference": "220.10.38.20.01.001",
+      "name": "Aqua Terra 150M Co-Axial Master Chronometer 38 mm (Black, Steel Bracelet)",
+      "dimensions": {
+        "diameter_mm": 38.0,
+        "lug_to_lug_mm": 45.0,
+        "thickness_mm": 12.24,
+        "lug_width_mm": 19,
+        "weight_bracelet_g": 131,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire (domed, AR both sides)",
+        "water_resistance_m": 150,
+        "bezel": "Fixed (Steel)",
+        "crown": "Push-pull",
+        "caseback": "Sapphire display",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "8800",
+        "type": "Automatic",
+        "power_reserve_hours": 55,
+        "frequency_vph": 25200
+      },
+      "context": {
+        "msrp_usd": 6500,
+        "production_start": 2017,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Omega",
+      "brand_slug": "omega",
+      "collection": "Constellation",
+      "collection_slug": "constellation",
+      "reference": "131.10.39.20.01.001",
+      "name": "Constellation Co-Axial Master Chronometer 39 mm (Black, Steel Bracelet)",
+      "dimensions": {
+        "diameter_mm": 39.0,
+        "lug_to_lug_mm": 41.0,
+        "thickness_mm": 12.43,
+        "lug_width_mm": null,
+        "weight_bracelet_g": 158,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire (domed, AR both sides)",
+        "water_resistance_m": 50,
+        "bezel": "Fixed (Roman Numerals, 18K White Gold)",
+        "crown": "Push-pull",
+        "caseback": "Sapphire display",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "8800",
+        "type": "Automatic",
+        "power_reserve_hours": 55,
+        "frequency_vph": 25200
+      },
+      "context": {
+        "msrp_usd": 7500,
+        "production_start": 2019,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Omega",
+      "brand_slug": "omega",
+      "collection": "Constellation",
+      "collection_slug": "constellation",
+      "reference": "131.10.36.20.01.001",
+      "name": "Constellation Co-Axial Master Chronometer 36 mm (Black, Steel Bracelet)",
+      "dimensions": {
+        "diameter_mm": 36.0,
+        "lug_to_lug_mm": 39.2,
+        "thickness_mm": 11.7,
+        "lug_width_mm": null,
+        "weight_bracelet_g": 145,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire (domed, AR both sides)",
+        "water_resistance_m": 50,
+        "bezel": "Fixed (Roman Numerals, 18K White Gold)",
+        "crown": "Push-pull",
+        "caseback": "Sapphire display",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "8800",
+        "type": "Automatic",
+        "power_reserve_hours": 55,
+        "frequency_vph": 25200
+      },
+      "context": {
+        "msrp_usd": 7100,
+        "production_start": 2019,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Omega",
+      "brand_slug": "omega",
+      "collection": "Constellation",
+      "collection_slug": "constellation",
+      "reference": "131.10.39.20.02.001",
+      "name": "Constellation Co-Axial Master Chronometer 39 mm (Silver, Steel Bracelet)",
+      "dimensions": {
+        "diameter_mm": 39.0,
+        "lug_to_lug_mm": 41.0,
+        "thickness_mm": 12.43,
+        "lug_width_mm": null,
+        "weight_bracelet_g": 158,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire (domed, AR both sides)",
+        "water_resistance_m": 50,
+        "bezel": "Fixed (Roman Numerals, 18K White Gold)",
+        "crown": "Push-pull",
+        "caseback": "Sapphire display",
+        "dial_color": "Silver"
+      },
+      "movement": {
+        "caliber": "8800",
+        "type": "Automatic",
+        "power_reserve_hours": 55,
+        "frequency_vph": 25200
+      },
+      "context": {
+        "msrp_usd": 7500,
+        "production_start": 2019,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Omega",
+      "brand_slug": "omega",
+      "collection": "Constellation",
+      "collection_slug": "constellation",
+      "reference": "131.13.39.20.01.001",
+      "name": "Constellation Co-Axial Master Chronometer 39 mm (Black, Leather Strap)",
+      "dimensions": {
+        "diameter_mm": 39.0,
+        "lug_to_lug_mm": 41.0,
+        "thickness_mm": 12.43,
+        "lug_width_mm": null,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire (domed, AR both sides)",
+        "water_resistance_m": 50,
+        "bezel": "Fixed (Roman Numerals, 18K White Gold)",
+        "crown": "Push-pull",
+        "caseback": "Sapphire display",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "8800",
+        "type": "Automatic",
+        "power_reserve_hours": 55,
+        "frequency_vph": 25200
+      },
+      "context": {
+        "msrp_usd": 6900,
+        "production_start": 2019,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Omega",
+      "brand_slug": "omega",
+      "collection": "Constellation",
+      "collection_slug": "constellation",
+      "reference": "131.10.36.20.02.001",
+      "name": "Constellation Co-Axial Master Chronometer 36 mm (Silver, Steel Bracelet)",
+      "dimensions": {
+        "diameter_mm": 36.0,
+        "lug_to_lug_mm": 39.2,
+        "thickness_mm": 11.7,
+        "lug_width_mm": null,
+        "weight_bracelet_g": 145,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire (domed, AR both sides)",
+        "water_resistance_m": 50,
+        "bezel": "Fixed (Roman Numerals, 18K White Gold)",
+        "crown": "Push-pull",
+        "caseback": "Sapphire display",
+        "dial_color": "Silver"
+      },
+      "movement": {
+        "caliber": "8800",
+        "type": "Automatic",
+        "power_reserve_hours": 55,
+        "frequency_vph": 25200
+      },
+      "context": {
+        "msrp_usd": 7100,
+        "production_start": 2019,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Omega",
+      "brand_slug": "omega",
+      "collection": "Constellation",
+      "collection_slug": "constellation",
+      "reference": "131.10.39.20.06.001",
+      "name": "Constellation Co-Axial Master Chronometer 39 mm (Grey, Steel Bracelet)",
+      "dimensions": {
+        "diameter_mm": 39.0,
+        "lug_to_lug_mm": 41.0,
+        "thickness_mm": 12.43,
+        "lug_width_mm": null,
+        "weight_bracelet_g": 158,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire (domed, AR both sides)",
+        "water_resistance_m": 50,
+        "bezel": "Fixed (Roman Numerals, 18K White Gold)",
+        "crown": "Push-pull",
+        "caseback": "Sapphire display",
+        "dial_color": "Grey"
+      },
+      "movement": {
+        "caliber": "8800",
+        "type": "Automatic",
+        "power_reserve_hours": 55,
+        "frequency_vph": 25200
+      },
+      "context": {
+        "msrp_usd": 7500,
+        "production_start": 2019,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Omega",
+      "brand_slug": "omega",
+      "collection": "Constellation",
+      "collection_slug": "constellation",
+      "reference": "131.10.41.21.01.001",
+      "name": "Constellation Co-Axial Master Chronometer 41 mm (Black, Steel Bracelet)",
+      "dimensions": {
+        "diameter_mm": 41.0,
+        "lug_to_lug_mm": 44.3,
+        "thickness_mm": 12.43,
+        "lug_width_mm": null,
+        "weight_bracelet_g": 172,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire (domed, AR both sides)",
+        "water_resistance_m": 50,
+        "bezel": "Fixed (Roman Numerals, 18K White Gold)",
+        "crown": "Push-pull",
+        "caseback": "Sapphire display",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "8900",
+        "type": "Automatic",
+        "power_reserve_hours": 60,
+        "frequency_vph": 25200
+      },
+      "context": {
+        "msrp_usd": 7900,
+        "production_start": 2019,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Omega",
+      "brand_slug": "omega",
+      "collection": "De Ville Prestige",
+      "collection_slug": "de-ville-prestige",
+      "reference": "424.10.40.20.02.003",
+      "name": "De Ville Prestige Co-Axial Chronometer 39.5 mm (Silver, Steel Bracelet)",
+      "dimensions": {
+        "diameter_mm": 39.5,
+        "lug_to_lug_mm": 44.8,
+        "thickness_mm": 9.75,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": 108,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire (domed, AR inside)",
+        "water_resistance_m": 30,
+        "bezel": "Fixed (Steel)",
+        "crown": "Push-pull",
+        "caseback": "Solid",
+        "dial_color": "Silver"
+      },
+      "movement": {
+        "caliber": "2500",
+        "type": "Automatic",
+        "power_reserve_hours": 48,
+        "frequency_vph": 25200
+      },
+      "context": {
+        "msrp_usd": 4000,
+        "production_start": 2014,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Omega",
+      "brand_slug": "omega",
+      "collection": "De Ville Prestige",
+      "collection_slug": "de-ville-prestige",
+      "reference": "424.10.37.20.02.001",
+      "name": "De Ville Prestige Co-Axial Chronometer 36.8 mm (Silver, Steel Bracelet)",
+      "dimensions": {
+        "diameter_mm": 36.8,
+        "lug_to_lug_mm": 41.2,
+        "thickness_mm": 9.5,
+        "lug_width_mm": 19,
+        "weight_bracelet_g": 94,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire (domed, AR inside)",
+        "water_resistance_m": 30,
+        "bezel": "Fixed (Steel)",
+        "crown": "Push-pull",
+        "caseback": "Solid",
+        "dial_color": "Silver"
+      },
+      "movement": {
+        "caliber": "2500",
+        "type": "Automatic",
+        "power_reserve_hours": 48,
+        "frequency_vph": 25200
+      },
+      "context": {
+        "msrp_usd": 3700,
+        "production_start": 2014,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Omega",
+      "brand_slug": "omega",
+      "collection": "De Ville Prestige",
+      "collection_slug": "de-ville-prestige",
+      "reference": "424.13.40.20.02.001",
+      "name": "De Ville Prestige Co-Axial Chronometer 39.5 mm (Silver, Leather Strap)",
+      "dimensions": {
+        "diameter_mm": 39.5,
+        "lug_to_lug_mm": 44.8,
+        "thickness_mm": 9.75,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire (domed, AR inside)",
+        "water_resistance_m": 30,
+        "bezel": "Fixed (Steel)",
+        "crown": "Push-pull",
+        "caseback": "Solid",
+        "dial_color": "Silver"
+      },
+      "movement": {
+        "caliber": "2500",
+        "type": "Automatic",
+        "power_reserve_hours": 48,
+        "frequency_vph": 25200
+      },
+      "context": {
+        "msrp_usd": 3600,
+        "production_start": 2014,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Omega",
+      "brand_slug": "omega",
+      "collection": "De Ville Prestige",
+      "collection_slug": "de-ville-prestige",
+      "reference": "424.10.40.20.03.001",
+      "name": "De Ville Prestige Co-Axial Chronometer 39.5 mm (Blue, Steel Bracelet)",
+      "dimensions": {
+        "diameter_mm": 39.5,
+        "lug_to_lug_mm": 44.8,
+        "thickness_mm": 9.75,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": 108,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire (domed, AR inside)",
+        "water_resistance_m": 30,
+        "bezel": "Fixed (Steel)",
+        "crown": "Push-pull",
+        "caseback": "Solid",
+        "dial_color": "Blue"
+      },
+      "movement": {
+        "caliber": "2500",
+        "type": "Automatic",
+        "power_reserve_hours": 48,
+        "frequency_vph": 25200
+      },
+      "context": {
+        "msrp_usd": 4000,
+        "production_start": 2014,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Omega",
+      "brand_slug": "omega",
+      "collection": "De Ville Prestige",
+      "collection_slug": "de-ville-prestige",
+      "reference": "424.10.40.20.01.003",
+      "name": "De Ville Prestige Co-Axial Chronometer 39.5 mm (Black, Steel Bracelet)",
+      "dimensions": {
+        "diameter_mm": 39.5,
+        "lug_to_lug_mm": 44.8,
+        "thickness_mm": 9.75,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": 108,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire (domed, AR inside)",
+        "water_resistance_m": 30,
+        "bezel": "Fixed (Steel)",
+        "crown": "Push-pull",
+        "caseback": "Solid",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "2500",
+        "type": "Automatic",
+        "power_reserve_hours": 48,
+        "frequency_vph": 25200
+      },
+      "context": {
+        "msrp_usd": 4000,
+        "production_start": 2014,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Omega",
+      "brand_slug": "omega",
+      "collection": "De Ville Prestige",
+      "collection_slug": "de-ville-prestige",
+      "reference": "424.10.37.20.03.001",
+      "name": "De Ville Prestige Co-Axial Chronometer 36.8 mm (Blue, Steel Bracelet)",
+      "dimensions": {
+        "diameter_mm": 36.8,
+        "lug_to_lug_mm": 41.2,
+        "thickness_mm": 9.5,
+        "lug_width_mm": 19,
+        "weight_bracelet_g": 94,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire (domed, AR inside)",
+        "water_resistance_m": 30,
+        "bezel": "Fixed (Steel)",
+        "crown": "Push-pull",
+        "caseback": "Solid",
+        "dial_color": "Blue"
+      },
+      "movement": {
+        "caliber": "2500",
+        "type": "Automatic",
+        "power_reserve_hours": 48,
+        "frequency_vph": 25200
+      },
+      "context": {
+        "msrp_usd": 3700,
+        "production_start": 2014,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Omega",
+      "brand_slug": "omega",
+      "collection": "De Ville Prestige",
+      "collection_slug": "de-ville-prestige",
+      "reference": "424.10.37.20.01.001",
+      "name": "De Ville Prestige Co-Axial Chronometer 36.8 mm (Black, Steel Bracelet)",
+      "dimensions": {
+        "diameter_mm": 36.8,
+        "lug_to_lug_mm": 41.2,
+        "thickness_mm": 9.5,
+        "lug_width_mm": 19,
+        "weight_bracelet_g": 94,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire (domed, AR inside)",
+        "water_resistance_m": 30,
+        "bezel": "Fixed (Steel)",
+        "crown": "Push-pull",
+        "caseback": "Solid",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "2500",
+        "type": "Automatic",
+        "power_reserve_hours": 48,
+        "frequency_vph": 25200
+      },
+      "context": {
+        "msrp_usd": 3700,
+        "production_start": 2014,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Omega",
+      "brand_slug": "omega",
+      "collection": "Seamaster Diver 300M",
+      "collection_slug": "seamaster-diver-300m",
+      "reference": "210.30.42.20.01.002",
+      "name": "Diver 300M Nekton Edition Co-Axial Master Chronometer 42 mm",
+      "dimensions": {
+        "diameter_mm": 42.0,
+        "lug_to_lug_mm": 49.9,
+        "thickness_mm": 13.56,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": 194,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire (domed, AR both sides)",
+        "water_resistance_m": 300,
+        "bezel": "Unidirectional rotating (Black Ceramic with White Enamel)",
+        "crown": "Screw-in",
+        "caseback": "Sapphire display",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "8800",
+        "type": "Automatic",
+        "power_reserve_hours": 55,
+        "frequency_vph": 25200
+      },
+      "context": {
+        "msrp_usd": 6700,
+        "production_start": 2020,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Omega",
+      "brand_slug": "omega",
+      "collection": "Seamaster Aqua Terra 150M",
+      "collection_slug": "seamaster-aqua-terra-150m",
+      "reference": "220.10.41.21.02.001",
+      "name": "Aqua Terra 150M Co-Axial Master Chronometer 41 mm (Silver, Steel Bracelet)",
+      "dimensions": {
+        "diameter_mm": 41.0,
+        "lug_to_lug_mm": 47.9,
+        "thickness_mm": 13.2,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": 149,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire (domed, AR both sides)",
+        "water_resistance_m": 150,
+        "bezel": "Fixed (Steel)",
+        "crown": "Push-pull",
+        "caseback": "Sapphire display",
+        "dial_color": "Silver"
+      },
+      "movement": {
+        "caliber": "8900",
+        "type": "Automatic",
+        "power_reserve_hours": 60,
+        "frequency_vph": 25200
+      },
+      "context": {
+        "msrp_usd": 7100,
+        "production_start": 2017,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Omega",
+      "brand_slug": "omega",
+      "collection": "Seamaster Aqua Terra 150M",
+      "collection_slug": "seamaster-aqua-terra-150m",
+      "reference": "220.10.38.20.09.001",
+      "name": "Aqua Terra 150M Co-Axial Master Chronometer 38 mm (Grey, Steel Bracelet)",
+      "dimensions": {
+        "diameter_mm": 38.0,
+        "lug_to_lug_mm": 45.0,
+        "thickness_mm": 12.24,
+        "lug_width_mm": 19,
+        "weight_bracelet_g": 131,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire (domed, AR both sides)",
+        "water_resistance_m": 150,
+        "bezel": "Fixed (Steel)",
+        "crown": "Push-pull",
+        "caseback": "Sapphire display",
+        "dial_color": "Grey"
+      },
+      "movement": {
+        "caliber": "8800",
+        "type": "Automatic",
+        "power_reserve_hours": 55,
+        "frequency_vph": 25200
+      },
+      "context": {
+        "msrp_usd": 6500,
+        "production_start": 2017,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Omega",
+      "brand_slug": "omega",
+      "collection": "Speedmaster Moonwatch Professional",
+      "collection_slug": "speedmaster-moonwatch-professional",
+      "reference": "310.63.42.50.01.001",
+      "name": "Moonwatch Professional Co-Axial Master Chronometer Chronograph 42 mm (Sedna Gold, Leather Strap)",
+      "dimensions": {
+        "diameter_mm": 42.0,
+        "lug_to_lug_mm": 47.5,
+        "thickness_mm": 13.18,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "18K Sedna Gold",
+        "crystal": "Sapphire",
+        "water_resistance_m": 50,
+        "bezel": "Tachymeter (18K Sedna Gold)",
+        "crown": "Push-pull",
+        "caseback": "Sapphire display",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "3861",
+        "type": "Manual",
+        "power_reserve_hours": 50,
+        "frequency_vph": 21600
+      },
+      "context": {
+        "msrp_usd": 40200,
+        "production_start": 2021,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Omega",
+      "brand_slug": "omega",
+      "collection": "Seamaster Diver 300M",
+      "collection_slug": "seamaster-diver-300m",
+      "reference": "210.22.42.20.01.001",
+      "name": "Diver 300M Co-Axial Master Chronometer 42 mm (Black, Steel / Yellow Gold Bracelet)",
+      "dimensions": {
+        "diameter_mm": 42.0,
+        "lug_to_lug_mm": 49.9,
+        "thickness_mm": 13.56,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel / 18K Yellow Gold",
+        "crystal": "Sapphire (domed, AR both sides)",
+        "water_resistance_m": 300,
+        "bezel": "Unidirectional rotating (Black Ceramic with Yellow Gold)",
+        "crown": "Screw-in",
+        "caseback": "Sapphire display",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "8800",
+        "type": "Automatic",
+        "power_reserve_hours": 55,
+        "frequency_vph": 25200
+      },
+      "context": {
+        "msrp_usd": 10900,
+        "production_start": 2018,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Omega",
+      "brand_slug": "omega",
+      "collection": "Speedmaster Moonwatch Professional",
+      "collection_slug": "speedmaster-moonwatch-professional",
+      "reference": "310.30.42.50.04.001",
+      "name": "Moonwatch Professional Co-Axial Master Chronometer Chronograph 42 mm (Green, Leather Strap)",
+      "dimensions": {
+        "diameter_mm": 42.0,
+        "lug_to_lug_mm": 47.5,
+        "thickness_mm": 13.18,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire",
+        "water_resistance_m": 50,
+        "bezel": "Tachymeter (Green Aluminium)",
+        "crown": "Push-pull",
+        "caseback": "Sapphire display",
+        "dial_color": "Green"
+      },
+      "movement": {
+        "caliber": "3861",
+        "type": "Manual",
+        "power_reserve_hours": 50,
+        "frequency_vph": 21600
+      },
+      "context": {
+        "msrp_usd": 8700,
+        "production_start": 2023,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    }
+  ]
+}

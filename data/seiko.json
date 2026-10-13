@@ -1,0 +1,1607 @@
+{
+  "brand": "Seiko",
+  "brand_slug": "seiko",
+  "brand_description": "Founded in 1881, Seiko is Japan's most prestigious watchmaker. From the affordable Seiko 5 to the elite Grand Seiko line, the brand spans every price point with innovations like Spring Drive, Hardlex crystal, and the legendary 6R/4R automatic movements.",
+  "watches": [
+    {
+      "brand": "Seiko",
+      "brand_slug": "seiko",
+      "collection": "Prospex",
+      "collection_slug": "prospex",
+      "reference": "SPB143",
+      "name": "Prospex 62MAS Reissue",
+      "dimensions": {
+        "diameter_mm": 40.5,
+        "lug_to_lug_mm": 47.6,
+        "thickness_mm": 13.2,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire",
+        "water_resistance_m": 200,
+        "bezel": "Unidirectional rotating",
+        "crown": "Screw-down",
+        "caseback": "Solid screw-down",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "6R35",
+        "type": "Automatic",
+        "power_reserve_hours": 70,
+        "frequency_vph": 21600
+      },
+      "context": {
+        "msrp_usd": 1100,
+        "production_start": 2020,
+        "production_end": null,
+        "predecessor": "62MAS (1965 original)",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Seiko",
+      "brand_slug": "seiko",
+      "collection": "Prospex",
+      "collection_slug": "prospex",
+      "reference": "SBDC101",
+      "name": "Prospex 62MAS Reissue (JDM)",
+      "dimensions": {
+        "diameter_mm": 40.5,
+        "lug_to_lug_mm": 47.6,
+        "thickness_mm": 13.2,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire",
+        "water_resistance_m": 200,
+        "bezel": "Unidirectional rotating",
+        "crown": "Screw-down",
+        "caseback": "Solid screw-down",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "6R35",
+        "type": "Automatic",
+        "power_reserve_hours": 70,
+        "frequency_vph": 21600
+      },
+      "context": {
+        "msrp_usd": 1100,
+        "production_start": 2020,
+        "production_end": null,
+        "predecessor": "62MAS (1965 original)",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Seiko",
+      "brand_slug": "seiko",
+      "collection": "Prospex",
+      "collection_slug": "prospex",
+      "reference": "SPB185",
+      "name": "Prospex Willard",
+      "dimensions": {
+        "diameter_mm": 42.7,
+        "lug_to_lug_mm": 48.0,
+        "thickness_mm": 13.7,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire",
+        "water_resistance_m": 200,
+        "bezel": "Unidirectional rotating",
+        "crown": "Screw-down",
+        "caseback": "Solid screw-down",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "6R35",
+        "type": "Automatic",
+        "power_reserve_hours": 70,
+        "frequency_vph": 21600
+      },
+      "context": {
+        "msrp_usd": 1200,
+        "production_start": 2020,
+        "production_end": null,
+        "predecessor": "6105-8110 (Captain Willard)",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Seiko",
+      "brand_slug": "seiko",
+      "collection": "Prospex",
+      "collection_slug": "prospex",
+      "reference": "SPB313",
+      "name": "Prospex 1968 Diver Reinterpretation",
+      "dimensions": {
+        "diameter_mm": 41.0,
+        "lug_to_lug_mm": 46.9,
+        "thickness_mm": 12.3,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire",
+        "water_resistance_m": 200,
+        "bezel": "Unidirectional rotating",
+        "crown": "Screw-down",
+        "caseback": "Solid screw-down",
+        "dial_color": "White"
+      },
+      "movement": {
+        "caliber": "6R35",
+        "type": "Automatic",
+        "power_reserve_hours": 70,
+        "frequency_vph": 21600
+      },
+      "context": {
+        "msrp_usd": 1100,
+        "production_start": 2022,
+        "production_end": null,
+        "predecessor": "6105-8000 (1968 Turtle)",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Seiko",
+      "brand_slug": "seiko",
+      "collection": "Prospex",
+      "collection_slug": "prospex",
+      "reference": "SPB317",
+      "name": "Prospex 1968 Diver Reinterpretation",
+      "dimensions": {
+        "diameter_mm": 41.0,
+        "lug_to_lug_mm": 46.9,
+        "thickness_mm": 12.3,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire",
+        "water_resistance_m": 200,
+        "bezel": "Unidirectional rotating",
+        "crown": "Screw-down",
+        "caseback": "Solid screw-down",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "6R35",
+        "type": "Automatic",
+        "power_reserve_hours": 70,
+        "frequency_vph": 21600
+      },
+      "context": {
+        "msrp_usd": 900,
+        "production_start": 2022,
+        "production_end": null,
+        "predecessor": "6105-8000 (1968 Turtle)",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Seiko",
+      "brand_slug": "seiko",
+      "collection": "Prospex",
+      "collection_slug": "prospex",
+      "reference": "SRPE93",
+      "name": "Prospex Turtle Diver",
+      "dimensions": {
+        "diameter_mm": 45.0,
+        "lug_to_lug_mm": 47.7,
+        "thickness_mm": 13.4,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Hardlex",
+        "water_resistance_m": 200,
+        "bezel": "Unidirectional rotating",
+        "crown": "Screw-down",
+        "caseback": "Solid screw-down",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "4R36",
+        "type": "Automatic",
+        "power_reserve_hours": 41,
+        "frequency_vph": 21600
+      },
+      "context": {
+        "msrp_usd": 495,
+        "production_start": 2021,
+        "production_end": null,
+        "predecessor": "SRP777",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Seiko",
+      "brand_slug": "seiko",
+      "collection": "Prospex",
+      "collection_slug": "prospex",
+      "reference": "SRPE99",
+      "name": "Prospex PADI Turtle Diver",
+      "dimensions": {
+        "diameter_mm": 45.0,
+        "lug_to_lug_mm": 47.7,
+        "thickness_mm": 13.4,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Hardlex",
+        "water_resistance_m": 200,
+        "bezel": "Unidirectional rotating",
+        "crown": "Screw-down",
+        "caseback": "Solid screw-down",
+        "dial_color": "Blue"
+      },
+      "movement": {
+        "caliber": "4R36",
+        "type": "Automatic",
+        "power_reserve_hours": 41,
+        "frequency_vph": 21600
+      },
+      "context": {
+        "msrp_usd": 550,
+        "production_start": 2021,
+        "production_end": null,
+        "predecessor": "SRP779",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Seiko",
+      "brand_slug": "seiko",
+      "collection": "Prospex",
+      "collection_slug": "prospex",
+      "reference": "SNJ025",
+      "name": "Prospex Arnie Solar",
+      "dimensions": {
+        "diameter_mm": 47.8,
+        "lug_to_lug_mm": 50.5,
+        "thickness_mm": 13.8,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Hardlex",
+        "water_resistance_m": 200,
+        "bezel": "Unidirectional rotating",
+        "crown": "Screw-down",
+        "caseback": "Solid screw-down",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "H851",
+        "type": "Solar Quartz (Analog-Digital)",
+        "power_reserve_hours": null,
+        "frequency_vph": null
+      },
+      "context": {
+        "msrp_usd": 475,
+        "production_start": 2019,
+        "production_end": null,
+        "predecessor": "H558-5000 (1982 original Arnie)",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Seiko",
+      "brand_slug": "seiko",
+      "collection": "Prospex",
+      "collection_slug": "prospex",
+      "reference": "SNJ027",
+      "name": "Prospex Arnie PADI Solar",
+      "dimensions": {
+        "diameter_mm": 47.8,
+        "lug_to_lug_mm": 50.5,
+        "thickness_mm": 13.8,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Hardlex",
+        "water_resistance_m": 200,
+        "bezel": "Unidirectional rotating",
+        "crown": "Screw-down",
+        "caseback": "Solid screw-down",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "H851",
+        "type": "Solar Quartz (Analog-Digital)",
+        "power_reserve_hours": null,
+        "frequency_vph": null
+      },
+      "context": {
+        "msrp_usd": 525,
+        "production_start": 2019,
+        "production_end": null,
+        "predecessor": "H558-5000 (1982 original Arnie)",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Seiko",
+      "brand_slug": "seiko",
+      "collection": "Prospex",
+      "collection_slug": "prospex",
+      "reference": "SPB053",
+      "name": "Prospex 62MAS Modern Reinterpretation",
+      "dimensions": {
+        "diameter_mm": 42.6,
+        "lug_to_lug_mm": 50.0,
+        "thickness_mm": 13.8,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire",
+        "water_resistance_m": 200,
+        "bezel": "Unidirectional rotating",
+        "crown": "Screw-down",
+        "caseback": "Solid screw-down",
+        "dial_color": "Blue"
+      },
+      "movement": {
+        "caliber": "6R15",
+        "type": "Automatic",
+        "power_reserve_hours": 50,
+        "frequency_vph": 21600
+      },
+      "context": {
+        "msrp_usd": 800,
+        "production_start": 2017,
+        "production_end": null,
+        "predecessor": "62MAS (1965 original)",
+        "successor": "SPB143"
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Seiko",
+      "brand_slug": "seiko",
+      "collection": "Prospex",
+      "collection_slug": "prospex",
+      "reference": "SLA021",
+      "name": "Prospex Marinemaster 300",
+      "dimensions": {
+        "diameter_mm": 44.3,
+        "lug_to_lug_mm": 50.5,
+        "thickness_mm": 15.4,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel (DiaShield coating)",
+        "crystal": "Sapphire",
+        "water_resistance_m": 300,
+        "bezel": "Unidirectional rotating, ceramic insert",
+        "crown": "Screw-down",
+        "caseback": "Solid (monoblock)",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "8L35",
+        "type": "Automatic",
+        "power_reserve_hours": 50,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 3200,
+        "production_start": 2017,
+        "production_end": null,
+        "predecessor": "SBDX017",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Seiko",
+      "brand_slug": "seiko",
+      "collection": "Prospex",
+      "collection_slug": "prospex",
+      "reference": "SNE573",
+      "name": "Prospex Solar Diver",
+      "dimensions": {
+        "diameter_mm": 38.5,
+        "lug_to_lug_mm": 45.6,
+        "thickness_mm": 10.7,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire",
+        "water_resistance_m": 200,
+        "bezel": "Unidirectional rotating",
+        "crown": "Screw-down",
+        "caseback": "Solid screw-down",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "V157",
+        "type": "Solar Quartz",
+        "power_reserve_hours": null,
+        "frequency_vph": null
+      },
+      "context": {
+        "msrp_usd": 525,
+        "production_start": 2021,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Seiko",
+      "brand_slug": "seiko",
+      "collection": "Prospex",
+      "collection_slug": "prospex",
+      "reference": "SNE569",
+      "name": "Prospex Solar Diver",
+      "dimensions": {
+        "diameter_mm": 38.5,
+        "lug_to_lug_mm": 45.6,
+        "thickness_mm": 10.7,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire",
+        "water_resistance_m": 200,
+        "bezel": "Unidirectional rotating",
+        "crown": "Screw-down",
+        "caseback": "Solid screw-down",
+        "dial_color": "Blue"
+      },
+      "movement": {
+        "caliber": "V157",
+        "type": "Solar Quartz",
+        "power_reserve_hours": null,
+        "frequency_vph": null
+      },
+      "context": {
+        "msrp_usd": 525,
+        "production_start": 2021,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Seiko",
+      "brand_slug": "seiko",
+      "collection": "Presage",
+      "collection_slug": "presage",
+      "reference": "SRPB41",
+      "name": "Presage Cocktail Time Blue Moon",
+      "dimensions": {
+        "diameter_mm": 40.5,
+        "lug_to_lug_mm": 47.0,
+        "thickness_mm": 11.8,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Hardlex",
+        "water_resistance_m": 50,
+        "bezel": "Fixed, smooth",
+        "crown": "Push/pull",
+        "caseback": "Display",
+        "dial_color": "Blue"
+      },
+      "movement": {
+        "caliber": "4R35",
+        "type": "Automatic",
+        "power_reserve_hours": 41,
+        "frequency_vph": 21600
+      },
+      "context": {
+        "msrp_usd": 450,
+        "production_start": 2017,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Seiko",
+      "brand_slug": "seiko",
+      "collection": "Presage",
+      "collection_slug": "presage",
+      "reference": "SRPB43",
+      "name": "Presage Cocktail Time",
+      "dimensions": {
+        "diameter_mm": 40.5,
+        "lug_to_lug_mm": 47.5,
+        "thickness_mm": 11.8,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Hardlex",
+        "water_resistance_m": 50,
+        "bezel": "Fixed, smooth",
+        "crown": "Push/pull",
+        "caseback": "Display",
+        "dial_color": "Light Blue"
+      },
+      "movement": {
+        "caliber": "4R35",
+        "type": "Automatic",
+        "power_reserve_hours": 41,
+        "frequency_vph": 21600
+      },
+      "context": {
+        "msrp_usd": 425,
+        "production_start": 2017,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Seiko",
+      "brand_slug": "seiko",
+      "collection": "Presage",
+      "collection_slug": "presage",
+      "reference": "SRPD37",
+      "name": "Presage Cocktail Time Mockingbird",
+      "dimensions": {
+        "diameter_mm": 40.5,
+        "lug_to_lug_mm": 47.5,
+        "thickness_mm": 11.8,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Hardlex",
+        "water_resistance_m": 50,
+        "bezel": "Fixed, smooth",
+        "crown": "Push/pull",
+        "caseback": "Display",
+        "dial_color": "Green"
+      },
+      "movement": {
+        "caliber": "4R35",
+        "type": "Automatic",
+        "power_reserve_hours": 41,
+        "frequency_vph": 21600
+      },
+      "context": {
+        "msrp_usd": 425,
+        "production_start": 2019,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Seiko",
+      "brand_slug": "seiko",
+      "collection": "Presage",
+      "collection_slug": "presage",
+      "reference": "SSA405",
+      "name": "Presage Open Heart",
+      "dimensions": {
+        "diameter_mm": 40.5,
+        "lug_to_lug_mm": 47.5,
+        "thickness_mm": 11.8,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Hardlex",
+        "water_resistance_m": 50,
+        "bezel": "Fixed, smooth",
+        "crown": "Push/pull",
+        "caseback": "Display",
+        "dial_color": "Blue (Open Heart)"
+      },
+      "movement": {
+        "caliber": "4R38",
+        "type": "Automatic",
+        "power_reserve_hours": 41,
+        "frequency_vph": 21600
+      },
+      "context": {
+        "msrp_usd": 475,
+        "production_start": 2018,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Seiko",
+      "brand_slug": "seiko",
+      "collection": "Presage",
+      "collection_slug": "presage",
+      "reference": "SRPE43",
+      "name": "Presage Cocktail Time",
+      "dimensions": {
+        "diameter_mm": 38.5,
+        "lug_to_lug_mm": 45.4,
+        "thickness_mm": 11.8,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Hardlex",
+        "water_resistance_m": 50,
+        "bezel": "Fixed, smooth",
+        "crown": "Push/pull",
+        "caseback": "Display",
+        "dial_color": "Blue"
+      },
+      "movement": {
+        "caliber": "4R35",
+        "type": "Automatic",
+        "power_reserve_hours": 41,
+        "frequency_vph": 21600
+      },
+      "context": {
+        "msrp_usd": 450,
+        "production_start": 2020,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Seiko",
+      "brand_slug": "seiko",
+      "collection": "Presage",
+      "collection_slug": "presage",
+      "reference": "SPB239",
+      "name": "Presage Sharp Edged",
+      "dimensions": {
+        "diameter_mm": 39.3,
+        "lug_to_lug_mm": 46.5,
+        "thickness_mm": 11.1,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire (dual-curved)",
+        "water_resistance_m": 100,
+        "bezel": "Fixed, faceted",
+        "crown": "Push/pull",
+        "caseback": "Display",
+        "dial_color": "White"
+      },
+      "movement": {
+        "caliber": "6R35",
+        "type": "Automatic",
+        "power_reserve_hours": 70,
+        "frequency_vph": 21600
+      },
+      "context": {
+        "msrp_usd": 825,
+        "production_start": 2021,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Seiko",
+      "brand_slug": "seiko",
+      "collection": "Presage",
+      "collection_slug": "presage",
+      "reference": "SPB241",
+      "name": "Presage Sharp Edged",
+      "dimensions": {
+        "diameter_mm": 39.3,
+        "lug_to_lug_mm": 46.5,
+        "thickness_mm": 11.1,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire (dual-curved)",
+        "water_resistance_m": 100,
+        "bezel": "Fixed, faceted",
+        "crown": "Push/pull",
+        "caseback": "Display",
+        "dial_color": "Blue"
+      },
+      "movement": {
+        "caliber": "6R35",
+        "type": "Automatic",
+        "power_reserve_hours": 70,
+        "frequency_vph": 21600
+      },
+      "context": {
+        "msrp_usd": 825,
+        "production_start": 2021,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Seiko",
+      "brand_slug": "seiko",
+      "collection": "Seiko 5 Sports",
+      "collection_slug": "seiko-5-sports",
+      "reference": "SRPD55",
+      "name": "Seiko 5 Sports",
+      "dimensions": {
+        "diameter_mm": 42.5,
+        "lug_to_lug_mm": 46.0,
+        "thickness_mm": 13.4,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Hardlex",
+        "water_resistance_m": 100,
+        "bezel": "Unidirectional rotating",
+        "crown": "Push/pull with crown guard",
+        "caseback": "Display",
+        "dial_color": "Blue"
+      },
+      "movement": {
+        "caliber": "4R36",
+        "type": "Automatic",
+        "power_reserve_hours": 41,
+        "frequency_vph": 21600
+      },
+      "context": {
+        "msrp_usd": 275,
+        "production_start": 2019,
+        "production_end": null,
+        "predecessor": "SKX007",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Seiko",
+      "brand_slug": "seiko",
+      "collection": "Seiko 5 Sports",
+      "collection_slug": "seiko-5-sports",
+      "reference": "SRPD65",
+      "name": "Seiko 5 Sports",
+      "dimensions": {
+        "diameter_mm": 42.5,
+        "lug_to_lug_mm": 46.0,
+        "thickness_mm": 13.4,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel (Black Hard Coating)",
+        "crystal": "Hardlex",
+        "water_resistance_m": 100,
+        "bezel": "Unidirectional rotating",
+        "crown": "Push/pull with crown guard",
+        "caseback": "Display",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "4R36",
+        "type": "Automatic",
+        "power_reserve_hours": 41,
+        "frequency_vph": 21600
+      },
+      "context": {
+        "msrp_usd": 350,
+        "production_start": 2019,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Seiko",
+      "brand_slug": "seiko",
+      "collection": "Seiko 5 Sports",
+      "collection_slug": "seiko-5-sports",
+      "reference": "SRPD71",
+      "name": "Seiko 5 Sports",
+      "dimensions": {
+        "diameter_mm": 42.5,
+        "lug_to_lug_mm": 46.0,
+        "thickness_mm": 13.4,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Hardlex",
+        "water_resistance_m": 100,
+        "bezel": "Unidirectional rotating",
+        "crown": "Push/pull with crown guard",
+        "caseback": "Display",
+        "dial_color": "Green"
+      },
+      "movement": {
+        "caliber": "4R36",
+        "type": "Automatic",
+        "power_reserve_hours": 41,
+        "frequency_vph": 21600
+      },
+      "context": {
+        "msrp_usd": 300,
+        "production_start": 2019,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Seiko",
+      "brand_slug": "seiko",
+      "collection": "Seiko 5 Sports",
+      "collection_slug": "seiko-5-sports",
+      "reference": "SRPD76",
+      "name": "Seiko 5 Sports",
+      "dimensions": {
+        "diameter_mm": 42.5,
+        "lug_to_lug_mm": 46.0,
+        "thickness_mm": 13.4,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel (Rose Gold Tone)",
+        "crystal": "Hardlex",
+        "water_resistance_m": 100,
+        "bezel": "Unidirectional rotating",
+        "crown": "Push/pull with crown guard",
+        "caseback": "Display",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "4R36",
+        "type": "Automatic",
+        "power_reserve_hours": 41,
+        "frequency_vph": 21600
+      },
+      "context": {
+        "msrp_usd": 350,
+        "production_start": 2019,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Seiko",
+      "brand_slug": "seiko",
+      "collection": "Seiko 5 Sports",
+      "collection_slug": "seiko-5-sports",
+      "reference": "SRPE55",
+      "name": "Seiko 5 Sports SKX Style",
+      "dimensions": {
+        "diameter_mm": 40.0,
+        "lug_to_lug_mm": 44.6,
+        "thickness_mm": 11.5,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Hardlex",
+        "water_resistance_m": 100,
+        "bezel": "Unidirectional rotating",
+        "crown": "Push/pull with crown guard",
+        "caseback": "Display",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "4R36",
+        "type": "Automatic",
+        "power_reserve_hours": 41,
+        "frequency_vph": 21600
+      },
+      "context": {
+        "msrp_usd": 315,
+        "production_start": 2021,
+        "production_end": null,
+        "predecessor": "SKX013",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Seiko",
+      "brand_slug": "seiko",
+      "collection": "Seiko 5 Sports",
+      "collection_slug": "seiko-5-sports",
+      "reference": "SRPE57",
+      "name": "Seiko 5 Sports SKX Style",
+      "dimensions": {
+        "diameter_mm": 40.0,
+        "lug_to_lug_mm": 44.6,
+        "thickness_mm": 11.5,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Hardlex",
+        "water_resistance_m": 100,
+        "bezel": "Unidirectional rotating",
+        "crown": "Push/pull with crown guard",
+        "caseback": "Display",
+        "dial_color": "Black (Gold Accents)"
+      },
+      "movement": {
+        "caliber": "4R36",
+        "type": "Automatic",
+        "power_reserve_hours": 41,
+        "frequency_vph": 21600
+      },
+      "context": {
+        "msrp_usd": 315,
+        "production_start": 2021,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Seiko",
+      "brand_slug": "seiko",
+      "collection": "Seiko 5 Sports",
+      "collection_slug": "seiko-5-sports",
+      "reference": "SSK001",
+      "name": "Seiko 5 Sports GMT",
+      "dimensions": {
+        "diameter_mm": 42.5,
+        "lug_to_lug_mm": 46.0,
+        "thickness_mm": 13.4,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Hardlex",
+        "water_resistance_m": 100,
+        "bezel": "Bidirectional rotating (24-hour)",
+        "crown": "Push/pull with crown guard",
+        "caseback": "Display",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "4R34",
+        "type": "Automatic (GMT)",
+        "power_reserve_hours": 41,
+        "frequency_vph": 21600
+      },
+      "context": {
+        "msrp_usd": 375,
+        "production_start": 2023,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Seiko",
+      "brand_slug": "seiko",
+      "collection": "Seiko 5 Sports",
+      "collection_slug": "seiko-5-sports",
+      "reference": "SSK003",
+      "name": "Seiko 5 Sports GMT",
+      "dimensions": {
+        "diameter_mm": 42.5,
+        "lug_to_lug_mm": 46.0,
+        "thickness_mm": 13.4,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Hardlex",
+        "water_resistance_m": 100,
+        "bezel": "Bidirectional rotating (24-hour)",
+        "crown": "Push/pull with crown guard",
+        "caseback": "Display",
+        "dial_color": "Blue"
+      },
+      "movement": {
+        "caliber": "4R34",
+        "type": "Automatic (GMT)",
+        "power_reserve_hours": 41,
+        "frequency_vph": 21600
+      },
+      "context": {
+        "msrp_usd": 375,
+        "production_start": 2023,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Seiko",
+      "brand_slug": "seiko",
+      "collection": "King Seiko",
+      "collection_slug": "king-seiko",
+      "reference": "SPB279",
+      "name": "King Seiko",
+      "dimensions": {
+        "diameter_mm": 37.0,
+        "lug_to_lug_mm": 43.6,
+        "thickness_mm": 12.1,
+        "lug_width_mm": 19,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire (box-shaped)",
+        "water_resistance_m": 100,
+        "bezel": "Fixed, polished",
+        "crown": "Screw-down",
+        "caseback": "Solid (King Seiko emblem)",
+        "dial_color": "Silver"
+      },
+      "movement": {
+        "caliber": "6R31",
+        "type": "Automatic",
+        "power_reserve_hours": 70,
+        "frequency_vph": 21600
+      },
+      "context": {
+        "msrp_usd": 1700,
+        "production_start": 2022,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Seiko",
+      "brand_slug": "seiko",
+      "collection": "King Seiko",
+      "collection_slug": "king-seiko",
+      "reference": "SPB281",
+      "name": "King Seiko",
+      "dimensions": {
+        "diameter_mm": 37.0,
+        "lug_to_lug_mm": 43.6,
+        "thickness_mm": 12.1,
+        "lug_width_mm": 19,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire (box-shaped)",
+        "water_resistance_m": 100,
+        "bezel": "Fixed, polished",
+        "crown": "Screw-down",
+        "caseback": "Solid (King Seiko emblem)",
+        "dial_color": "Grey"
+      },
+      "movement": {
+        "caliber": "6R31",
+        "type": "Automatic",
+        "power_reserve_hours": 70,
+        "frequency_vph": 21600
+      },
+      "context": {
+        "msrp_usd": 1700,
+        "production_start": 2022,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Seiko",
+      "brand_slug": "seiko",
+      "collection": "King Seiko",
+      "collection_slug": "king-seiko",
+      "reference": "SPB283",
+      "name": "King Seiko",
+      "dimensions": {
+        "diameter_mm": 37.0,
+        "lug_to_lug_mm": 43.6,
+        "thickness_mm": 12.1,
+        "lug_width_mm": 19,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire (box-shaped)",
+        "water_resistance_m": 100,
+        "bezel": "Fixed, polished",
+        "crown": "Screw-down",
+        "caseback": "Solid (King Seiko emblem)",
+        "dial_color": "Charcoal"
+      },
+      "movement": {
+        "caliber": "6R31",
+        "type": "Automatic",
+        "power_reserve_hours": 70,
+        "frequency_vph": 21600
+      },
+      "context": {
+        "msrp_usd": 1700,
+        "production_start": 2022,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Grand Seiko",
+      "brand_slug": "grand-seiko",
+      "collection": "Heritage",
+      "collection_slug": "heritage",
+      "reference": "SBGA413",
+      "name": "Grand Seiko Shunbun (Spring)",
+      "dimensions": {
+        "diameter_mm": 40.0,
+        "lug_to_lug_mm": 47.0,
+        "thickness_mm": 12.8,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "High-Intensity Titanium",
+        "crystal": "Sapphire (dual-curved)",
+        "water_resistance_m": 100,
+        "bezel": "Fixed, smooth",
+        "crown": "Screw-down",
+        "caseback": "Display",
+        "dial_color": "Pink"
+      },
+      "movement": {
+        "caliber": "9R65",
+        "type": "Spring Drive",
+        "power_reserve_hours": 72,
+        "frequency_vph": null
+      },
+      "context": {
+        "msrp_usd": 6300,
+        "production_start": 2019,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Grand Seiko",
+      "brand_slug": "grand-seiko",
+      "collection": "Heritage",
+      "collection_slug": "heritage",
+      "reference": "SBGA211",
+      "name": "Grand Seiko Snowflake",
+      "dimensions": {
+        "diameter_mm": 41.0,
+        "lug_to_lug_mm": 48.4,
+        "thickness_mm": 12.5,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "High-Intensity Titanium",
+        "crystal": "Sapphire (dual-curved)",
+        "water_resistance_m": 100,
+        "bezel": "Fixed, smooth",
+        "crown": "Screw-down",
+        "caseback": "Display",
+        "dial_color": "White (Snowflake texture)"
+      },
+      "movement": {
+        "caliber": "9R65",
+        "type": "Spring Drive",
+        "power_reserve_hours": 72,
+        "frequency_vph": null
+      },
+      "context": {
+        "msrp_usd": 5800,
+        "production_start": 2016,
+        "production_end": null,
+        "predecessor": "SBGA011",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Grand Seiko",
+      "brand_slug": "grand-seiko",
+      "collection": "Elegance",
+      "collection_slug": "elegance",
+      "reference": "SBGW231",
+      "name": "Grand Seiko Manual Wind",
+      "dimensions": {
+        "diameter_mm": 37.3,
+        "lug_to_lug_mm": 44.3,
+        "thickness_mm": 11.6,
+        "lug_width_mm": 19,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire (box-shaped)",
+        "water_resistance_m": 30,
+        "bezel": "Fixed, polished",
+        "crown": "Pull-out",
+        "caseback": "Display",
+        "dial_color": "Ivory"
+      },
+      "movement": {
+        "caliber": "9S64",
+        "type": "Manual Winding",
+        "power_reserve_hours": 72,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 4300,
+        "production_start": 2017,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Grand Seiko",
+      "brand_slug": "grand-seiko",
+      "collection": "Heritage",
+      "collection_slug": "heritage",
+      "reference": "SBGH271",
+      "name": "Grand Seiko Hi-Beat Rikka (Summer)",
+      "dimensions": {
+        "diameter_mm": 40.0,
+        "lug_to_lug_mm": 47.0,
+        "thickness_mm": 12.9,
+        "lug_width_mm": 21,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire (box-shaped)",
+        "water_resistance_m": 100,
+        "bezel": "Fixed, polished",
+        "crown": "Screw-down",
+        "caseback": "Display",
+        "dial_color": "Green"
+      },
+      "movement": {
+        "caliber": "9S85",
+        "type": "Automatic (Hi-Beat 36000)",
+        "power_reserve_hours": 55,
+        "frequency_vph": 36000
+      },
+      "context": {
+        "msrp_usd": 6300,
+        "production_start": 2019,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Grand Seiko",
+      "brand_slug": "grand-seiko",
+      "collection": "Evolution 9",
+      "collection_slug": "evolution-9",
+      "reference": "SLGA007",
+      "name": "Grand Seiko Spring Drive 140th Anniversary",
+      "dimensions": {
+        "diameter_mm": 40.0,
+        "lug_to_lug_mm": 47.6,
+        "thickness_mm": 11.8,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire (dual-curved)",
+        "water_resistance_m": 100,
+        "bezel": "Fixed, polished",
+        "crown": "Screw-down",
+        "caseback": "Display",
+        "dial_color": "Blue (Lake Suwa texture)"
+      },
+      "movement": {
+        "caliber": "9RA2",
+        "type": "Spring Drive",
+        "power_reserve_hours": 120,
+        "frequency_vph": null
+      },
+      "context": {
+        "msrp_usd": 8700,
+        "production_start": 2021,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Grand Seiko",
+      "brand_slug": "grand-seiko",
+      "collection": "Sport",
+      "collection_slug": "sport",
+      "reference": "SBGE257",
+      "name": "Grand Seiko Spring Drive GMT",
+      "dimensions": {
+        "diameter_mm": 40.5,
+        "lug_to_lug_mm": 48.7,
+        "thickness_mm": 14.7,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire (dual-curved)",
+        "water_resistance_m": 200,
+        "bezel": "Rotating ceramic (24-hour)",
+        "crown": "Screw-down",
+        "caseback": "Solid",
+        "dial_color": "Green"
+      },
+      "movement": {
+        "caliber": "9R66",
+        "type": "Spring Drive (GMT)",
+        "power_reserve_hours": 72,
+        "frequency_vph": null
+      },
+      "context": {
+        "msrp_usd": 6900,
+        "production_start": 2020,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Grand Seiko",
+      "brand_slug": "grand-seiko",
+      "collection": "Heritage",
+      "collection_slug": "heritage",
+      "reference": "SBGX261",
+      "name": "Grand Seiko Quartz",
+      "dimensions": {
+        "diameter_mm": 37.0,
+        "lug_to_lug_mm": 44.6,
+        "thickness_mm": 10.0,
+        "lug_width_mm": 19,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire",
+        "water_resistance_m": 100,
+        "bezel": "Fixed, smooth",
+        "crown": "Push/pull",
+        "caseback": "Solid",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "9F62",
+        "type": "Quartz",
+        "power_reserve_hours": null,
+        "frequency_vph": null
+      },
+      "context": {
+        "msrp_usd": 2700,
+        "production_start": 2017,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Grand Seiko",
+      "brand_slug": "grand-seiko",
+      "collection": "Sport",
+      "collection_slug": "sport",
+      "reference": "SBGN005",
+      "name": "Grand Seiko Quartz GMT",
+      "dimensions": {
+        "diameter_mm": 39.0,
+        "lug_to_lug_mm": 46.0,
+        "thickness_mm": 12.1,
+        "lug_width_mm": 19,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire (dual-curved)",
+        "water_resistance_m": 200,
+        "bezel": "Rotating ceramic (24-hour)",
+        "crown": "Screw-down",
+        "caseback": "Solid",
+        "dial_color": "Blue"
+      },
+      "movement": {
+        "caliber": "9F86",
+        "type": "Quartz (GMT)",
+        "power_reserve_hours": null,
+        "frequency_vph": null
+      },
+      "context": {
+        "msrp_usd": 3100,
+        "production_start": 2019,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Grand Seiko",
+      "brand_slug": "grand-seiko",
+      "collection": "Heritage",
+      "collection_slug": "heritage",
+      "reference": "SBGJ237",
+      "name": "Grand Seiko Hi-Beat GMT",
+      "dimensions": {
+        "diameter_mm": 40.2,
+        "lug_to_lug_mm": 47.0,
+        "thickness_mm": 14.4,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire (box-shaped)",
+        "water_resistance_m": 100,
+        "bezel": "Fixed, polished",
+        "crown": "Screw-down",
+        "caseback": "Display",
+        "dial_color": "Blue (Mount Iwate texture)"
+      },
+      "movement": {
+        "caliber": "9S86",
+        "type": "Automatic (Hi-Beat 36000 GMT)",
+        "power_reserve_hours": 55,
+        "frequency_vph": 36000
+      },
+      "context": {
+        "msrp_usd": 7600,
+        "production_start": 2019,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    }
+  ]
+}

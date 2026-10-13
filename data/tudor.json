@@ -1,0 +1,727 @@
+{
+  "brand": "Tudor",
+  "brand_slug": "tudor",
+  "brand_description": "Founded in 1926 as Rolex's sister brand, Tudor offers Swiss-made tool watches with in-house movements at accessible price points. The Black Bay collection has become one of the most popular dive watch lines in modern horology.",
+  "watches": [
+    {
+      "brand": "Tudor",
+      "brand_slug": "tudor",
+      "collection": "Black Bay",
+      "collection_slug": "black-bay",
+      "reference": "79230N",
+      "name": "Black Bay Black",
+      "dimensions": {
+        "diameter_mm": 41.0,
+        "lug_to_lug_mm": 50.0,
+        "thickness_mm": 14.8,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire",
+        "water_resistance_m": 200,
+        "bezel": "Unidirectional rotating, anodised aluminium insert",
+        "crown": "Screw-down",
+        "caseback": "Solid, screw-down",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "MT5602",
+        "type": "Automatic",
+        "power_reserve_hours": 70,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 3725,
+        "production_start": 2018,
+        "production_end": null,
+        "predecessor": "79220N",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Tudor",
+      "brand_slug": "tudor",
+      "collection": "Black Bay",
+      "collection_slug": "black-bay",
+      "reference": "79230R",
+      "name": "Black Bay Red",
+      "dimensions": {
+        "diameter_mm": 41.0,
+        "lug_to_lug_mm": 50.0,
+        "thickness_mm": 14.8,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire",
+        "water_resistance_m": 200,
+        "bezel": "Unidirectional rotating, anodised aluminium insert",
+        "crown": "Screw-down",
+        "caseback": "Solid, screw-down",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "MT5602",
+        "type": "Automatic",
+        "power_reserve_hours": 70,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 3725,
+        "production_start": 2018,
+        "production_end": null,
+        "predecessor": "79220R",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Tudor",
+      "brand_slug": "tudor",
+      "collection": "Black Bay",
+      "collection_slug": "black-bay",
+      "reference": "79230B",
+      "name": "Black Bay Blue",
+      "dimensions": {
+        "diameter_mm": 41.0,
+        "lug_to_lug_mm": 50.0,
+        "thickness_mm": 14.8,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire",
+        "water_resistance_m": 200,
+        "bezel": "Unidirectional rotating, anodised aluminium insert",
+        "crown": "Screw-down",
+        "caseback": "Solid, screw-down",
+        "dial_color": "Blue"
+      },
+      "movement": {
+        "caliber": "MT5602",
+        "type": "Automatic",
+        "power_reserve_hours": 70,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 3725,
+        "production_start": 2018,
+        "production_end": null,
+        "predecessor": "79220B",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Tudor",
+      "brand_slug": "tudor",
+      "collection": "Black Bay 58",
+      "collection_slug": "black-bay-58",
+      "reference": "79030N",
+      "name": "Black Bay Fifty-Eight Black",
+      "dimensions": {
+        "diameter_mm": 39.0,
+        "lug_to_lug_mm": 47.75,
+        "thickness_mm": 11.9,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire",
+        "water_resistance_m": 200,
+        "bezel": "Unidirectional rotating, anodised aluminium insert",
+        "crown": "Screw-down",
+        "caseback": "Solid, screw-down",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "MT5402",
+        "type": "Automatic",
+        "power_reserve_hours": 70,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 3575,
+        "production_start": 2018,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Tudor",
+      "brand_slug": "tudor",
+      "collection": "Black Bay 58",
+      "collection_slug": "black-bay-58",
+      "reference": "79030B",
+      "name": "Black Bay Fifty-Eight Navy Blue",
+      "dimensions": {
+        "diameter_mm": 39.0,
+        "lug_to_lug_mm": 47.75,
+        "thickness_mm": 11.9,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire",
+        "water_resistance_m": 200,
+        "bezel": "Unidirectional rotating, anodised aluminium insert",
+        "crown": "Screw-down",
+        "caseback": "Solid, screw-down",
+        "dial_color": "Navy Blue"
+      },
+      "movement": {
+        "caliber": "MT5402",
+        "type": "Automatic",
+        "power_reserve_hours": 70,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 3575,
+        "production_start": 2020,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Tudor",
+      "brand_slug": "tudor",
+      "collection": "Black Bay Pro",
+      "collection_slug": "black-bay-pro",
+      "reference": "79470",
+      "name": "Black Bay Pro",
+      "dimensions": {
+        "diameter_mm": 39.0,
+        "lug_to_lug_mm": 47.5,
+        "thickness_mm": 14.6,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Domed sapphire",
+        "water_resistance_m": 200,
+        "bezel": "Fixed, 24-hour graduated steel",
+        "crown": "Screw-down",
+        "caseback": "Solid, screw-down",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "MT5652",
+        "type": "Automatic",
+        "power_reserve_hours": 70,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 3800,
+        "production_start": 2022,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Tudor",
+      "brand_slug": "tudor",
+      "collection": "Black Bay GMT",
+      "collection_slug": "black-bay-gmt",
+      "reference": "79830RB",
+      "name": "Black Bay GMT",
+      "dimensions": {
+        "diameter_mm": 41.0,
+        "lug_to_lug_mm": 50.0,
+        "thickness_mm": 14.7,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire",
+        "water_resistance_m": 200,
+        "bezel": "Bidirectional rotating, 24-hour graduated anodised aluminium insert",
+        "crown": "Screw-down",
+        "caseback": "Solid, screw-down",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "MT5652",
+        "type": "Automatic",
+        "power_reserve_hours": 70,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 4075,
+        "production_start": 2018,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Tudor",
+      "brand_slug": "tudor",
+      "collection": "Black Bay Chrono",
+      "collection_slug": "black-bay-chrono",
+      "reference": "79360N",
+      "name": "Black Bay Chrono",
+      "dimensions": {
+        "diameter_mm": 41.0,
+        "lug_to_lug_mm": 50.0,
+        "thickness_mm": 14.4,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire",
+        "water_resistance_m": 200,
+        "bezel": "Fixed, tachymetric scale, anodised aluminium insert",
+        "crown": "Screw-down",
+        "caseback": "Solid, screw-down",
+        "dial_color": "Black/White (Panda)"
+      },
+      "movement": {
+        "caliber": "MT5813",
+        "type": "Automatic",
+        "power_reserve_hours": 70,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 5400,
+        "production_start": 2021,
+        "production_end": null,
+        "predecessor": "79350",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Tudor",
+      "brand_slug": "tudor",
+      "collection": "Pelagos",
+      "collection_slug": "pelagos",
+      "reference": "25600TN",
+      "name": "Pelagos Black",
+      "dimensions": {
+        "diameter_mm": 42.0,
+        "lug_to_lug_mm": 50.0,
+        "thickness_mm": 14.3,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Titanium",
+        "crystal": "Sapphire",
+        "water_resistance_m": 500,
+        "bezel": "Unidirectional rotating, ceramic insert",
+        "crown": "Screw-down",
+        "caseback": "Titanium, screw-down with helium escape valve",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "MT5612",
+        "type": "Automatic",
+        "power_reserve_hours": 70,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 4800,
+        "production_start": 2015,
+        "production_end": null,
+        "predecessor": "25500TN",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Tudor",
+      "brand_slug": "tudor",
+      "collection": "Pelagos",
+      "collection_slug": "pelagos",
+      "reference": "25600TB",
+      "name": "Pelagos Blue",
+      "dimensions": {
+        "diameter_mm": 42.0,
+        "lug_to_lug_mm": 50.0,
+        "thickness_mm": 14.3,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Titanium",
+        "crystal": "Sapphire",
+        "water_resistance_m": 500,
+        "bezel": "Unidirectional rotating, ceramic insert",
+        "crown": "Screw-down",
+        "caseback": "Titanium, screw-down with helium escape valve",
+        "dial_color": "Blue"
+      },
+      "movement": {
+        "caliber": "MT5612",
+        "type": "Automatic",
+        "power_reserve_hours": 70,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 4800,
+        "production_start": 2015,
+        "production_end": null,
+        "predecessor": "25500TB",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Tudor",
+      "brand_slug": "tudor",
+      "collection": "Pelagos FXD",
+      "collection_slug": "pelagos-fxd",
+      "reference": "M25707B",
+      "name": "Pelagos FXD",
+      "dimensions": {
+        "diameter_mm": 42.0,
+        "lug_to_lug_mm": null,
+        "thickness_mm": 12.75,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Titanium",
+        "crystal": "Sapphire",
+        "water_resistance_m": 200,
+        "bezel": "Unidirectional rotating, ceramic insert",
+        "crown": "Screw-down",
+        "caseback": "Titanium, screw-down",
+        "dial_color": "Blue"
+      },
+      "movement": {
+        "caliber": "MT5602",
+        "type": "Automatic",
+        "power_reserve_hours": 70,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 4475,
+        "production_start": 2021,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Tudor",
+      "brand_slug": "tudor",
+      "collection": "Pelagos 39",
+      "collection_slug": "pelagos-39",
+      "reference": "25407N",
+      "name": "Pelagos 39",
+      "dimensions": {
+        "diameter_mm": 39.0,
+        "lug_to_lug_mm": 47.0,
+        "thickness_mm": 11.8,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": 107,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Titanium",
+        "crystal": "Sapphire",
+        "water_resistance_m": 200,
+        "bezel": "Unidirectional rotating, ceramic insert",
+        "crown": "Screw-down",
+        "caseback": "Titanium, screw-down",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "MT5400",
+        "type": "Automatic",
+        "power_reserve_hours": 70,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 4575,
+        "production_start": 2022,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Tudor",
+      "brand_slug": "tudor",
+      "collection": "Ranger",
+      "collection_slug": "ranger",
+      "reference": "79950",
+      "name": "Ranger",
+      "dimensions": {
+        "diameter_mm": 39.0,
+        "lug_to_lug_mm": 48.0,
+        "thickness_mm": 12.0,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": 141,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Domed sapphire",
+        "water_resistance_m": 100,
+        "bezel": "Smooth, satin-brushed steel",
+        "crown": "Screw-down",
+        "caseback": "Solid, screw-down",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "MT5402",
+        "type": "Automatic",
+        "power_reserve_hours": 70,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 3300,
+        "production_start": 2022,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Tudor",
+      "brand_slug": "tudor",
+      "collection": "Royal",
+      "collection_slug": "royal",
+      "reference": "28600",
+      "name": "Royal Day-Date 41",
+      "dimensions": {
+        "diameter_mm": 41.0,
+        "lug_to_lug_mm": 47.0,
+        "thickness_mm": 11.0,
+        "lug_width_mm": 21,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire",
+        "water_resistance_m": 100,
+        "bezel": "Notched, alternating polished and satin",
+        "crown": "Screw-down",
+        "caseback": "Solid, screw-down",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "T603",
+        "type": "Automatic",
+        "power_reserve_hours": 38,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 2875,
+        "production_start": 2020,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Tudor",
+      "brand_slug": "tudor",
+      "collection": "1926",
+      "collection_slug": "1926",
+      "reference": "91650",
+      "name": "1926 41mm",
+      "dimensions": {
+        "diameter_mm": 41.0,
+        "lug_to_lug_mm": 48.0,
+        "thickness_mm": 9.3,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire",
+        "water_resistance_m": 100,
+        "bezel": "Smooth, polished steel",
+        "crown": "Screw-down",
+        "caseback": "Solid, screw-down",
+        "dial_color": "Silver"
+      },
+      "movement": {
+        "caliber": "T601",
+        "type": "Automatic",
+        "power_reserve_hours": 38,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 2150,
+        "production_start": 2018,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Tudor",
+      "brand_slug": "tudor",
+      "collection": "1926",
+      "collection_slug": "1926",
+      "reference": "91550",
+      "name": "1926 39mm",
+      "dimensions": {
+        "diameter_mm": 39.0,
+        "lug_to_lug_mm": 46.0,
+        "thickness_mm": 9.2,
+        "lug_width_mm": 21,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire",
+        "water_resistance_m": 100,
+        "bezel": "Smooth, polished steel",
+        "crown": "Screw-down",
+        "caseback": "Solid, screw-down",
+        "dial_color": "Silver"
+      },
+      "movement": {
+        "caliber": "T601",
+        "type": "Automatic",
+        "power_reserve_hours": 38,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 2050,
+        "production_start": 2018,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Tudor",
+      "brand_slug": "tudor",
+      "collection": "1926",
+      "collection_slug": "1926",
+      "reference": "91450",
+      "name": "1926 36mm",
+      "dimensions": {
+        "diameter_mm": 36.0,
+        "lug_to_lug_mm": 43.0,
+        "thickness_mm": 9.2,
+        "lug_width_mm": 19,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Sapphire",
+        "water_resistance_m": 100,
+        "bezel": "Smooth, polished steel",
+        "crown": "Screw-down",
+        "caseback": "Solid, screw-down",
+        "dial_color": "Silver"
+      },
+      "movement": {
+        "caliber": "T601",
+        "type": "Automatic",
+        "power_reserve_hours": 38,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 1950,
+        "production_start": 2018,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Tudor",
+      "brand_slug": "tudor",
+      "collection": "Black Bay 54",
+      "collection_slug": "black-bay-54",
+      "reference": "79000N",
+      "name": "Black Bay Fifty-Four",
+      "dimensions": {
+        "diameter_mm": 37.0,
+        "lug_to_lug_mm": 46.0,
+        "thickness_mm": 11.2,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": null,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless Steel",
+        "crystal": "Domed sapphire",
+        "water_resistance_m": 200,
+        "bezel": "Unidirectional rotating, anodised aluminium insert",
+        "crown": "Screw-down",
+        "caseback": "Solid, screw-down",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "MT5400",
+        "type": "Automatic",
+        "power_reserve_hours": 70,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 3575,
+        "production_start": 2023,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    }
+  ]
+}

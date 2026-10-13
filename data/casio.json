@@ -1,0 +1,1327 @@
+{
+  "brand": "Casio",
+  "brand_slug": "casio",
+  "brand_description": "Founded in 1946, Casio revolutionized watchmaking with affordable digital watches and the virtually indestructible G-Shock line. From the $10 F-91W to premium MR-G models, Casio dominates the rugged, functional watch segment worldwide.",
+  "watches": [
+    {
+      "brand": "Casio",
+      "brand_slug": "casio",
+      "collection": "G-Shock",
+      "collection_slug": "g-shock",
+      "reference": "GA-2100-1A",
+      "name": "CasiOak",
+      "dimensions": {
+        "diameter_mm": 45.4,
+        "lug_to_lug_mm": 48.5,
+        "thickness_mm": 11.8,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": 51,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Carbon Core Guard (resin)",
+        "crystal": "Mineral",
+        "water_resistance_m": 200,
+        "bezel": "Fixed, octagonal",
+        "crown": null,
+        "caseback": "Solid",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "5611",
+        "type": "Quartz (analog-digital)",
+        "power_reserve_hours": null,
+        "frequency_vph": null
+      },
+      "context": {
+        "msrp_usd": 99,
+        "production_start": 2019,
+        "production_end": null,
+        "predecessor": null,
+        "successor": "GA-B2100-1A"
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Casio",
+      "brand_slug": "casio",
+      "collection": "G-Shock",
+      "collection_slug": "g-shock",
+      "reference": "GA-2100-1A1",
+      "name": "CasiOak All Black",
+      "dimensions": {
+        "diameter_mm": 45.4,
+        "lug_to_lug_mm": 48.5,
+        "thickness_mm": 11.8,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": 51,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Carbon Core Guard (resin)",
+        "crystal": "Mineral",
+        "water_resistance_m": 200,
+        "bezel": "Fixed, octagonal",
+        "crown": null,
+        "caseback": "Solid",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "5611",
+        "type": "Quartz (analog-digital)",
+        "power_reserve_hours": null,
+        "frequency_vph": null
+      },
+      "context": {
+        "msrp_usd": 99,
+        "production_start": 2019,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Casio",
+      "brand_slug": "casio",
+      "collection": "G-Shock",
+      "collection_slug": "g-shock",
+      "reference": "GM-2100-1A",
+      "name": "Metal CasiOak",
+      "dimensions": {
+        "diameter_mm": 44.4,
+        "lug_to_lug_mm": 49.3,
+        "thickness_mm": 11.8,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": 72,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Resin with stainless steel bezel",
+        "crystal": "Mineral",
+        "water_resistance_m": 200,
+        "bezel": "Fixed, octagonal, stainless steel",
+        "crown": null,
+        "caseback": "Solid",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "5611",
+        "type": "Quartz (analog-digital)",
+        "power_reserve_hours": null,
+        "frequency_vph": null
+      },
+      "context": {
+        "msrp_usd": 200,
+        "production_start": 2021,
+        "production_end": null,
+        "predecessor": "GA-2100-1A",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Casio",
+      "brand_slug": "casio",
+      "collection": "G-Shock",
+      "collection_slug": "g-shock",
+      "reference": "GM-B2100D-1A",
+      "name": "Full Metal CasiOak",
+      "dimensions": {
+        "diameter_mm": 44.4,
+        "lug_to_lug_mm": 49.8,
+        "thickness_mm": 12.8,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": 165,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless steel",
+        "crystal": "Mineral",
+        "water_resistance_m": 200,
+        "bezel": "Fixed, octagonal, stainless steel",
+        "crown": null,
+        "caseback": "Solid, stainless steel",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "5691",
+        "type": "Quartz (analog-digital, Tough Solar, Bluetooth)",
+        "power_reserve_hours": null,
+        "frequency_vph": null
+      },
+      "context": {
+        "msrp_usd": 550,
+        "production_start": 2022,
+        "production_end": null,
+        "predecessor": "GM-2100-1A",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Casio",
+      "brand_slug": "casio",
+      "collection": "G-Shock",
+      "collection_slug": "g-shock",
+      "reference": "GA-B2100-1A",
+      "name": "CasiOak Bluetooth",
+      "dimensions": {
+        "diameter_mm": 45.4,
+        "lug_to_lug_mm": 48.5,
+        "thickness_mm": 11.9,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": 51,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Carbon Core Guard (resin)",
+        "crystal": "Mineral",
+        "water_resistance_m": 200,
+        "bezel": "Fixed, octagonal",
+        "crown": null,
+        "caseback": "Solid",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "5689",
+        "type": "Quartz (analog-digital, Tough Solar, Bluetooth)",
+        "power_reserve_hours": null,
+        "frequency_vph": null
+      },
+      "context": {
+        "msrp_usd": 150,
+        "production_start": 2022,
+        "production_end": null,
+        "predecessor": "GA-2100-1A",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Casio",
+      "brand_slug": "casio",
+      "collection": "G-Shock",
+      "collection_slug": "g-shock",
+      "reference": "DW-5600E-1V",
+      "name": "Classic Square",
+      "dimensions": {
+        "diameter_mm": 42.8,
+        "lug_to_lug_mm": 48.9,
+        "thickness_mm": 13.4,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": 53,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Resin",
+        "crystal": "Mineral",
+        "water_resistance_m": 200,
+        "bezel": "Fixed, square",
+        "crown": null,
+        "caseback": "Solid",
+        "dial_color": "Black (digital LCD)"
+      },
+      "movement": {
+        "caliber": "3229",
+        "type": "Quartz (digital)",
+        "power_reserve_hours": null,
+        "frequency_vph": null
+      },
+      "context": {
+        "msrp_usd": 55,
+        "production_start": 1996,
+        "production_end": null,
+        "predecessor": "DW-5600C-1V",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Casio",
+      "brand_slug": "casio",
+      "collection": "G-Shock",
+      "collection_slug": "g-shock",
+      "reference": "GW-M5610U-1",
+      "name": "Multiband Square",
+      "dimensions": {
+        "diameter_mm": 43.2,
+        "lug_to_lug_mm": 46.7,
+        "thickness_mm": 12.7,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": 52,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Resin",
+        "crystal": "Mineral",
+        "water_resistance_m": 200,
+        "bezel": "Fixed, square",
+        "crown": null,
+        "caseback": "Solid",
+        "dial_color": "Black (digital LCD)"
+      },
+      "movement": {
+        "caliber": "3495",
+        "type": "Quartz (digital, Tough Solar, Multi-Band 6)",
+        "power_reserve_hours": null,
+        "frequency_vph": null
+      },
+      "context": {
+        "msrp_usd": 130,
+        "production_start": 2021,
+        "production_end": null,
+        "predecessor": "GW-M5610-1",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Casio",
+      "brand_slug": "casio",
+      "collection": "G-Shock",
+      "collection_slug": "g-shock",
+      "reference": "GMW-B5000D-1",
+      "name": "Full Metal Square",
+      "dimensions": {
+        "diameter_mm": 43.2,
+        "lug_to_lug_mm": 49.3,
+        "thickness_mm": 13.0,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": 167,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless steel",
+        "crystal": "Mineral",
+        "water_resistance_m": 200,
+        "bezel": "Fixed, square, stainless steel",
+        "crown": null,
+        "caseback": "Solid, stainless steel, screw-back",
+        "dial_color": "Black (digital STN LCD)"
+      },
+      "movement": {
+        "caliber": "3461",
+        "type": "Quartz (digital, Tough Solar, Bluetooth, Multi-Band 6)",
+        "power_reserve_hours": null,
+        "frequency_vph": null
+      },
+      "context": {
+        "msrp_usd": 500,
+        "production_start": 2018,
+        "production_end": null,
+        "predecessor": "DW-5000C-1A",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Casio",
+      "brand_slug": "casio",
+      "collection": "G-Shock",
+      "collection_slug": "g-shock",
+      "reference": "GBD-200-1",
+      "name": "G-SQUAD",
+      "dimensions": {
+        "diameter_mm": 45.9,
+        "lug_to_lug_mm": 49.4,
+        "thickness_mm": 15.0,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": 58,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Resin",
+        "crystal": "Mineral",
+        "water_resistance_m": 200,
+        "bezel": "Fixed, resin",
+        "crown": null,
+        "caseback": "Solid",
+        "dial_color": "Black (digital MIP LCD)"
+      },
+      "movement": {
+        "caliber": "3506",
+        "type": "Quartz (digital, Bluetooth)",
+        "power_reserve_hours": null,
+        "frequency_vph": null
+      },
+      "context": {
+        "msrp_usd": 150,
+        "production_start": 2021,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Casio",
+      "brand_slug": "casio",
+      "collection": "G-Shock",
+      "collection_slug": "g-shock",
+      "reference": "MRG-B5000B-1",
+      "name": "MR-G",
+      "dimensions": {
+        "diameter_mm": 43.2,
+        "lug_to_lug_mm": 49.4,
+        "thickness_mm": 12.9,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": 114,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Titanium (Ti64, DLC coating)",
+        "crystal": "Sapphire (AR coating)",
+        "water_resistance_m": 200,
+        "bezel": "Fixed, square, Cobarion alloy",
+        "crown": null,
+        "caseback": "Solid, titanium, screw-back",
+        "dial_color": "Black (digital LCD)"
+      },
+      "movement": {
+        "caliber": "3501",
+        "type": "Quartz (digital, Tough Solar, Multi-Band 6, Bluetooth)",
+        "power_reserve_hours": null,
+        "frequency_vph": null
+      },
+      "context": {
+        "msrp_usd": 4000,
+        "production_start": 2022,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Casio",
+      "brand_slug": "casio",
+      "collection": "G-Shock",
+      "collection_slug": "g-shock",
+      "reference": "GA-110-1A",
+      "name": null,
+      "dimensions": {
+        "diameter_mm": 51.2,
+        "lug_to_lug_mm": 55.0,
+        "thickness_mm": 16.9,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": 72,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Resin",
+        "crystal": "Mineral",
+        "water_resistance_m": 200,
+        "bezel": "Fixed, round, resin",
+        "crown": null,
+        "caseback": "Solid",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "5146",
+        "type": "Quartz (analog-digital)",
+        "power_reserve_hours": null,
+        "frequency_vph": null
+      },
+      "context": {
+        "msrp_usd": 110,
+        "production_start": 2010,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Casio",
+      "brand_slug": "casio",
+      "collection": "G-Shock",
+      "collection_slug": "g-shock",
+      "reference": "GA-700-1A",
+      "name": null,
+      "dimensions": {
+        "diameter_mm": 53.4,
+        "lug_to_lug_mm": 57.5,
+        "thickness_mm": 18.4,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": 69,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Resin",
+        "crystal": "Mineral",
+        "water_resistance_m": 200,
+        "bezel": "Fixed, round, resin",
+        "crown": null,
+        "caseback": "Solid",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "5522",
+        "type": "Quartz (analog-digital)",
+        "power_reserve_hours": null,
+        "frequency_vph": null
+      },
+      "context": {
+        "msrp_usd": 99,
+        "production_start": 2016,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Casio",
+      "brand_slug": "casio",
+      "collection": "G-Shock",
+      "collection_slug": "g-shock",
+      "reference": "DW-6900-1V",
+      "name": null,
+      "dimensions": {
+        "diameter_mm": 50.0,
+        "lug_to_lug_mm": 53.2,
+        "thickness_mm": 16.3,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": 67,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Resin",
+        "crystal": "Mineral",
+        "water_resistance_m": 200,
+        "bezel": "Fixed, round, resin",
+        "crown": null,
+        "caseback": "Solid",
+        "dial_color": "Black (digital LCD)"
+      },
+      "movement": {
+        "caliber": "3230",
+        "type": "Quartz (digital)",
+        "power_reserve_hours": null,
+        "frequency_vph": null
+      },
+      "context": {
+        "msrp_usd": 85,
+        "production_start": 1995,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Casio",
+      "brand_slug": "casio",
+      "collection": "G-Shock",
+      "collection_slug": "g-shock",
+      "reference": "GW-9400-1",
+      "name": "Rangeman",
+      "dimensions": {
+        "diameter_mm": 53.5,
+        "lug_to_lug_mm": 55.2,
+        "thickness_mm": 18.2,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": 93,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Resin",
+        "crystal": "Mineral",
+        "water_resistance_m": 200,
+        "bezel": "Fixed, round, resin with stainless steel buttons",
+        "crown": null,
+        "caseback": "Solid",
+        "dial_color": "Black (digital LCD)"
+      },
+      "movement": {
+        "caliber": "3410",
+        "type": "Quartz (digital, Tough Solar, Multi-Band 6, Triple Sensor)",
+        "power_reserve_hours": null,
+        "frequency_vph": null
+      },
+      "context": {
+        "msrp_usd": 300,
+        "production_start": 2014,
+        "production_end": null,
+        "predecessor": null,
+        "successor": "GPR-H1000-1"
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Casio",
+      "brand_slug": "casio",
+      "collection": "G-Shock",
+      "collection_slug": "g-shock",
+      "reference": "GWG-2000-1A",
+      "name": "Mudmaster",
+      "dimensions": {
+        "diameter_mm": 54.4,
+        "lug_to_lug_mm": 61.2,
+        "thickness_mm": 16.1,
+        "lug_width_mm": 24,
+        "weight_bracelet_g": 106,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Carbon Core Guard (resin) with forged carbon bezel",
+        "crystal": "Sapphire (AR coating)",
+        "water_resistance_m": 200,
+        "bezel": "Fixed, forged carbon",
+        "crown": null,
+        "caseback": "Solid",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "5678",
+        "type": "Quartz (analog-digital, Tough Solar, Multi-Band 6)",
+        "power_reserve_hours": null,
+        "frequency_vph": null
+      },
+      "context": {
+        "msrp_usd": 800,
+        "production_start": 2021,
+        "production_end": null,
+        "predecessor": "GWG-1000-1A",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Casio",
+      "brand_slug": "casio",
+      "collection": "G-Shock",
+      "collection_slug": "g-shock",
+      "reference": "GPR-H1000-1",
+      "name": "Rangeman GPS",
+      "dimensions": {
+        "diameter_mm": 53.2,
+        "lug_to_lug_mm": 60.6,
+        "thickness_mm": 20.3,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": 92,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Resin (bio-based bezel and band)",
+        "crystal": "Mineral",
+        "water_resistance_m": 200,
+        "bezel": "Fixed, resin (bio-based)",
+        "crown": null,
+        "caseback": "Solid",
+        "dial_color": "Black (digital MIP LCD)"
+      },
+      "movement": {
+        "caliber": "3554",
+        "type": "Quartz (digital, Solar-assisted + USB charging, GPS, Bluetooth)",
+        "power_reserve_hours": null,
+        "frequency_vph": null
+      },
+      "context": {
+        "msrp_usd": 550,
+        "production_start": 2024,
+        "production_end": null,
+        "predecessor": "GPR-B1000-1",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Casio",
+      "brand_slug": "casio",
+      "collection": "Edifice",
+      "collection_slug": "edifice",
+      "reference": "EQB-1100D-1A",
+      "name": null,
+      "dimensions": {
+        "diameter_mm": 44.6,
+        "lug_to_lug_mm": 51.1,
+        "thickness_mm": 8.9,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": 124,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless steel",
+        "crystal": "Sapphire (AR coating)",
+        "water_resistance_m": 100,
+        "bezel": "Fixed, stainless steel",
+        "crown": "Push/pull",
+        "caseback": "Solid, stainless steel, screw-back",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "5639",
+        "type": "Quartz (analog, Tough Solar, Bluetooth)",
+        "power_reserve_hours": null,
+        "frequency_vph": null
+      },
+      "context": {
+        "msrp_usd": 500,
+        "production_start": 2020,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Casio",
+      "brand_slug": "casio",
+      "collection": "Edifice",
+      "collection_slug": "edifice",
+      "reference": "EFS-S590D-1A",
+      "name": null,
+      "dimensions": {
+        "diameter_mm": 45.3,
+        "lug_to_lug_mm": 50.0,
+        "thickness_mm": 9.9,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": 128,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless steel",
+        "crystal": "Sapphire (AR coating)",
+        "water_resistance_m": 100,
+        "bezel": "Fixed, stainless steel",
+        "crown": "Push/pull",
+        "caseback": "Solid, stainless steel, screw-back",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "5633",
+        "type": "Quartz (analog, Tough Solar)",
+        "power_reserve_hours": null,
+        "frequency_vph": null
+      },
+      "context": {
+        "msrp_usd": 230,
+        "production_start": 2021,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Casio",
+      "brand_slug": "casio",
+      "collection": "Oceanus",
+      "collection_slug": "oceanus",
+      "reference": "OCW-T200S-1AJF",
+      "name": null,
+      "dimensions": {
+        "diameter_mm": 41.1,
+        "lug_to_lug_mm": 47.5,
+        "thickness_mm": 10.7,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": 128,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Stainless steel",
+        "crystal": "Sapphire (AR coating)",
+        "water_resistance_m": 100,
+        "bezel": "Fixed, stainless steel",
+        "crown": "Push/pull",
+        "caseback": "Solid, stainless steel, screw-back",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "5596",
+        "type": "Quartz (analog, Tough Solar, Multi-Band 6, Bluetooth)",
+        "power_reserve_hours": null,
+        "frequency_vph": null
+      },
+      "context": {
+        "msrp_usd": null,
+        "production_start": 2019,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Casio",
+      "brand_slug": "casio",
+      "collection": "Oceanus",
+      "collection_slug": "oceanus",
+      "reference": "OCW-S100-1AJF",
+      "name": null,
+      "dimensions": {
+        "diameter_mm": 41.5,
+        "lug_to_lug_mm": 45.7,
+        "thickness_mm": 10.5,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": 90,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Titanium",
+        "crystal": "Sapphire (dual-curve AR coating)",
+        "water_resistance_m": 100,
+        "bezel": "Fixed, titanium",
+        "crown": "Push/pull",
+        "caseback": "Solid, titanium, screw-back",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "5235",
+        "type": "Quartz (analog, Tough Solar, Multi-Band 6)",
+        "power_reserve_hours": null,
+        "frequency_vph": null
+      },
+      "context": {
+        "msrp_usd": null,
+        "production_start": 2012,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Casio",
+      "brand_slug": "casio",
+      "collection": "Pro Trek",
+      "collection_slug": "pro-trek",
+      "reference": "PRW-6600Y-1",
+      "name": null,
+      "dimensions": {
+        "diameter_mm": 51.5,
+        "lug_to_lug_mm": 51.6,
+        "thickness_mm": 13.6,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": 78,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Resin with stainless steel bezel",
+        "crystal": "Mineral",
+        "water_resistance_m": 100,
+        "bezel": "Fixed, stainless steel",
+        "crown": null,
+        "caseback": "Solid",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "5571",
+        "type": "Quartz (analog-digital, Tough Solar, Multi-Band 6, Triple Sensor)",
+        "power_reserve_hours": null,
+        "frequency_vph": null
+      },
+      "context": {
+        "msrp_usd": 380,
+        "production_start": 2018,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Casio",
+      "brand_slug": "casio",
+      "collection": "Pro Trek",
+      "collection_slug": "pro-trek",
+      "reference": "PRG-270-1",
+      "name": null,
+      "dimensions": {
+        "diameter_mm": 52.4,
+        "lug_to_lug_mm": 54.6,
+        "thickness_mm": 14.4,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": 67,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Resin",
+        "crystal": "Mineral",
+        "water_resistance_m": 100,
+        "bezel": "Fixed, resin",
+        "crown": null,
+        "caseback": "Solid",
+        "dial_color": "Black (digital LCD)"
+      },
+      "movement": {
+        "caliber": "3415",
+        "type": "Quartz (digital, Tough Solar, Triple Sensor V3)",
+        "power_reserve_hours": null,
+        "frequency_vph": null
+      },
+      "context": {
+        "msrp_usd": 150,
+        "production_start": 2013,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Casio",
+      "brand_slug": "casio",
+      "collection": "G-Shock",
+      "collection_slug": "g-shock",
+      "reference": "GW-B5600BC-1B",
+      "name": null,
+      "dimensions": {
+        "diameter_mm": 42.8,
+        "lug_to_lug_mm": 48.9,
+        "thickness_mm": 13.4,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": 85,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Resin with composite band",
+        "crystal": "Mineral",
+        "water_resistance_m": 200,
+        "bezel": "Fixed, square",
+        "crown": null,
+        "caseback": "Solid",
+        "dial_color": "Black (digital STN LCD)"
+      },
+      "movement": {
+        "caliber": "3461",
+        "type": "Quartz (digital, Tough Solar, Bluetooth, Multi-Band 6)",
+        "power_reserve_hours": null,
+        "frequency_vph": null
+      },
+      "context": {
+        "msrp_usd": 220,
+        "production_start": 2018,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Casio",
+      "brand_slug": "casio",
+      "collection": "G-Shock",
+      "collection_slug": "g-shock",
+      "reference": "GA-2200-1A",
+      "name": null,
+      "dimensions": {
+        "diameter_mm": 47.1,
+        "lug_to_lug_mm": 50.8,
+        "thickness_mm": 13.1,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": 57,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Carbon Core Guard (resin)",
+        "crystal": "Mineral",
+        "water_resistance_m": 200,
+        "bezel": "Fixed, round, resin",
+        "crown": null,
+        "caseback": "Solid",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "5647",
+        "type": "Quartz (analog-digital)",
+        "power_reserve_hours": null,
+        "frequency_vph": null
+      },
+      "context": {
+        "msrp_usd": 130,
+        "production_start": 2021,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Casio",
+      "brand_slug": "casio",
+      "collection": "G-Shock",
+      "collection_slug": "g-shock",
+      "reference": "DW-5610SU-8",
+      "name": null,
+      "dimensions": {
+        "diameter_mm": 43.8,
+        "lug_to_lug_mm": 48.9,
+        "thickness_mm": 13.5,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": 52,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Resin",
+        "crystal": "Mineral",
+        "water_resistance_m": 200,
+        "bezel": "Fixed, square",
+        "crown": null,
+        "caseback": "Solid",
+        "dial_color": "Gray (digital LCD)"
+      },
+      "movement": {
+        "caliber": "3229",
+        "type": "Quartz (digital)",
+        "power_reserve_hours": null,
+        "frequency_vph": null
+      },
+      "context": {
+        "msrp_usd": 99,
+        "production_start": 2020,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Casio",
+      "brand_slug": "casio",
+      "collection": "G-Shock",
+      "collection_slug": "g-shock",
+      "reference": "GBX-100-1",
+      "name": "G-LIDE",
+      "dimensions": {
+        "diameter_mm": 46.0,
+        "lug_to_lug_mm": 50.9,
+        "thickness_mm": 14.7,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": 66,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Resin with stainless steel bezel",
+        "crystal": "Mineral",
+        "water_resistance_m": 200,
+        "bezel": "Fixed, stainless steel",
+        "crown": null,
+        "caseback": "Solid",
+        "dial_color": "Black (digital MIP LCD)"
+      },
+      "movement": {
+        "caliber": "3482",
+        "type": "Quartz (digital, Bluetooth)",
+        "power_reserve_hours": null,
+        "frequency_vph": null
+      },
+      "context": {
+        "msrp_usd": 160,
+        "production_start": 2020,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Casio",
+      "brand_slug": "casio",
+      "collection": "G-Shock",
+      "collection_slug": "g-shock",
+      "reference": "GST-B400D-1A",
+      "name": "G-STEEL",
+      "dimensions": {
+        "diameter_mm": 49.6,
+        "lug_to_lug_mm": 46.6,
+        "thickness_mm": 12.9,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": 160,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Carbon Core Guard (resin) with stainless steel bezel",
+        "crystal": "Mineral",
+        "water_resistance_m": 200,
+        "bezel": "Fixed, stainless steel",
+        "crown": null,
+        "caseback": "Solid",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "5657",
+        "type": "Quartz (analog-digital, Tough Solar, Bluetooth)",
+        "power_reserve_hours": null,
+        "frequency_vph": null
+      },
+      "context": {
+        "msrp_usd": 400,
+        "production_start": 2021,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Casio",
+      "brand_slug": "casio",
+      "collection": "G-Shock",
+      "collection_slug": "g-shock",
+      "reference": "GST-B200D-1A",
+      "name": "G-STEEL Carbon Core",
+      "dimensions": {
+        "diameter_mm": 46.5,
+        "lug_to_lug_mm": 53.3,
+        "thickness_mm": 14.5,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": 177,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Carbon Core Guard (resin) with stainless steel bezel",
+        "crystal": "Mineral",
+        "water_resistance_m": 200,
+        "bezel": "Fixed, stainless steel",
+        "crown": null,
+        "caseback": "Solid, stainless steel",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "5608",
+        "type": "Quartz (analog-digital, Tough Solar, Bluetooth)",
+        "power_reserve_hours": null,
+        "frequency_vph": null
+      },
+      "context": {
+        "msrp_usd": 400,
+        "production_start": 2019,
+        "production_end": null,
+        "predecessor": null,
+        "successor": "GST-B400D-1A"
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Casio",
+      "brand_slug": "casio",
+      "collection": "G-Shock",
+      "collection_slug": "g-shock",
+      "reference": "GG-B100-1A",
+      "name": "Mudmaster",
+      "dimensions": {
+        "diameter_mm": 51.3,
+        "lug_to_lug_mm": 55.4,
+        "thickness_mm": 19.4,
+        "lug_width_mm": 24,
+        "weight_bracelet_g": 92,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Carbon Core Guard (resin)",
+        "crystal": "Mineral (spherical)",
+        "water_resistance_m": 200,
+        "bezel": "Fixed, resin with stainless steel bumpers",
+        "crown": null,
+        "caseback": "Solid",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "5594",
+        "type": "Quartz (analog-digital, Bluetooth, Quad Sensor)",
+        "power_reserve_hours": null,
+        "frequency_vph": null
+      },
+      "context": {
+        "msrp_usd": 330,
+        "production_start": 2019,
+        "production_end": null,
+        "predecessor": "GG-1000-1A",
+        "successor": "GWG-2000-1A"
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Casio",
+      "brand_slug": "casio",
+      "collection": "G-Shock",
+      "collection_slug": "g-shock",
+      "reference": "GA-2000-1A",
+      "name": null,
+      "dimensions": {
+        "diameter_mm": 48.7,
+        "lug_to_lug_mm": 51.2,
+        "thickness_mm": 14.1,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": 56,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Carbon Core Guard (resin)",
+        "crystal": "Mineral",
+        "water_resistance_m": 200,
+        "bezel": "Fixed, round, resin",
+        "crown": null,
+        "caseback": "Solid",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "5590",
+        "type": "Quartz (analog-digital)",
+        "power_reserve_hours": null,
+        "frequency_vph": null
+      },
+      "context": {
+        "msrp_usd": 130,
+        "production_start": 2019,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Casio",
+      "brand_slug": "casio",
+      "collection": "G-Shock",
+      "collection_slug": "g-shock",
+      "reference": "AWG-M100-1A",
+      "name": null,
+      "dimensions": {
+        "diameter_mm": 46.4,
+        "lug_to_lug_mm": 52.0,
+        "thickness_mm": 14.9,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": 56,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Resin with stainless steel bezel",
+        "crystal": "Mineral",
+        "water_resistance_m": 200,
+        "bezel": "Fixed, stainless steel",
+        "crown": null,
+        "caseback": "Solid",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "5230",
+        "type": "Quartz (analog-digital, Tough Solar, Multi-Band 6)",
+        "power_reserve_hours": null,
+        "frequency_vph": null
+      },
+      "context": {
+        "msrp_usd": 180,
+        "production_start": 2012,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Casio",
+      "brand_slug": "casio",
+      "collection": "Standard",
+      "collection_slug": "standard",
+      "reference": "A168WA-1",
+      "name": "Classic Digital",
+      "dimensions": {
+        "diameter_mm": 33.2,
+        "lug_to_lug_mm": 36.3,
+        "thickness_mm": 8.5,
+        "lug_width_mm": 18,
+        "weight_bracelet_g": 32,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Resin with stainless steel band",
+        "crystal": "Mineral",
+        "water_resistance_m": 30,
+        "bezel": "Fixed, resin",
+        "crown": null,
+        "caseback": "Solid",
+        "dial_color": "Silver (digital LCD with EL backlight)"
+      },
+      "movement": {
+        "caliber": "1572",
+        "type": "Quartz (digital)",
+        "power_reserve_hours": null,
+        "frequency_vph": null
+      },
+      "context": {
+        "msrp_usd": 23,
+        "production_start": 1991,
+        "production_end": null,
+        "predecessor": "A158WA-1",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Casio",
+      "brand_slug": "casio",
+      "collection": "Standard",
+      "collection_slug": "standard",
+      "reference": "F-91W-1",
+      "name": "Iconic Digital",
+      "dimensions": {
+        "diameter_mm": 33.2,
+        "lug_to_lug_mm": 38.2,
+        "thickness_mm": 8.5,
+        "lug_width_mm": 18,
+        "weight_bracelet_g": 21,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Resin",
+        "crystal": "Acrylic",
+        "water_resistance_m": 30,
+        "bezel": "Fixed, resin",
+        "crown": null,
+        "caseback": "Solid",
+        "dial_color": "Black (digital LCD)"
+      },
+      "movement": {
+        "caliber": "593",
+        "type": "Quartz (digital)",
+        "power_reserve_hours": null,
+        "frequency_vph": null
+      },
+      "context": {
+        "msrp_usd": 15,
+        "production_start": 1989,
+        "production_end": null,
+        "predecessor": "F-87W",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    }
+  ]
+}

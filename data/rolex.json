@@ -1,0 +1,1247 @@
+{
+  "brand": "Rolex",
+  "brand_slug": "rolex",
+  "brand_description": "Founded in 1905, Rolex is the world's most recognized luxury watch brand. Known for the Oyster case, Perpetual rotor, and iconic models like the Submariner, Daytona, and Datejust.",
+  "watches": [
+    {
+      "brand": "Rolex",
+      "brand_slug": "rolex",
+      "collection": "Submariner",
+      "collection_slug": "submariner",
+      "reference": "124060",
+      "name": "Submariner",
+      "dimensions": {
+        "diameter_mm": 41.0,
+        "lug_to_lug_mm": 47.5,
+        "thickness_mm": 12.2,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": 155,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Oystersteel (904L)",
+        "crystal": "Sapphire",
+        "water_resistance_m": 300,
+        "bezel": "Unidirectional rotating, Cerachrom, 60-minute graduations",
+        "crown": "Screw-down, Triplock",
+        "caseback": "Solid, screw-down",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "3230",
+        "type": "Automatic",
+        "power_reserve_hours": 70,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 9100,
+        "production_start": 2020,
+        "production_end": null,
+        "predecessor": "114060",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Rolex",
+      "brand_slug": "rolex",
+      "collection": "Submariner",
+      "collection_slug": "submariner",
+      "reference": "126610LN",
+      "name": "Submariner Date",
+      "dimensions": {
+        "diameter_mm": 41.0,
+        "lug_to_lug_mm": 47.5,
+        "thickness_mm": 12.8,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": 160,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Oystersteel (904L)",
+        "crystal": "Sapphire with Cyclops lens",
+        "water_resistance_m": 300,
+        "bezel": "Unidirectional rotating, Cerachrom, 60-minute graduations",
+        "crown": "Screw-down, Triplock",
+        "caseback": "Solid, screw-down",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "3235",
+        "type": "Automatic",
+        "power_reserve_hours": 70,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 10250,
+        "production_start": 2020,
+        "production_end": null,
+        "predecessor": "116610LN",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Rolex",
+      "brand_slug": "rolex",
+      "collection": "Submariner",
+      "collection_slug": "submariner",
+      "reference": "126610LV",
+      "name": "Submariner Date",
+      "dimensions": {
+        "diameter_mm": 41.0,
+        "lug_to_lug_mm": 47.5,
+        "thickness_mm": 12.8,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": 160,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Oystersteel (904L)",
+        "crystal": "Sapphire with Cyclops lens",
+        "water_resistance_m": 300,
+        "bezel": "Unidirectional rotating, Cerachrom (green), 60-minute graduations",
+        "crown": "Screw-down, Triplock",
+        "caseback": "Solid, screw-down",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "3235",
+        "type": "Automatic",
+        "power_reserve_hours": 70,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 10800,
+        "production_start": 2020,
+        "production_end": null,
+        "predecessor": "116610LV",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Rolex",
+      "brand_slug": "rolex",
+      "collection": "Submariner",
+      "collection_slug": "submariner",
+      "reference": "126613LB",
+      "name": "Submariner Date",
+      "dimensions": {
+        "diameter_mm": 41.0,
+        "lug_to_lug_mm": 47.5,
+        "thickness_mm": 12.8,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": 175,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Oystersteel and 18k yellow gold (Rolesor)",
+        "crystal": "Sapphire with Cyclops lens",
+        "water_resistance_m": 300,
+        "bezel": "Unidirectional rotating, Cerachrom (blue), 18k yellow gold, 60-minute graduations",
+        "crown": "Screw-down, Triplock",
+        "caseback": "Solid, screw-down",
+        "dial_color": "Royal Blue"
+      },
+      "movement": {
+        "caliber": "3235",
+        "type": "Automatic",
+        "power_reserve_hours": 70,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 16500,
+        "production_start": 2020,
+        "production_end": null,
+        "predecessor": "116613LB",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Rolex",
+      "brand_slug": "rolex",
+      "collection": "Submariner",
+      "collection_slug": "submariner",
+      "reference": "126619LB",
+      "name": "Submariner Date",
+      "dimensions": {
+        "diameter_mm": 41.0,
+        "lug_to_lug_mm": 47.5,
+        "thickness_mm": 12.8,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": 186,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "18k white gold",
+        "crystal": "Sapphire with Cyclops lens",
+        "water_resistance_m": 300,
+        "bezel": "Unidirectional rotating, Cerachrom (blue), 60-minute graduations",
+        "crown": "Screw-down, Triplock",
+        "caseback": "Solid, screw-down",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "3235",
+        "type": "Automatic",
+        "power_reserve_hours": 70,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 41000,
+        "production_start": 2020,
+        "production_end": null,
+        "predecessor": "116619LB",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Rolex",
+      "brand_slug": "rolex",
+      "collection": "Datejust",
+      "collection_slug": "datejust",
+      "reference": "126200",
+      "name": "Datejust 36",
+      "dimensions": {
+        "diameter_mm": 36.0,
+        "lug_to_lug_mm": 44.0,
+        "thickness_mm": 11.7,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": 130,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Oystersteel (904L)",
+        "crystal": "Sapphire with Cyclops lens",
+        "water_resistance_m": 100,
+        "bezel": "Smooth, domed",
+        "crown": "Screw-down, Twinlock",
+        "caseback": "Solid, screw-down",
+        "dial_color": "Silver"
+      },
+      "movement": {
+        "caliber": "3235",
+        "type": "Automatic",
+        "power_reserve_hours": 70,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 7650,
+        "production_start": 2019,
+        "production_end": null,
+        "predecessor": "116200",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Rolex",
+      "brand_slug": "rolex",
+      "collection": "Datejust",
+      "collection_slug": "datejust",
+      "reference": "126234",
+      "name": "Datejust 36",
+      "dimensions": {
+        "diameter_mm": 36.0,
+        "lug_to_lug_mm": 44.0,
+        "thickness_mm": 11.7,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": 130,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Oystersteel and 18k white gold",
+        "crystal": "Sapphire with Cyclops lens",
+        "water_resistance_m": 100,
+        "bezel": "Fluted, 18k white gold",
+        "crown": "Screw-down, Twinlock",
+        "caseback": "Solid, screw-down",
+        "dial_color": "Silver"
+      },
+      "movement": {
+        "caliber": "3235",
+        "type": "Automatic",
+        "power_reserve_hours": 70,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 9550,
+        "production_start": 2019,
+        "production_end": null,
+        "predecessor": "116234",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Rolex",
+      "brand_slug": "rolex",
+      "collection": "Datejust",
+      "collection_slug": "datejust",
+      "reference": "126300",
+      "name": "Datejust 41",
+      "dimensions": {
+        "diameter_mm": 41.0,
+        "lug_to_lug_mm": 47.5,
+        "thickness_mm": 12.0,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": 148,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Oystersteel (904L)",
+        "crystal": "Sapphire with Cyclops lens",
+        "water_resistance_m": 100,
+        "bezel": "Smooth, domed",
+        "crown": "Screw-down, Twinlock",
+        "caseback": "Solid, screw-down",
+        "dial_color": "Silver"
+      },
+      "movement": {
+        "caliber": "3235",
+        "type": "Automatic",
+        "power_reserve_hours": 70,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 8100,
+        "production_start": 2018,
+        "production_end": null,
+        "predecessor": "116300",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Rolex",
+      "brand_slug": "rolex",
+      "collection": "Datejust",
+      "collection_slug": "datejust",
+      "reference": "126334",
+      "name": "Datejust 41",
+      "dimensions": {
+        "diameter_mm": 41.0,
+        "lug_to_lug_mm": 47.5,
+        "thickness_mm": 12.0,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": 148,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Oystersteel and 18k white gold",
+        "crystal": "Sapphire with Cyclops lens",
+        "water_resistance_m": 100,
+        "bezel": "Fluted, 18k white gold",
+        "crown": "Screw-down, Twinlock",
+        "caseback": "Solid, screw-down",
+        "dial_color": "Silver"
+      },
+      "movement": {
+        "caliber": "3235",
+        "type": "Automatic",
+        "power_reserve_hours": 70,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 10050,
+        "production_start": 2018,
+        "production_end": null,
+        "predecessor": "116334",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Rolex",
+      "brand_slug": "rolex",
+      "collection": "Explorer",
+      "collection_slug": "explorer",
+      "reference": "124270",
+      "name": "Explorer",
+      "dimensions": {
+        "diameter_mm": 36.0,
+        "lug_to_lug_mm": 44.0,
+        "thickness_mm": 11.5,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": 115,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Oystersteel (904L)",
+        "crystal": "Sapphire",
+        "water_resistance_m": 100,
+        "bezel": "Smooth",
+        "crown": "Screw-down, Twinlock",
+        "caseback": "Solid, screw-down",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "3230",
+        "type": "Automatic",
+        "power_reserve_hours": 70,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 7200,
+        "production_start": 2021,
+        "production_end": null,
+        "predecessor": "214270",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Rolex",
+      "brand_slug": "rolex",
+      "collection": "Explorer",
+      "collection_slug": "explorer",
+      "reference": "226570",
+      "name": "Explorer II",
+      "dimensions": {
+        "diameter_mm": 42.0,
+        "lug_to_lug_mm": 49.5,
+        "thickness_mm": 13.0,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": 165,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Oystersteel (904L)",
+        "crystal": "Sapphire with Cyclops lens",
+        "water_resistance_m": 100,
+        "bezel": "Fixed, 24-hour graduations, Oystersteel",
+        "crown": "Screw-down, Twinlock",
+        "caseback": "Solid, screw-down",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "3285",
+        "type": "Automatic",
+        "power_reserve_hours": 70,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 9550,
+        "production_start": 2021,
+        "production_end": null,
+        "predecessor": "216570",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Rolex",
+      "brand_slug": "rolex",
+      "collection": "GMT-Master II",
+      "collection_slug": "gmt-master-ii",
+      "reference": "126710BLRO",
+      "name": "GMT-Master II 'Pepsi'",
+      "dimensions": {
+        "diameter_mm": 40.0,
+        "lug_to_lug_mm": 47.5,
+        "thickness_mm": 12.3,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": 150,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Oystersteel (904L)",
+        "crystal": "Sapphire with Cyclops lens",
+        "water_resistance_m": 100,
+        "bezel": "Bidirectional rotating, Cerachrom (blue/red), 24-hour graduations",
+        "crown": "Screw-down, Triplock",
+        "caseback": "Solid, screw-down",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "3285",
+        "type": "Automatic",
+        "power_reserve_hours": 70,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 10800,
+        "production_start": 2018,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Rolex",
+      "brand_slug": "rolex",
+      "collection": "GMT-Master II",
+      "collection_slug": "gmt-master-ii",
+      "reference": "126710BLNR",
+      "name": "GMT-Master II 'Batman'",
+      "dimensions": {
+        "diameter_mm": 40.0,
+        "lug_to_lug_mm": 47.5,
+        "thickness_mm": 12.3,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": 150,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Oystersteel (904L)",
+        "crystal": "Sapphire with Cyclops lens",
+        "water_resistance_m": 100,
+        "bezel": "Bidirectional rotating, Cerachrom (blue/black), 24-hour graduations",
+        "crown": "Screw-down, Triplock",
+        "caseback": "Solid, screw-down",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "3285",
+        "type": "Automatic",
+        "power_reserve_hours": 70,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 10800,
+        "production_start": 2019,
+        "production_end": null,
+        "predecessor": "116710BLNR",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Rolex",
+      "brand_slug": "rolex",
+      "collection": "GMT-Master II",
+      "collection_slug": "gmt-master-ii",
+      "reference": "126720VTNR",
+      "name": "GMT-Master II 'Sprite' (Destro)",
+      "dimensions": {
+        "diameter_mm": 40.0,
+        "lug_to_lug_mm": 47.5,
+        "thickness_mm": 12.3,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": 150,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Oystersteel (904L)",
+        "crystal": "Sapphire with Cyclops lens",
+        "water_resistance_m": 100,
+        "bezel": "Bidirectional rotating, Cerachrom (green/black), 24-hour graduations",
+        "crown": "Screw-down, Triplock, left-side (9 o'clock)",
+        "caseback": "Solid, screw-down",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "3285",
+        "type": "Automatic",
+        "power_reserve_hours": 70,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 11350,
+        "production_start": 2022,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Rolex",
+      "brand_slug": "rolex",
+      "collection": "Daytona",
+      "collection_slug": "daytona",
+      "reference": "126500LN",
+      "name": "Cosmograph Daytona",
+      "dimensions": {
+        "diameter_mm": 40.0,
+        "lug_to_lug_mm": 47.0,
+        "thickness_mm": 12.2,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": 148,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Oystersteel (904L)",
+        "crystal": "Sapphire",
+        "water_resistance_m": 100,
+        "bezel": "Fixed, Cerachrom (black), tachymeter scale",
+        "crown": "Screw-down, Triplock",
+        "caseback": "Solid, screw-down",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "4131",
+        "type": "Automatic chronograph",
+        "power_reserve_hours": 72,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 15100,
+        "production_start": 2023,
+        "production_end": null,
+        "predecessor": "116500LN",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Rolex",
+      "brand_slug": "rolex",
+      "collection": "Oyster Perpetual",
+      "collection_slug": "oyster-perpetual",
+      "reference": "124200",
+      "name": "Oyster Perpetual 34",
+      "dimensions": {
+        "diameter_mm": 34.0,
+        "lug_to_lug_mm": 40.0,
+        "thickness_mm": 11.6,
+        "lug_width_mm": 19,
+        "weight_bracelet_g": 105,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Oystersteel (904L)",
+        "crystal": "Sapphire",
+        "water_resistance_m": 100,
+        "bezel": "Smooth, domed",
+        "crown": "Screw-down, Twinlock",
+        "caseback": "Solid, screw-down",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "2232",
+        "type": "Automatic",
+        "power_reserve_hours": 55,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 6150,
+        "production_start": 2020,
+        "production_end": null,
+        "predecessor": "114200",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Rolex",
+      "brand_slug": "rolex",
+      "collection": "Oyster Perpetual",
+      "collection_slug": "oyster-perpetual",
+      "reference": "124300",
+      "name": "Oyster Perpetual 41",
+      "dimensions": {
+        "diameter_mm": 41.0,
+        "lug_to_lug_mm": 47.5,
+        "thickness_mm": 11.8,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": 140,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Oystersteel (904L)",
+        "crystal": "Sapphire",
+        "water_resistance_m": 100,
+        "bezel": "Smooth, domed",
+        "crown": "Screw-down, Twinlock",
+        "caseback": "Solid, screw-down",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "3230",
+        "type": "Automatic",
+        "power_reserve_hours": 70,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 6550,
+        "production_start": 2020,
+        "production_end": null,
+        "predecessor": "114300",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Rolex",
+      "brand_slug": "rolex",
+      "collection": "Oyster Perpetual",
+      "collection_slug": "oyster-perpetual",
+      "reference": "126000",
+      "name": "Oyster Perpetual 36",
+      "dimensions": {
+        "diameter_mm": 36.0,
+        "lug_to_lug_mm": 44.0,
+        "thickness_mm": 11.4,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": 120,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Oystersteel (904L)",
+        "crystal": "Sapphire",
+        "water_resistance_m": 100,
+        "bezel": "Smooth, domed",
+        "crown": "Screw-down, Twinlock",
+        "caseback": "Solid, screw-down",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "3230",
+        "type": "Automatic",
+        "power_reserve_hours": 70,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 6150,
+        "production_start": 2020,
+        "production_end": null,
+        "predecessor": "116000",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Rolex",
+      "brand_slug": "rolex",
+      "collection": "Oyster Perpetual",
+      "collection_slug": "oyster-perpetual",
+      "reference": "277200",
+      "name": "Oyster Perpetual 31",
+      "dimensions": {
+        "diameter_mm": 31.0,
+        "lug_to_lug_mm": 38.5,
+        "thickness_mm": 10.5,
+        "lug_width_mm": 15,
+        "weight_bracelet_g": 90,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Oystersteel (904L)",
+        "crystal": "Sapphire",
+        "water_resistance_m": 100,
+        "bezel": "Smooth, domed",
+        "crown": "Screw-down, Twinlock",
+        "caseback": "Solid, screw-down",
+        "dial_color": "Silver"
+      },
+      "movement": {
+        "caliber": "2232",
+        "type": "Automatic",
+        "power_reserve_hours": 55,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 5900,
+        "production_start": 2020,
+        "production_end": null,
+        "predecessor": "177200",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Rolex",
+      "brand_slug": "rolex",
+      "collection": "Oyster Perpetual",
+      "collection_slug": "oyster-perpetual",
+      "reference": "276200",
+      "name": "Oyster Perpetual 28",
+      "dimensions": {
+        "diameter_mm": 28.0,
+        "lug_to_lug_mm": 36.0,
+        "thickness_mm": 9.5,
+        "lug_width_mm": 14,
+        "weight_bracelet_g": 75,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Oystersteel (904L)",
+        "crystal": "Sapphire",
+        "water_resistance_m": 100,
+        "bezel": "Smooth, domed",
+        "crown": "Screw-down, Twinlock",
+        "caseback": "Solid, screw-down",
+        "dial_color": "Silver"
+      },
+      "movement": {
+        "caliber": "2232",
+        "type": "Automatic",
+        "power_reserve_hours": 55,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 5600,
+        "production_start": 2020,
+        "production_end": null,
+        "predecessor": "176200",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Rolex",
+      "brand_slug": "rolex",
+      "collection": "Day-Date",
+      "collection_slug": "day-date",
+      "reference": "128238",
+      "name": "Day-Date 36",
+      "dimensions": {
+        "diameter_mm": 36.0,
+        "lug_to_lug_mm": 44.0,
+        "thickness_mm": 12.0,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": 185,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "18k yellow gold",
+        "crystal": "Sapphire with Cyclops lens",
+        "water_resistance_m": 100,
+        "bezel": "Fluted, 18k yellow gold",
+        "crown": "Screw-down, Twinlock",
+        "caseback": "Solid, screw-down",
+        "dial_color": "Champagne"
+      },
+      "movement": {
+        "caliber": "3255",
+        "type": "Automatic",
+        "power_reserve_hours": 70,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 36450,
+        "production_start": 2019,
+        "production_end": null,
+        "predecessor": "118238",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Rolex",
+      "brand_slug": "rolex",
+      "collection": "Day-Date",
+      "collection_slug": "day-date",
+      "reference": "228235",
+      "name": "Day-Date 40",
+      "dimensions": {
+        "diameter_mm": 40.0,
+        "lug_to_lug_mm": 47.0,
+        "thickness_mm": 12.5,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": 218,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "18k Everose gold",
+        "crystal": "Sapphire with Cyclops lens",
+        "water_resistance_m": 100,
+        "bezel": "Fluted, 18k Everose gold",
+        "crown": "Screw-down, Twinlock",
+        "caseback": "Solid, screw-down",
+        "dial_color": "Sundust"
+      },
+      "movement": {
+        "caliber": "3255",
+        "type": "Automatic",
+        "power_reserve_hours": 70,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 39550,
+        "production_start": 2015,
+        "production_end": null,
+        "predecessor": "218235",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Rolex",
+      "brand_slug": "rolex",
+      "collection": "Day-Date",
+      "collection_slug": "day-date",
+      "reference": "228238",
+      "name": "Day-Date 40",
+      "dimensions": {
+        "diameter_mm": 40.0,
+        "lug_to_lug_mm": 47.0,
+        "thickness_mm": 12.5,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": 218,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "18k yellow gold",
+        "crystal": "Sapphire with Cyclops lens",
+        "water_resistance_m": 100,
+        "bezel": "Fluted, 18k yellow gold",
+        "crown": "Screw-down, Twinlock",
+        "caseback": "Solid, screw-down",
+        "dial_color": "Champagne"
+      },
+      "movement": {
+        "caliber": "3255",
+        "type": "Automatic",
+        "power_reserve_hours": 70,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 39550,
+        "production_start": 2015,
+        "production_end": null,
+        "predecessor": "218238",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Rolex",
+      "brand_slug": "rolex",
+      "collection": "Air-King",
+      "collection_slug": "air-king",
+      "reference": "126900",
+      "name": "Air-King",
+      "dimensions": {
+        "diameter_mm": 40.0,
+        "lug_to_lug_mm": 47.0,
+        "thickness_mm": 13.1,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": 148,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Oystersteel (904L)",
+        "crystal": "Sapphire",
+        "water_resistance_m": 100,
+        "bezel": "Smooth",
+        "crown": "Screw-down, Twinlock",
+        "caseback": "Solid, screw-down",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "3230",
+        "type": "Automatic",
+        "power_reserve_hours": 70,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 7400,
+        "production_start": 2022,
+        "production_end": null,
+        "predecessor": "116900",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Rolex",
+      "brand_slug": "rolex",
+      "collection": "Yacht-Master",
+      "collection_slug": "yacht-master",
+      "reference": "126621",
+      "name": "Yacht-Master 40",
+      "dimensions": {
+        "diameter_mm": 40.0,
+        "lug_to_lug_mm": 47.0,
+        "thickness_mm": 12.0,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": 160,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Oystersteel and 18k Everose gold (Rolesor)",
+        "crystal": "Sapphire with Cyclops lens",
+        "water_resistance_m": 100,
+        "bezel": "Bidirectional rotating, Cerachrom (matte black), 60-minute graduations, 18k Everose gold",
+        "crown": "Screw-down, Twinlock",
+        "caseback": "Solid, screw-down",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "3235",
+        "type": "Automatic",
+        "power_reserve_hours": 70,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 15300,
+        "production_start": 2019,
+        "production_end": null,
+        "predecessor": "116621",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Rolex",
+      "brand_slug": "rolex",
+      "collection": "Yacht-Master",
+      "collection_slug": "yacht-master",
+      "reference": "268655",
+      "name": "Yacht-Master 37",
+      "dimensions": {
+        "diameter_mm": 37.0,
+        "lug_to_lug_mm": 44.0,
+        "thickness_mm": 11.3,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": null,
+        "weight_head_g": 95
+      },
+      "case": {
+        "material": "18k Everose gold",
+        "crystal": "Sapphire with Cyclops lens",
+        "water_resistance_m": 100,
+        "bezel": "Bidirectional rotating, Cerachrom (matte black), 60-minute graduations",
+        "crown": "Screw-down, Twinlock",
+        "caseback": "Solid, screw-down",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "2236",
+        "type": "Automatic",
+        "power_reserve_hours": 55,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 24700,
+        "production_start": 2015,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Rolex",
+      "brand_slug": "rolex",
+      "collection": "Yacht-Master",
+      "collection_slug": "yacht-master",
+      "reference": "226627",
+      "name": "Yacht-Master 42",
+      "dimensions": {
+        "diameter_mm": 42.0,
+        "lug_to_lug_mm": 48.0,
+        "thickness_mm": 12.5,
+        "lug_width_mm": 20,
+        "weight_bracelet_g": 105,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "RLX titanium (grade 5)",
+        "crystal": "Sapphire",
+        "water_resistance_m": 100,
+        "bezel": "Bidirectional rotating, Cerachrom (matte black), 60-minute graduations",
+        "crown": "Screw-down, Twinlock",
+        "caseback": "Solid, screw-down",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "3235",
+        "type": "Automatic",
+        "power_reserve_hours": 70,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 13150,
+        "production_start": 2023,
+        "production_end": null,
+        "predecessor": null,
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Rolex",
+      "brand_slug": "rolex",
+      "collection": "Sea-Dweller",
+      "collection_slug": "sea-dweller",
+      "reference": "126600",
+      "name": "Sea-Dweller",
+      "dimensions": {
+        "diameter_mm": 43.0,
+        "lug_to_lug_mm": 50.5,
+        "thickness_mm": 14.7,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": 195,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Oystersteel (904L)",
+        "crystal": "Sapphire with Cyclops lens",
+        "water_resistance_m": 1220,
+        "bezel": "Unidirectional rotating, Cerachrom, 60-minute graduations",
+        "crown": "Screw-down, Triplock",
+        "caseback": "Solid, screw-down",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "3235",
+        "type": "Automatic",
+        "power_reserve_hours": 70,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 12550,
+        "production_start": 2017,
+        "production_end": null,
+        "predecessor": "116600",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Rolex",
+      "brand_slug": "rolex",
+      "collection": "Deepsea",
+      "collection_slug": "deepsea",
+      "reference": "136660",
+      "name": "Rolex Deepsea",
+      "dimensions": {
+        "diameter_mm": 44.0,
+        "lug_to_lug_mm": 51.0,
+        "thickness_mm": 17.7,
+        "lug_width_mm": 22,
+        "weight_bracelet_g": 220,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Oystersteel (904L)",
+        "crystal": "Sapphire",
+        "water_resistance_m": 3900,
+        "bezel": "Unidirectional rotating, Cerachrom, 60-minute graduations",
+        "crown": "Screw-down, Triplock",
+        "caseback": "Solid, screw-down, Ring Lock System, titanium caseback",
+        "dial_color": "Black"
+      },
+      "movement": {
+        "caliber": "3235",
+        "type": "Automatic",
+        "power_reserve_hours": 70,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 14350,
+        "production_start": 2022,
+        "production_end": null,
+        "predecessor": "126660",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Rolex",
+      "brand_slug": "rolex",
+      "collection": "Sky-Dweller",
+      "collection_slug": "sky-dweller",
+      "reference": "326934",
+      "name": "Sky-Dweller",
+      "dimensions": {
+        "diameter_mm": 42.0,
+        "lug_to_lug_mm": 49.0,
+        "thickness_mm": 14.1,
+        "lug_width_mm": 21,
+        "weight_bracelet_g": 175,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Oystersteel and 18k white gold",
+        "crystal": "Sapphire with Cyclops lens",
+        "water_resistance_m": 100,
+        "bezel": "Fixed, fluted, Ring Command, 18k white gold",
+        "crown": "Screw-down, Twinlock",
+        "caseback": "Solid, screw-down",
+        "dial_color": "Blue"
+      },
+      "movement": {
+        "caliber": "9001",
+        "type": "Automatic",
+        "power_reserve_hours": 72,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 15250,
+        "production_start": 2017,
+        "production_end": 2023,
+        "predecessor": null,
+        "successor": "336934"
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    },
+    {
+      "brand": "Rolex",
+      "brand_slug": "rolex",
+      "collection": "Sky-Dweller",
+      "collection_slug": "sky-dweller",
+      "reference": "336934",
+      "name": "Sky-Dweller",
+      "dimensions": {
+        "diameter_mm": 42.0,
+        "lug_to_lug_mm": 49.0,
+        "thickness_mm": 14.0,
+        "lug_width_mm": 21,
+        "weight_bracelet_g": 175,
+        "weight_head_g": null
+      },
+      "case": {
+        "material": "Oystersteel and 18k white gold",
+        "crystal": "Sapphire with Cyclops lens",
+        "water_resistance_m": 100,
+        "bezel": "Fixed, fluted, Ring Command, 18k white gold",
+        "crown": "Screw-down, Twinlock",
+        "caseback": "Solid, screw-down",
+        "dial_color": "Blue"
+      },
+      "movement": {
+        "caliber": "9002",
+        "type": "Automatic",
+        "power_reserve_hours": 72,
+        "frequency_vph": 28800
+      },
+      "context": {
+        "msrp_usd": 16150,
+        "production_start": 2023,
+        "production_end": null,
+        "predecessor": "326934",
+        "successor": null
+      },
+      "data_source": "manufacturer",
+      "last_verified": "2026-10"
+    }
+  ]
+}
