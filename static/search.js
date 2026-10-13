@@ -21,6 +21,7 @@
 
     input.addEventListener('input', function() {
       var q = this.value.trim().toLowerCase();
+      var terms = q.split(/\s+/);
       if (q.length < 2 || !searchData) {
         results.classList.remove('active');
         results.innerHTML = '';
@@ -31,7 +32,11 @@
       for (var i = 0; i < searchData.length && matches.length < 12; i++) {
         var w = searchData[i];
         var hay = (w.brand + ' ' + w.collection + ' ' + w.name + ' ' + w.reference).toLowerCase();
-        if (hay.indexOf(q) !== -1) matches.push(w);
+        var allMatch = true;
+        for (var t = 0; t < terms.length; t++) {
+          if (hay.indexOf(terms[t]) === -1) { allMatch = false; break; }
+        }
+        if (allMatch) matches.push(w);
       }
 
       if (matches.length === 0) {
