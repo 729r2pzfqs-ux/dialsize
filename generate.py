@@ -23,7 +23,7 @@ SITE_URL = "https://dialsize.com"
 DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
 STATIC_DIR = os.path.join(os.path.dirname(__file__), "static")
 OUT_DIR = os.path.join(os.path.dirname(__file__), "docs")
-GA_ID = "G-XXXXXXXXXX"
+GA_ID = "G-9W8FY82CS3"
 ADSENSE_PUB = "ca-pub-5861928596436289"
 
 # ---------------------------------------------------------------------------
