@@ -114,52 +114,9 @@
     return cell ? cell.textContent.trim() : '';
   }
 
-  /* ---- Cookie consent ---- */
-  function initCookieConsent() {
-    var banner = document.getElementById('cookie-banner');
-    if (!banner) return;
-    if (localStorage.getItem('ds_cookie_consent')) return;
-    banner.classList.add('show');
-
-    var acceptBtn = document.getElementById('cookie-accept');
-    var rejectBtn = document.getElementById('cookie-reject');
-
-    if (acceptBtn) {
-      acceptBtn.addEventListener('click', function() {
-        localStorage.setItem('ds_cookie_consent', 'accepted');
-        banner.classList.remove('show');
-        loadAnalytics();
-      });
-    }
-    if (rejectBtn) {
-      rejectBtn.addEventListener('click', function() {
-        localStorage.setItem('ds_cookie_consent', 'rejected');
-        banner.classList.remove('show');
-      });
-    }
-  }
-
-  function loadAnalytics() {
-    /* GA4 loads via gtag in the page head with consent mode */
-    if (typeof gtag === 'function') {
-      gtag('consent', 'update', {
-        'analytics_storage': 'granted',
-        'ad_storage': 'granted',
-        'ad_user_data': 'granted',
-        'ad_personalization': 'granted'
-      });
-    }
-  }
-
   /* ---- Init ---- */
   document.addEventListener('DOMContentLoaded', function() {
     initSearch();
     initSort();
-    initCookieConsent();
-
-    /* If consent was previously accepted, enable analytics */
-    if (localStorage.getItem('ds_cookie_consent') === 'accepted') {
-      loadAnalytics();
-    }
   });
 })();
