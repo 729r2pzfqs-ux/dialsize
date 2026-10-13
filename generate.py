@@ -22,6 +22,7 @@ from jinja2 import BaseLoader, Environment, TemplateNotFound
 SITE_URL = "https://dialsize.com"
 DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
 STATIC_DIR = os.path.join(os.path.dirname(__file__), "static")
+FAVICON_DIR = os.path.join(os.path.dirname(__file__), "favicon")
 OUT_DIR = os.path.join(os.path.dirname(__file__), "docs")
 GA_ID = "G-9W8FY82CS3"
 ADSENSE_PUB = "ca-pub-5861928596436289"
@@ -694,6 +695,13 @@ BASE_TEMPLATE = r"""<!DOCTYPE html>
 <meta property="og:url" content="{{ canonical }}">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="DialSize">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#1a1f36">
 <link rel="stylesheet" href="/static/style.css">
 <script>
 window.dataLayer = window.dataLayer || [];
@@ -1452,6 +1460,12 @@ class SiteGenerator:
                 shutil.rmtree(static_out, ignore_errors=True)
             shutil.copytree(STATIC_DIR, static_out, dirs_exist_ok=True)
             print("Copied static/")
+
+        # Copy favicons to site root (browsers request /favicon.ico directly)
+        if os.path.exists(FAVICON_DIR):
+            for name in os.listdir(FAVICON_DIR):
+                shutil.copy2(os.path.join(FAVICON_DIR, name), os.path.join(OUT_DIR, name))
+            print("Copied favicon/")
 
         self.gen_homepage()
         self.gen_brand_pages()
