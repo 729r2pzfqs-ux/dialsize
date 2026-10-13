@@ -5,6 +5,7 @@ Reads watch data from data/*.json, renders Jinja2 templates, and writes
 a complete static site into docs/ for GitHub Pages deployment.
 """
 
+import hashlib
 import json
 import os
 import re
@@ -1434,6 +1435,9 @@ class SiteGenerator:
         print("DialSize.com — Static site generator")
         print(f"Loaded {len(self.watches)} watches from {len(self.brands)} brands")
 
+        # Remember previous lastmod dates and page hashes before wiping docs/
+        self.prev_pages = self.load_previous_pages()
+
         # Clean output
         if os.path.exists(OUT_DIR):
             try:
@@ -2117,14 +2121,53 @@ class SiteGenerator:
         self.write("404.html", html)
 
     # -- Sitemap --
+    @staticmethod
+    def page_file(u):
+        """Map a site URL to its generated file path under docs/."""
+        return os.path.join(OUT_DIR, u[len(SITE_URL) + 1:], "index.html")
+
+    @staticmethod
+    def file_hash(path):
+        with open(path, "rb") as f:
+            return hashlib.sha256(f.read()).hexdigest()
+
+    def load_previous_pages(self):
+        """Return {url: (lastmod, sha256)} from the existing docs/ build."""
+        prev = {}
+        sitemap = os.path.join(OUT_DIR, "sitemap.xml")
+        if not os.path.exists(sitemap):
+            return prev
+        with open(sitemap) as f:
+            entries = re.findall(r"<loc>([^<]+)</loc><lastmod>([^<]+)</lastmod>", f.read())
+        for u, lastmod in entries:
+            path = self.page_file(u)
+            if os.path.exists(path):
+                prev[u] = (lastmod, self.file_hash(path))
+        return prev
+
+    def sitemap_priority(self, u):
+        parts = u[len(SITE_URL) + 1:].strip("/").split("/")
+        brand_slugs = {w["brand_slug"] for w in self.watches}
+        if parts == [""]:
+            return "1.0"  # homepage
+        if parts[0] in brand_slugs:
+            return {1: "0.8", 2: "0.7"}.get(len(parts), "0.6")  # brand, collection, watch
+        if parts[0] == "compare":
+            return "0.5" if len(parts) == 1 else "0.4"  # compare index, compare pair
+        if parts[0] in ("guides", "lug-width"):
+            return "0.5"
+        return "0.3"  # about, privacy, affiliate disclosure
+
     def gen_sitemap(self):
         print("Generating sitemap.xml...")
         lines = ['<?xml version="1.0" encoding="UTF-8"?>']
         lines.append('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">')
         today = datetime.now().strftime("%Y-%m-%d")
         for u in sorted(set(self.all_urls)):
-            priority = "1.0" if u == SITE_URL + "/" else "0.8" if u.count("/") <= 4 else "0.6"
-            lines.append(f"  <url><loc>{u}</loc><lastmod>{today}</lastmod><priority>{priority}</priority></url>")
+            # Keep the previous lastmod unless the page's HTML actually changed
+            prev = self.prev_pages.get(u)
+            lastmod = prev[0] if prev and prev[1] == self.file_hash(self.page_file(u)) else today
+            lines.append(f"  <url><loc>{u}</loc><lastmod>{lastmod}</lastmod><priority>{self.sitemap_priority(u)}</priority></url>")
         lines.append("</urlset>")
         self.write("sitemap.xml", "\n".join(lines))
 
