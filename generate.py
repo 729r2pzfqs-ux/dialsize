@@ -710,6 +710,7 @@ gtag('js',new Date());gtag('config','{{ ga_id }}');
 <a href="/" class="site-logo">Dial<span>Size</span></a>
 <nav class="site-nav">
 <a href="/">Home</a>
+<a href="/compare/">Compare</a>
 <a href="/guides/watches-under-40mm/">Guides</a>
 <a href="/about/">About</a>
 </nav>
@@ -1125,7 +1126,7 @@ REFERENCE_TEMPLATE = r"""{% extends "base.html" %}
 COMPARE_TEMPLATE = r"""{% extends "base.html" %}
 {% block body %}
 <div class="container">
-<div class="breadcrumbs"><a href="/">Home</a> <span>/</span> Compare <span>/</span> {{ w1.brand }} {{ w1.name }} vs {{ w2.brand }} {{ w2.name }}</div>
+<div class="breadcrumbs"><a href="/">Home</a> <span>/</span> <a href="/compare/">Compare</a> <span>/</span> {{ w1.brand }} {{ w1.name }} vs {{ w2.brand }} {{ w2.name }}</div>
 <div class="page-header">
 <h1>{{ w1.brand }} {{ w1.name }} vs {{ w2.brand }} {{ w2.name }}</h1>
 <p class="subtitle">Side-by-side dimension comparison — Ref. {{ w1.reference }} vs {{ w2.reference }}</p>
@@ -1189,6 +1190,48 @@ COMPARE_TEMPLATE = r"""{% extends "base.html" %}
 {% block head_extra %}
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://dialsize.com/"},{"@type":"ListItem","position":2,"name":"Compare","item":"https://dialsize.com/compare/"},{"@type":"ListItem","position":3,"name":"{{ w1.brand }} {{ w1.name }} vs {{ w2.brand }} {{ w2.name }}","item":"{{ canonical }}"}]}
+</script>
+{% endblock %}"""
+
+COMPARE_INDEX_TEMPLATE = r"""{% extends "base.html" %}
+{% block body %}
+<div class="container">
+<div class="breadcrumbs"><a href="/">Home</a> <span>/</span> Compare</div>
+<div class="page-header">
+<h1>Watch Size Comparisons</h1>
+<p class="subtitle">{{ total }} side-by-side dimension comparisons across {{ brand_count }} brands</p>
+</div>
+</div>
+<section>
+<div class="container">
+<div class="stats-grid">
+<div class="stat-box"><div class="stat-num">{{ total }}</div><div class="stat-label">Comparisons</div></div>
+<div class="stat-box"><div class="stat-num">{{ brand_count }}</div><div class="stat-label">Brands</div></div>
+</div>
+</div>
+</section>
+{% for group in groups %}
+<section>
+<div class="container">
+<h2 class="section-title">{{ group.title }}</h2>
+<div class="card-grid">
+{% for c in group.comparisons %}
+<div class="card">
+<h3><a href="/compare/{{ c.slug }}/">{{ c.w1_name }} vs {{ c.w2_name }}</a></h3>
+<p>{{ c.w1_dia }} mm vs {{ c.w2_dia }} mm diameter</p>
+</div>
+{% endfor %}
+</div>
+</div>
+</section>
+{% endfor %}
+{% endblock %}
+{% block head_extra %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CollectionPage","name":"Watch Size Comparisons","description":"{{ meta_desc }}","url":"{{ canonical }}","isPartOf":{"@type":"WebSite","name":"DialSize","url":"https://dialsize.com/"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://dialsize.com/"},{"@type":"ListItem","position":2,"name":"Compare","item":"https://dialsize.com/compare/"}]}
 </script>
 {% endblock %}"""
 
@@ -1365,6 +1408,7 @@ class SiteGenerator:
             "collection.html": COLLECTION_TEMPLATE,
             "reference.html": REFERENCE_TEMPLATE,
             "compare.html": COMPARE_TEMPLATE,
+            "compare_index.html": COMPARE_INDEX_TEMPLATE,
             "lug_width.html": LUG_WIDTH_TEMPLATE,
             "guide.html": GUIDE_TEMPLATE,
             "static_page.html": STATIC_PAGE_TEMPLATE,
@@ -1421,6 +1465,7 @@ class SiteGenerator:
         self.gen_collection_pages()
         self.gen_reference_pages()
         self.gen_compare_pages()
+        self.gen_compare_index()
         self.gen_lug_width_pages()
         self.gen_guide_pages()
         self.gen_static_pages()
@@ -1831,6 +1876,49 @@ class SiteGenerator:
                 aff2=aff2,
             )
             self.write(f"compare/{slug}/index.html", html)
+
+    # -- Compare index page --
+    def gen_compare_index(self):
+        print("Generating compare index page...")
+        # Group comparisons by brand pair
+        brand_groups = defaultdict(list)
+        all_brands_in_comparisons = set()
+        for w1, w2, slug in self.comparisons:
+            d1 = w1.get("dimensions", {})
+            d2 = w2.get("dimensions", {})
+            b1 = w1["brand"]
+            b2 = w2["brand"]
+            all_brands_in_comparisons.add(b1)
+            all_brands_in_comparisons.add(b2)
+            if b1 == b2:
+                group_key = b1
+            else:
+                group_key = " vs ".join(sorted([b1, b2]))
+            brand_groups[group_key].append({
+                "slug": slug,
+                "w1_name": f"{b1} {w1.get('name', w1['reference'])}",
+                "w2_name": f"{b2} {w2.get('name', w2['reference'])}",
+                "w1_dia": f"{safe_float(d1.get('diameter_mm')):.1f}",
+                "w2_dia": f"{safe_float(d2.get('diameter_mm')):.1f}",
+            })
+
+        # Sort groups: within-brand first (alphabetical), then cross-brand (alphabetical)
+        within = sorted([(k, v) for k, v in brand_groups.items() if " vs " not in k])
+        cross = sorted([(k, v) for k, v in brand_groups.items() if " vs " in k])
+        groups = []
+        for key, items in within + cross:
+            groups.append({"title": key, "comparisons": items})
+
+        canonical = self.url("compare/index.html")
+        html = self.env.get_template("compare_index.html").render(
+            meta_title="Watch Size Comparisons — Side-by-Side Dimensions | DialSize",
+            meta_desc=f"Compare watch dimensions side by side. {len(self.comparisons)} comparisons across {len(all_brands_in_comparisons)} brands — diameter, lug-to-lug, thickness, and more.",
+            canonical=canonical,
+            total=len(self.comparisons),
+            brand_count=len(all_brands_in_comparisons),
+            groups=groups,
+        )
+        self.write("compare/index.html", html)
 
     # -- Lug width pages --
     def gen_lug_width_pages(self):
