@@ -27,6 +27,7 @@ FAVICON_DIR = os.path.join(os.path.dirname(__file__), "favicon")
 OUT_DIR = os.path.join(os.path.dirname(__file__), "docs")
 GA_ID = "G-9W8FY82CS3"
 ADSENSE_PUB = "ca-pub-5861928596436289"
+OG_IMAGE = SITE_URL + "/static/og-image.png"
 
 # ---------------------------------------------------------------------------
 # Helpers
@@ -118,14 +119,62 @@ def wrist_fit(lug_to_lug):
         return ("7.25\"", "18.5 cm")
 
 
-def affiliate_ebay(brand, model, ref):
-    q = urllib.parse.quote_plus(f"{brand} {model} {ref}")
-    return (f"https://www.ebay.com/sch/i.html?_nkw={q}"
-            "&mkcid=1&mkrid=711-53200-19255-0&campid=5339221177&toolid=10001")
+def with_brand(brand, name):
+    """Prefix the brand unless the name already starts with it ("Seiko 5 Sports")."""
+    if name.lower().startswith(brand.lower() + " "):
+        return name
+    return f"{brand} {name}"
 
 
-def affiliate_jomashop(brand, model):
-    q = urllib.parse.quote_plus(f"{brand} {model}")
+# Spec-sheet phrases dropped from long names for compact display (compare pages)
+SHORT_NAME_DROP = [
+    r"\([^)]*\)",                      # variant details: "(Black, Steel Bracelet)"
+    r"Co-Axial (Master )?Chronometer",
+    r"Master Chronometer",
+    r"Chronograph",
+    r"\d+(st|nd|rd|th) Anniversary",
+]
+SHORT_NAME_MAX = 45
+
+
+def short_watch_name(name):
+    """Shorten long names, e.g. 'Moonwatch Professional Co-Axial Master
+    Chronometer Chronograph 42 mm (Sedna Gold, Leather Strap)' ->
+    'Moonwatch Professional 42 mm'. Names up to SHORT_NAME_MAX are unchanged."""
+    if len(name) <= SHORT_NAME_MAX:
+        return name
+    s = name
+    for pattern in SHORT_NAME_DROP:
+        s = re.sub(pattern, "", s)
+    s = re.sub(r"\s+", " ", s).strip()
+    if len(s) > SHORT_NAME_MAX:
+        # Keep a trailing case size ("42 mm") and trim words before it
+        m = re.search(r"\s\d+(\.\d+)? mm$", s)
+        size = m.group(0) if m else ""
+        head = s[:len(s) - len(size)]
+        head = head[:SHORT_NAME_MAX - len(size)].rsplit(" ", 1)[0]
+        s = head + size
+    return s or name
+
+
+def fmt_lug_width(watch):
+    lw = watch.get("dimensions", {}).get("lug_width_mm")
+    if lw:
+        return fmt_mm(lw)
+    return "Integrated" if watch.get("integrated_bracelet") else "N/A"
+
+
+def affiliate_links(watch):
+    """Retailer search links for a watch (no eBay: not activated for this domain)."""
+    return {
+        "chrono24": affiliate_chrono24(watch["brand"], watch["reference"]),
+        "jomashop": affiliate_jomashop(watch["full_name"]),
+        "amazon": affiliate_amazon(watch["full_name"]),
+    }
+
+
+def affiliate_jomashop(query):
+    q = urllib.parse.quote_plus(query)
     return f"https://www.jomashop.com/catalogsearch/result/?q={q}"
 
 
@@ -134,8 +183,8 @@ def affiliate_chrono24(brand, ref):
     return f"https://www.chrono24.com/search/index.htm?query={q}"
 
 
-def affiliate_amazon(brand, model):
-    q = urllib.parse.quote_plus(f"{brand} {model}")
+def affiliate_amazon(query):
+    q = urllib.parse.quote_plus(query)
     return f"https://www.amazon.com/s?k={q}"
 
 
@@ -189,7 +238,7 @@ def generate_svg(watch):
 
     parts = []
     parts.append(f'<svg viewBox="0 0 {vb_w} {vb_h}" xmlns="http://www.w3.org/2000/svg" '
-                 f'role="img" aria-label="Dimensions diagram for {watch.get("brand","")} {watch.get("name","")}">')
+                 f'role="img" aria-label="Dimensions diagram for {watch["full_name"]}">')
     parts.append(f'<rect width="{vb_w}" height="{vb_h}" fill="{bg}"/>')
 
     # --- Front view ---
@@ -372,9 +421,10 @@ def generate_compare_svg(w1, w2):
     scale = 3.0
     navy = "#1a1f36"
     gold = "#c4a35a"
+    gold_text = "#7d6020"  # darker gold for legible legend text on white
 
     parts = [f'<svg viewBox="0 0 {vb_w} {vb_h}" xmlns="http://www.w3.org/2000/svg" '
-             f'role="img" aria-label="Size comparison overlay">']
+             f'role="img" aria-label="Size comparison overlay: {w1["short_name"]} vs {w2["short_name"]}">']
 
     r1 = dia1 * scale / 2
     r2 = dia2 * scale / 2
@@ -402,10 +452,10 @@ def generate_compare_svg(w1, w2):
     # Legend
     parts.append(f'<line x1="20" y1="20" x2="40" y2="20" stroke="{navy}" stroke-width="2"/>')
     parts.append(f'<text x="46" y="24" fill="{navy}" font-size="10" font-family="sans-serif">'
-                 f'{w1["brand"]} {w1.get("name","")} ({dia1:.1f} mm)</text>')
+                 f'{w1["short_name"]} ({dia1:.1f} mm)</text>')
     parts.append(f'<line x1="20" y1="36" x2="40" y2="36" stroke="{gold}" stroke-width="2" stroke-dasharray="6 3"/>')
-    parts.append(f'<text x="46" y="40" fill="{gold}" font-size="10" font-family="sans-serif">'
-                 f'{w2["brand"]} {w2.get("name","")} ({dia2:.1f} mm)</text>')
+    parts.append(f'<text x="46" y="40" fill="{gold_text}" font-size="10" font-family="sans-serif">'
+                 f'{w2["short_name"]} ({dia2:.1f} mm)</text>')
 
     parts.append("</svg>")
     return "\n".join(parts)
@@ -435,6 +485,17 @@ def load_all_data():
         for w in data["watches"]:
             w.setdefault("brand", data["brand"])
             w.setdefault("brand_slug", data["brand_slug"])
+            # Display names: fall back to the reference when the name is missing,
+            # and never repeat the brand ("Grand Seiko Grand Seiko ...")
+            if not w.get("name"):
+                w["name"] = w["reference"]
+            w["full_name"] = with_brand(w["brand"], w["name"])
+            w["short_name"] = with_brand(w["brand"], short_watch_name(w["name"]))
+            # "Casio GA-110-1A" already contains the reference; others get it appended
+            w["name_with_ref"] = (w["full_name"] if w["name"] == w["reference"]
+                                  else f"{w['full_name']} ({w['reference']})")
+            w["short_with_ref"] = (w["short_name"] if w["name"] == w["reference"]
+                                   else f"{w['short_name']} ({w['reference']})")
             all_watches.append(w)
             b = brands.setdefault(w["brand_slug"], {
                 "brand": w["brand"],
@@ -568,8 +629,8 @@ def compare_verdict(w1, w2):
     l2l2 = safe_float(d2.get("lug_to_lug_mm"))
     t1 = safe_float(d1.get("thickness_mm"))
     t2 = safe_float(d2.get("thickness_mm"))
-    name1 = f'{w1["brand"]} {w1.get("name", w1["reference"])}'
-    name2 = f'{w2["brand"]} {w2.get("name", w2["reference"])}'
+    name1 = w1["short_name"]
+    name2 = w2["short_name"]
 
     parts = []
     if dia1 and dia2:
@@ -699,12 +760,22 @@ BASE_TEMPLATE = r"""<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ meta_title }}</title>
 <meta name="description" content="{{ meta_desc }}">
-<link rel="canonical" href="{{ canonical }}">
+{% if canonical %}<link rel="canonical" href="{{ canonical }}">
+{% endif %}<link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+<link rel="preconnect" href="https://www.googletagmanager.com">
 <meta property="og:title" content="{{ meta_title }}">
 <meta property="og:description" content="{{ meta_desc }}">
-<meta property="og:url" content="{{ canonical }}">
-<meta property="og:type" content="website">
+{% if canonical %}<meta property="og:url" content="{{ canonical }}">
+{% endif %}<meta property="og:type" content="website">
 <meta property="og:site_name" content="DialSize">
+<meta property="og:image" content="{{ og_image }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="DialSize — Watch Dimensions Database">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ meta_title }}">
+<meta name="twitter:description" content="{{ meta_desc }}">
+<meta name="twitter:image" content="{{ og_image }}">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -740,18 +811,22 @@ gtag('config', '{{ ga_id }}');
 {% block head_extra %}{% endblock %}
 </head>
 <body>
+<a href="#main" class="skip-link">Skip to main content</a>
 <header class="site-header">
 <div class="container">
 <a href="/" class="site-logo">Dial<span>Size</span></a>
-<nav class="site-nav">
+<nav class="site-nav" aria-label="Main">
 <a href="/">Home</a>
 <a href="/compare/">Compare</a>
-<a href="/guides/watches-under-40mm/">Guides</a>
+<a href="/guides/">Guides</a>
+<a href="/lug-width/">Lug Widths</a>
 <a href="/about/">About</a>
 </nav>
 </div>
 </header>
+<main id="main" tabindex="-1">
 {% block body %}{% endblock %}
+</main>
 <footer class="site-footer">
 <div class="container">
 <div class="footer-grid">
@@ -766,9 +841,12 @@ gtag('config', '{{ ga_id }}');
 <a href="/guides/thinnest-dive-watches/">Thinnest Divers</a>
 <a href="/guides/best-watches-for-small-wrists/">Small Wrists</a>
 <a href="/guides/watches-40-42mm/">40-42mm Watches</a>
+<a href="/guides/">All Guides</a>
 </div>
 <div class="footer-col">
 <h4>Tools</h4>
+<a href="/compare/">Compare Watches</a>
+<a href="/lug-width/">All Lug Widths</a>
 <a href="/lug-width/20mm/">Lug Width: 20mm</a>
 <a href="/lug-width/22mm/">Lug Width: 22mm</a>
 <a href="/lug-width/18mm/">Lug Width: 18mm</a>
@@ -861,7 +939,7 @@ HOME_TEMPLATE = r"""{% extends "base.html" %}
 <div class="card-grid">
 {% for w in latest[:8] %}
 <div class="card">
-<h3><a href="/{{ w.brand_slug }}/{{ w.collection_slug }}/{{ w.ref_slug }}/">{{ w.brand }} {{ w.name }}</a></h3>
+<h3><a href="/{{ w.brand_slug }}/{{ w.collection_slug }}/{{ w.ref_slug }}/">{{ w.full_name }}</a></h3>
 <p>{{ w.dims }}</p>
 <div class="card-meta">Ref. {{ w.reference }}</div>
 </div>
@@ -907,7 +985,7 @@ BRAND_TEMPLATE = r"""{% extends "base.html" %}
 <section>
 <div class="container">
 <h2 class="section-title">All {{ brand.brand }} <span>Watches</span></h2>
-<div class="table-wrap">
+<div class="table-wrap"><div class="table-scroll">
 <table class="specs-table" id="brand-table">
 <thead>
 <tr>
@@ -934,7 +1012,7 @@ BRAND_TEMPLATE = r"""{% extends "base.html" %}
 {% endfor %}
 </tbody>
 </table>
-</div>
+</div></div>
 </div>
 </section>
 {% endblock %}
@@ -949,7 +1027,7 @@ COLLECTION_TEMPLATE = r"""{% extends "base.html" %}
 <div class="container">
 <div class="breadcrumbs"><a href="/">Home</a> <span>/</span> <a href="/{{ brand_slug }}/">{{ brand }}</a> <span>/</span> {{ collection }}</div>
 <div class="page-header">
-<h1>{{ brand }} {{ collection }} Dimensions</h1>
+<h1>{{ collection_full }} Dimensions</h1>
 <p class="subtitle">{{ watch_count }} reference{{ 's' if watch_count != 1 else '' }} &mdash; {{ dia_range }} diameter</p>
 </div>
 </div>
@@ -961,7 +1039,8 @@ COLLECTION_TEMPLATE = r"""{% extends "base.html" %}
 <div class="stat-box"><div class="stat-num">{{ dia_max }}</div><div class="stat-label">Max Diameter</div></div>
 <div class="stat-box"><div class="stat-num">{{ thickness_range }}</div><div class="stat-label">Thickness Range</div></div>
 </div>
-<div class="table-wrap">
+<h2 class="section-title">All {{ collection }} <span>References</span></h2>
+<div class="table-wrap"><div class="table-scroll">
 <table class="specs-table" id="coll-table">
 <thead>
 <tr>
@@ -990,7 +1069,7 @@ COLLECTION_TEMPLATE = r"""{% extends "base.html" %}
 {% endfor %}
 </tbody>
 </table>
-</div>
+</div></div>
 </div>
 </section>
 {% endblock %}
@@ -1005,7 +1084,7 @@ REFERENCE_TEMPLATE = r"""{% extends "base.html" %}
 <div class="container">
 <div class="breadcrumbs"><a href="/">Home</a> <span>/</span> <a href="/{{ w.brand_slug }}/">{{ w.brand }}</a> <span>/</span> <a href="/{{ w.brand_slug }}/{{ w.collection_slug }}/">{{ w.collection }}</a> <span>/</span> {{ w.reference }}</div>
 <div class="page-header">
-<h1>{{ w.brand }} {{ w.name }} ({{ w.reference }}) Dimensions</h1>
+<h1>{{ w.name_with_ref }} Dimensions</h1>
 <p class="subtitle">{{ w.collection }} &mdash; Complete specifications and wrist fit guide</p>
 </div>
 </div>
@@ -1017,7 +1096,7 @@ REFERENCE_TEMPLATE = r"""{% extends "base.html" %}
 <div class="spec-row"><div class="spec-label">Lug-to-Lug</div><div class="spec-value">{{ dims.lug_to_lug }}</div></div>
 <div class="spec-row"><div class="spec-label">Thickness</div><div class="spec-value">{{ dims.thickness }}</div></div>
 <div class="spec-row"><div class="spec-label">Lug Width</div><div class="spec-value">{{ dims.lug_width }}</div></div>
-{% if dims.weight_bracelet %}<div class="spec-row"><div class="spec-label">Weight (on bracelet)</div><div class="spec-value">{{ dims.weight_bracelet }}</div></div>{% endif %}
+{% if dims.weight_bracelet %}<div class="spec-row"><div class="spec-label">Weight</div><div class="spec-value">{{ dims.weight_bracelet }}</div></div>{% endif %}
 {% if dims.weight_head %}<div class="spec-row"><div class="spec-label">Weight (head only)</div><div class="spec-value">{{ dims.weight_head }}</div></div>{% endif %}
 </div>
 </div>
@@ -1073,10 +1152,10 @@ REFERENCE_TEMPLATE = r"""{% extends "base.html" %}
 <div class="wrist-fit">
 <h3>Wrist Fit Guide</h3>
 {% if wrist_fit_data %}
-<p>With a lug-to-lug distance of {{ dims.lug_to_lug }}, the {{ w.brand }} {{ w.name }} fits wrists {{ wrist_fit_data[0] }} ({{ wrist_fit_data[1] }}) and larger comfortably.</p>
+<p>With a lug-to-lug distance of {{ dims.lug_to_lug }}, the {{ w.full_name }} fits wrists {{ wrist_fit_data[0] }} ({{ wrist_fit_data[1] }}) and larger comfortably.</p>
 {% endif %}
 {% if similar_l2l %}
-<p style="margin-top:.5rem"><strong>Wears similar to:</strong> {% for s in similar_l2l %}{{ s.brand }} {{ s.name }} ({{ s.reference }}){{ ', ' if not loop.last else '' }}{% endfor %}</p>
+<p style="margin-top:.5rem"><strong>Wears similar to:</strong> {% for s in similar_l2l %}<a href="/{{ s.brand_slug }}/{{ s.collection_slug }}/{{ s.ref_slug }}/">{{ s.name_with_ref }}</a>{{ ', ' if not loop.last else '' }}{% endfor %}</p>
 {% endif %}
 </div>
 </div>
@@ -1085,8 +1164,7 @@ REFERENCE_TEMPLATE = r"""{% extends "base.html" %}
 <div class="container">
 <h2 class="section-title">Where to <span>Buy</span></h2>
 <div class="buy-links">
-<a href="{{ affiliate.ebay }}" class="buy-link" rel="sponsored nofollow noopener" target="_blank">eBay</a>
-<a href="{{ affiliate.chrono24 }}" class="buy-link secondary" rel="sponsored nofollow noopener" target="_blank">Chrono24</a>
+<a href="{{ affiliate.chrono24 }}" class="buy-link" rel="sponsored nofollow noopener" target="_blank">Chrono24</a>
 <a href="{{ affiliate.jomashop }}" class="buy-link secondary" rel="sponsored nofollow noopener" target="_blank">Jomashop</a>
 <a href="{{ affiliate.amazon }}" class="buy-link secondary" rel="sponsored nofollow noopener" target="_blank">Amazon</a>
 </div>
@@ -1100,7 +1178,7 @@ REFERENCE_TEMPLATE = r"""{% extends "base.html" %}
 <div class="related-grid">
 {% for r in related[:6] %}
 <div class="card">
-<h3><a href="/{{ r.brand_slug }}/{{ r.collection_slug }}/{{ r.ref_slug }}/">{{ r.brand }} {{ r.name }}</a></h3>
+<h3><a href="/{{ r.brand_slug }}/{{ r.collection_slug }}/{{ r.ref_slug }}/">{{ r.full_name }}</a></h3>
 <p>{{ r.dims }}</p>
 <div class="card-meta">Ref. {{ r.reference }}</div>
 </div>
@@ -1137,10 +1215,10 @@ REFERENCE_TEMPLATE = r"""{% extends "base.html" %}
 COMPARE_TEMPLATE = r"""{% extends "base.html" %}
 {% block body %}
 <div class="container">
-<div class="breadcrumbs"><a href="/">Home</a> <span>/</span> <a href="/compare/">Compare</a> <span>/</span> {{ w1.brand }} {{ w1.name }} vs {{ w2.brand }} {{ w2.name }}</div>
+<div class="breadcrumbs"><a href="/">Home</a> <span>/</span> <a href="/compare/">Compare</a> <span>/</span> {{ w1.short_name }} vs {{ w2.short_name }}</div>
 <div class="page-header">
-<h1>{{ w1.brand }} {{ w1.name }} vs {{ w2.brand }} {{ w2.name }}</h1>
-<p class="subtitle">Side-by-side dimension comparison — Ref. {{ w1.reference }} vs {{ w2.reference }}</p>
+<h1>{{ w1.short_name }} vs {{ w2.short_name }}</h1>
+<p class="subtitle">Side-by-side dimension comparison — Ref. {{ w1.reference }} vs Ref. {{ w2.reference }}</p>
 </div>
 </div>
 <section>
@@ -1153,9 +1231,9 @@ COMPARE_TEMPLATE = r"""{% extends "base.html" %}
 <section>
 <div class="container">
 <h2 class="section-title">Dimensions <span>Compared</span></h2>
-<div class="table-wrap">
+<div class="table-wrap"><div class="table-scroll">
 <table class="specs-table compare-table">
-<thead><tr><th>Spec</th><th>{{ w1.brand }} {{ w1.name }}</th><th>{{ w2.brand }} {{ w2.name }}</th></tr></thead>
+<thead><tr><th>Spec</th><th>{{ w1.short_name }}</th><th>{{ w2.short_name }}</th></tr></thead>
 <tbody>
 {% for row in spec_rows %}
 <tr{% if row.diff %} class="highlight"{% endif %}>
@@ -1166,7 +1244,7 @@ COMPARE_TEMPLATE = r"""{% extends "base.html" %}
 {% endfor %}
 </tbody>
 </table>
-</div>
+</div></div>
 </div>
 </section>
 <section>
@@ -1180,17 +1258,19 @@ COMPARE_TEMPLATE = r"""{% extends "base.html" %}
 <h2 class="section-title">Where to <span>Buy</span></h2>
 <div class="compare-grid">
 <div class="compare-col">
-<h3>{{ w1.brand }} {{ w1.name }}</h3>
+<h3>{{ w1.short_name }}</h3>
 <div class="buy-links" style="justify-content:center">
-<a href="{{ aff1.ebay }}" class="buy-link" rel="sponsored nofollow noopener" target="_blank">eBay</a>
-<a href="{{ aff1.chrono24 }}" class="buy-link secondary" rel="sponsored nofollow noopener" target="_blank">Chrono24</a>
+<a href="{{ aff1.chrono24 }}" class="buy-link" rel="sponsored nofollow noopener" target="_blank">Chrono24</a>
+<a href="{{ aff1.jomashop }}" class="buy-link secondary" rel="sponsored nofollow noopener" target="_blank">Jomashop</a>
+<a href="{{ aff1.amazon }}" class="buy-link secondary" rel="sponsored nofollow noopener" target="_blank">Amazon</a>
 </div>
 </div>
 <div class="compare-col">
-<h3>{{ w2.brand }} {{ w2.name }}</h3>
+<h3>{{ w2.short_name }}</h3>
 <div class="buy-links" style="justify-content:center">
-<a href="{{ aff2.ebay }}" class="buy-link" rel="sponsored nofollow noopener" target="_blank">eBay</a>
-<a href="{{ aff2.chrono24 }}" class="buy-link secondary" rel="sponsored nofollow noopener" target="_blank">Chrono24</a>
+<a href="{{ aff2.chrono24 }}" class="buy-link" rel="sponsored nofollow noopener" target="_blank">Chrono24</a>
+<a href="{{ aff2.jomashop }}" class="buy-link secondary" rel="sponsored nofollow noopener" target="_blank">Jomashop</a>
+<a href="{{ aff2.amazon }}" class="buy-link secondary" rel="sponsored nofollow noopener" target="_blank">Amazon</a>
 </div>
 </div>
 </div>
@@ -1200,7 +1280,7 @@ COMPARE_TEMPLATE = r"""{% extends "base.html" %}
 {% endblock %}
 {% block head_extra %}
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://dialsize.com/"},{"@type":"ListItem","position":2,"name":"Compare","item":"https://dialsize.com/compare/"},{"@type":"ListItem","position":3,"name":"{{ w1.brand }} {{ w1.name }} vs {{ w2.brand }} {{ w2.name }}","item":"{{ canonical }}"}]}
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://dialsize.com/"},{"@type":"ListItem","position":2,"name":"Compare","item":"https://dialsize.com/compare/"},{"@type":"ListItem","position":3,"name":"{{ w1.short_name }} vs {{ w2.short_name }}","item":"{{ canonical }}"}]}
 </script>
 {% endblock %}"""
 
@@ -1246,10 +1326,83 @@ COMPARE_INDEX_TEMPLATE = r"""{% extends "base.html" %}
 </script>
 {% endblock %}"""
 
+GUIDES_INDEX_TEMPLATE = r"""{% extends "base.html" %}
+{% block body %}
+<div class="container">
+<div class="breadcrumbs"><a href="/">Home</a> <span>/</span> Guides</div>
+<div class="page-header">
+<h1>Watch Size Guides</h1>
+<p class="subtitle">{{ guides|length }} guides to finding a watch that fits &mdash; by diameter, thickness, weight, and wrist size</p>
+</div>
+</div>
+<section>
+<div class="container">
+<h2 class="section-title">All <span>Guides</span></h2>
+<div class="card-grid">
+{% for g in guides %}
+<div class="card">
+<h3><a href="/guides/{{ g.slug }}/">{{ g.title }}</a></h3>
+<p>{{ g.desc }}</p>
+<div class="card-meta">{{ g.count }} watch{{ 'es' if g.count != 1 else '' }}</div>
+</div>
+{% endfor %}
+</div>
+</div>
+</section>
+{% endblock %}
+{% block head_extra %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CollectionPage","name":"Watch Size Guides","description":"{{ meta_desc }}","url":"{{ canonical }}","isPartOf":{"@type":"WebSite","name":"DialSize","url":"https://dialsize.com/"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://dialsize.com/"},{"@type":"ListItem","position":2,"name":"Guides","item":"https://dialsize.com/guides/"}]}
+</script>
+{% endblock %}"""
+
+LUG_WIDTH_INDEX_TEMPLATE = r"""{% extends "base.html" %}
+{% block body %}
+<div class="container">
+<div class="breadcrumbs"><a href="/">Home</a> <span>/</span> Lug Width</div>
+<div class="page-header">
+<h1>Watches by Lug Width</h1>
+<p class="subtitle">Find every watch that fits your straps &mdash; {{ total }} watches across {{ widths|length }} lug widths</p>
+</div>
+</div>
+<section>
+<div class="container">
+<h2 class="section-title">All Lug <span>Widths</span></h2>
+<div class="size-grid">
+{% for lw in widths %}
+<a href="/lug-width/{{ lw.width }}mm/" class="size-card">
+<div class="size-range">{{ lw.width }}mm</div>
+<div class="size-label">{{ lw.count }} watch{{ 'es' if lw.count != 1 else '' }}</div>
+</a>
+{% endfor %}
+</div>
+{% if integrated %}
+<p class="affiliate-note">{{ integrated }} watch{{ 'es' if integrated != 1 else '' }} with integrated bracelets (no standard lug width) are not listed.</p>
+{% endif %}
+</div>
+</section>
+<section>
+<div class="container">
+<h2 class="section-title">Why Lug Width <span>Matters</span></h2>
+<div class="guide-content">
+<p>Lug width is the distance between the lugs where the strap or bracelet attaches. It determines which straps fit your watch: a 20mm watch needs a 20mm strap. 20mm and 22mm are the most common sizes, so watches with those lug widths have the widest choice of aftermarket straps.</p>
+</div>
+</div>
+</section>
+{% endblock %}
+{% block head_extra %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://dialsize.com/"},{"@type":"ListItem","position":2,"name":"Lug Width","item":"https://dialsize.com/lug-width/"}]}
+</script>
+{% endblock %}"""
+
 LUG_WIDTH_TEMPLATE = r"""{% extends "base.html" %}
 {% block body %}
 <div class="container">
-<div class="breadcrumbs"><a href="/">Home</a> <span>/</span> Lug Width <span>/</span> {{ width }}mm</div>
+<div class="breadcrumbs"><a href="/">Home</a> <span>/</span> <a href="/lug-width/">Lug Width</a> <span>/</span> {{ width }}mm</div>
 <div class="page-header">
 <div class="lug-width-header">
 <h1>Watches with {{ width }}mm Lug Width</h1>
@@ -1267,7 +1420,7 @@ LUG_WIDTH_TEMPLATE = r"""{% extends "base.html" %}
 <section>
 <div class="container">
 <h2 class="section-title">All Watches &mdash; <span>{{ width }}mm</span></h2>
-<div class="table-wrap">
+<div class="table-wrap"><div class="table-scroll">
 <table class="specs-table" id="lw-table">
 <thead>
 <tr>
@@ -1292,7 +1445,7 @@ LUG_WIDTH_TEMPLATE = r"""{% extends "base.html" %}
 {% endfor %}
 </tbody>
 </table>
-</div>
+</div></div>
 </div>
 </section>
 {% endblock %}
@@ -1305,7 +1458,7 @@ LUG_WIDTH_TEMPLATE = r"""{% extends "base.html" %}
 GUIDE_TEMPLATE = r"""{% extends "base.html" %}
 {% block body %}
 <div class="container">
-<div class="breadcrumbs"><a href="/">Home</a> <span>/</span> Guides <span>/</span> {{ title }}</div>
+<div class="breadcrumbs"><a href="/">Home</a> <span>/</span> <a href="/guides/">Guides</a> <span>/</span> {{ title }}</div>
 <div class="page-header">
 <h1>{{ title }}</h1>
 </div>
@@ -1321,7 +1474,7 @@ GUIDE_TEMPLATE = r"""{% extends "base.html" %}
 <section>
 <div class="container">
 <h2 class="section-title">Qualifying <span>Watches</span> ({{ watches|length }})</h2>
-<div class="table-wrap">
+<div class="table-wrap"><div class="table-scroll">
 <table class="specs-table" id="guide-table">
 <thead>
 <tr>
@@ -1348,7 +1501,7 @@ GUIDE_TEMPLATE = r"""{% extends "base.html" %}
 {% endfor %}
 </tbody>
 </table>
-</div>
+</div></div>
 </div>
 </section>
 {% endblock %}
@@ -1410,6 +1563,7 @@ class SiteGenerator:
         self.env.globals["year"] = self.year
         self.env.globals["ga_id"] = GA_ID
         self.env.globals["adsense_pub"] = ADSENSE_PUB
+        self.env.globals["og_image"] = OG_IMAGE
 
         # Register templates
         self._templates = {
@@ -1421,6 +1575,8 @@ class SiteGenerator:
             "compare.html": COMPARE_TEMPLATE,
             "compare_index.html": COMPARE_INDEX_TEMPLATE,
             "lug_width.html": LUG_WIDTH_TEMPLATE,
+            "lug_width_index.html": LUG_WIDTH_INDEX_TEMPLATE,
+            "guides_index.html": GUIDES_INDEX_TEMPLATE,
             "guide.html": GUIDE_TEMPLATE,
             "static_page.html": STATIC_PAGE_TEMPLATE,
             "error.html": ERROR_TEMPLATE,
@@ -1487,7 +1643,9 @@ class SiteGenerator:
         self.gen_compare_pages()
         self.gen_compare_index()
         self.gen_lug_width_pages()
+        self.gen_lug_width_index()
         self.gen_guide_pages()
+        self.gen_guides_index()
         self.gen_static_pages()
         self.gen_404()
         self.gen_sitemap()
@@ -1515,8 +1673,8 @@ class SiteGenerator:
         for w1, w2, slug in self.comparisons[:8]:
             popular.append({
                 "slug": slug,
-                "w1_name": f"{w1['brand']} {w1.get('name', w1['reference'])}",
-                "w2_name": f"{w2['brand']} {w2.get('name', w2['reference'])}",
+                "w1_name": w1["short_name"],
+                "w2_name": w2["short_name"],
                 "w1_dia": safe_float(w1.get("dimensions", {}).get("diameter_mm")),
                 "w2_dia": safe_float(w2.get("dimensions", {}).get("diameter_mm")),
             })
@@ -1530,7 +1688,7 @@ class SiteGenerator:
                 "brand_slug": w["brand_slug"],
                 "collection_slug": w.get("collection_slug", ""),
                 "ref_slug": ref_slug(w["reference"]),
-                "name": w.get("name", w["reference"]),
+                "full_name": w["full_name"],
                 "reference": w["reference"],
                 "dims": dims,
             })
@@ -1583,11 +1741,11 @@ class SiteGenerator:
                     "brand_slug": bs,
                     "reference": w["reference"],
                     "ref_slug": ref_slug(w["reference"]),
-                    "name": w.get("name", ""),
+                    "name": w["name"],
                     "diameter": fmt_mm(d.get("diameter_mm")),
                     "lug_to_lug": fmt_mm(d.get("lug_to_lug_mm")),
                     "thickness": fmt_mm(d.get("thickness_mm")),
-                    "lug_width": fmt_mm(d.get("lug_width_mm")) if d.get("lug_width_mm") else "N/A",
+                    "lug_width": fmt_lug_width(w),
                 })
 
             canonical = self.url(f"{bs}/index.html")
@@ -1619,23 +1777,24 @@ class SiteGenerator:
                 rows.append({
                     "reference": w["reference"],
                     "ref_slug": ref_slug(w["reference"]),
-                    "name": w.get("name", ""),
+                    "name": w["name"],
                     "diameter": fmt_mm(d.get("diameter_mm")),
                     "lug_to_lug": fmt_mm(d.get("lug_to_lug_mm")),
                     "thickness": fmt_mm(d.get("thickness_mm")),
-                    "lug_width": fmt_mm(d.get("lug_width_mm")) if d.get("lug_width_mm") else "N/A",
+                    "lug_width": fmt_lug_width(w),
                     "material": c.get("material", "N/A"),
                     "wr": fmt_m(c.get("water_resistance_m")) if c.get("water_resistance_m") else "N/A",
                 })
 
             canonical = self.url(f"{bs}/{cs}/index.html")
             html = self.env.get_template("collection.html").render(
-                meta_title=f"{brand_name} {coll_name} Dimensions & Specs | DialSize",
-                meta_desc=f"All {brand_name} {coll_name} dimensions compared. {len(coll_watches)} references with diameter, lug-to-lug, and thickness specs.",
+                meta_title=f"{with_brand(brand_name, coll_name)} Dimensions & Specs | DialSize",
+                meta_desc=f"All {with_brand(brand_name, coll_name)} dimensions compared. {len(coll_watches)} references with diameter, lug-to-lug, and thickness specs.",
                 canonical=canonical,
                 brand=brand_name,
                 brand_slug=bs,
                 collection=coll_name,
+                collection_full=with_brand(brand_name, coll_name),
                 coll_slug=cs,
                 watches=rows,
                 watch_count=len(coll_watches),
@@ -1670,7 +1829,7 @@ class SiteGenerator:
                 "diameter": fmt_mm(d.get("diameter_mm")),
                 "lug_to_lug": fmt_mm(d.get("lug_to_lug_mm")),
                 "thickness": fmt_mm(d.get("thickness_mm")),
-                "lug_width": fmt_mm(d.get("lug_width_mm")) if d.get("lug_width_mm") else "N/A",
+                "lug_width": fmt_lug_width(w),
                 "weight_bracelet": fmt_g(d.get("weight_bracelet_g")) if d.get("weight_bracelet_g") else None,
                 "weight_head": fmt_g(d.get("weight_head_g")) if d.get("weight_head_g") else None,
             }
@@ -1719,9 +1878,10 @@ class SiteGenerator:
                     other_l2l = safe_float(other.get("dimensions", {}).get("lug_to_lug_mm"))
                     if other_l2l and abs(my_l2l - other_l2l) <= 1.0:
                         similar.append({
-                            "brand": other["brand"],
-                            "name": other.get("name", other["reference"]),
-                            "reference": other["reference"],
+                            "brand_slug": other["brand_slug"],
+                            "collection_slug": other.get("collection_slug", ""),
+                            "ref_slug": ref_slug(other["reference"]),
+                            "name_with_ref": other["name_with_ref"],
                         })
                     if len(similar) >= 5:
                         break
@@ -1738,7 +1898,7 @@ class SiteGenerator:
                         "brand_slug": other["brand_slug"],
                         "collection_slug": other.get("collection_slug", ""),
                         "ref_slug": ref_slug(other["reference"]),
-                        "name": other.get("name", other["reference"]),
+                        "full_name": other["full_name"],
                         "reference": other["reference"],
                         "dims": f"{fmt_mm(od.get('diameter_mm'))} / {fmt_mm(od.get('thickness_mm'))} thick",
                     })
@@ -1754,39 +1914,29 @@ class SiteGenerator:
                 od = o.get("dimensions", {})
                 compare_links.append({
                     "slug": ce["slug"],
-                    "other_name": f"{o['brand']} {o.get('name', o['reference'])}",
+                    "other_name": o["short_name"],
                     "other_dims": f"{fmt_mm(od.get('diameter_mm'))} / {fmt_mm(od.get('thickness_mm'))} thick",
                 })
 
-            aff = {
-                "ebay": affiliate_ebay(w["brand"], w.get("name", ""), w["reference"]),
-                "jomashop": affiliate_jomashop(w["brand"], w.get("name", "")),
-                "chrono24": affiliate_chrono24(w["brand"], w["reference"]),
-                "amazon": affiliate_amazon(w["brand"], w.get("name", "")),
-            }
+            aff = affiliate_links(w)
 
-            # Schema.org Product
+            # Schema.org Product (no offers: the site doesn't sell watches)
             schema = {
                 "@context": "https://schema.org",
                 "@type": "Product",
-                "name": f"{w['brand']} {w.get('name', w['reference'])}",
+                "name": w["full_name"],
                 "brand": {"@type": "Brand", "name": w["brand"]},
-                "description": f"{w['brand']} {w.get('name', w['reference'])} — {fmt_mm(d.get('diameter_mm'))} diameter, {fmt_mm(d.get('thickness_mm'))} thick, {fmt_mm(d.get('lug_to_lug_mm'))} lug-to-lug.",
+                "description": f"{w['full_name']} — {fmt_mm(d.get('diameter_mm'))} diameter, {fmt_mm(d.get('thickness_mm'))} thick, {fmt_mm(d.get('lug_to_lug_mm'))} lug-to-lug.",
                 "sku": w["reference"],
+                "mpn": w["reference"],
                 "category": "Watches",
+                "image": OG_IMAGE,
             }
-            if ctx.get("msrp_usd"):
-                schema["offers"] = {
-                    "@type": "Offer",
-                    "price": ctx["msrp_usd"],
-                    "priceCurrency": "USD",
-                    "availability": "https://schema.org/InStock",
-                }
 
             canonical = self.url(f"{bs}/{cs}/{rs}/index.html")
             html = self.env.get_template("reference.html").render(
-                meta_title=f"{w['brand']} {w.get('name', w['reference'])} ({w['reference']}) Dimensions | DialSize",
-                meta_desc=f"{w['brand']} {w.get('name', w['reference'])} dimensions: {fmt_mm(d.get('diameter_mm'))} diameter, {fmt_mm(d.get('lug_to_lug_mm'))} lug-to-lug, {fmt_mm(d.get('thickness_mm'))} thick. Complete specs and wrist fit guide.",
+                meta_title=f"{w['name_with_ref']} Dimensions | DialSize",
+                meta_desc=f"{w['full_name']} dimensions: {fmt_mm(d.get('diameter_mm'))} diameter, {fmt_mm(d.get('lug_to_lug_mm'))} lug-to-lug, {fmt_mm(d.get('thickness_mm'))} thick. Complete specs and wrist fit guide.",
                 canonical=canonical,
                 w=w,
                 dims=dims,
@@ -1807,7 +1957,8 @@ class SiteGenerator:
             self.search_index.append({
                 "brand": w["brand"],
                 "collection": w.get("collection", ""),
-                "name": w.get("name", ""),
+                "name": w["name"],
+                "title": w["full_name"],
                 "reference": w["reference"],
                 "url": f"/{bs}/{cs}/{rs}/",
             })
@@ -1870,22 +2021,25 @@ class SiteGenerator:
             comp_svg = generate_compare_svg(w1, w2)
             verdict = compare_verdict(w1, w2)
 
-            aff1 = {
-                "ebay": affiliate_ebay(w1["brand"], w1.get("name", ""), w1["reference"]),
-                "chrono24": affiliate_chrono24(w1["brand"], w1["reference"]),
-            }
-            aff2 = {
-                "ebay": affiliate_ebay(w2["brand"], w2.get("name", ""), w2["reference"]),
-                "chrono24": affiliate_chrono24(w2["brand"], w2["reference"]),
-            }
+            aff1 = affiliate_links(w1)
+            aff2 = affiliate_links(w2)
 
-            n1 = f"{w1['brand']} {w1.get('name', w1['reference'])}"
-            n2 = f"{w2['brand']} {w2.get('name', w2['reference'])}"
+            def dim_pair(key, label):
+                a, b = d1.get(key), d2.get(key)
+                if not a or not b:
+                    return None
+                return f"{safe_float(a):g} vs {safe_float(b):g} mm {label}"
+
+            dims_text = ", ".join(p for p in (
+                dim_pair("diameter_mm", "diameter"),
+                dim_pair("lug_to_lug_mm", "lug-to-lug"),
+                dim_pair("thickness_mm", "thick"),
+            ) if p)
 
             canonical = self.url(f"compare/{slug}/index.html")
             html = self.env.get_template("compare.html").render(
-                meta_title=f"{n1} vs {n2} — Size Comparison | DialSize",
-                meta_desc=f"Compare {n1} vs {n2} dimensions side by side. Diameter, thickness, lug-to-lug, weight and more.",
+                meta_title=f"{w1['short_with_ref']} vs {w2['short_with_ref']} Size Comparison | DialSize",
+                meta_desc=f"{w1['short_with_ref']} vs {w2['short_with_ref']}: {dims_text}. Side-by-side size comparison with overlay diagram and full specs.",
                 canonical=canonical,
                 w1=w1,
                 w2=w2,
@@ -1916,8 +2070,8 @@ class SiteGenerator:
                 group_key = " vs ".join(sorted([b1, b2]))
             brand_groups[group_key].append({
                 "slug": slug,
-                "w1_name": f"{b1} {w1.get('name', w1['reference'])}",
-                "w2_name": f"{b2} {w2.get('name', w2['reference'])}",
+                "w1_name": w1["short_with_ref"],
+                "w2_name": w2["short_with_ref"],
                 "w1_dia": f"{safe_float(d1.get('diameter_mm')):.1f}",
                 "w2_dia": f"{safe_float(d2.get('diameter_mm')):.1f}",
             })
@@ -1956,7 +2110,7 @@ class SiteGenerator:
                     "brand_slug": w["brand_slug"],
                     "collection_slug": w.get("collection_slug", ""),
                     "ref_slug": ref_slug(w["reference"]),
-                    "name": w.get("name", w["reference"]),
+                    "name": w["name"],
                     "reference": w["reference"],
                     "diameter": fmt_mm(d.get("diameter_mm")),
                     "lug_to_lug": fmt_mm(d.get("lug_to_lug_mm")),
@@ -1975,6 +2129,41 @@ class SiteGenerator:
                 popularity=popularity,
             )
             self.write(f"lug-width/{width}mm/index.html", html)
+
+    # -- Lug width index page --
+    def gen_lug_width_index(self):
+        print("Generating lug width index page...")
+        widths = [{"width": width, "count": len(ws)} for width, ws in sorted(self.lug_widths.items())]
+        total = sum(lw["count"] for lw in widths)
+        integrated = sum(1 for w in self.watches if w.get("integrated_bracelet"))
+        canonical = self.url("lug-width/index.html")
+        html = self.env.get_template("lug_width_index.html").render(
+            meta_title="Watches by Lug Width — Strap Size Finder | DialSize",
+            meta_desc=f"Browse {total} watches by lug width, from {widths[0]['width']}mm to {widths[-1]['width']}mm. Find every watch that fits your straps.",
+            canonical=canonical,
+            widths=widths,
+            total=total,
+            integrated=integrated,
+        )
+        self.write("lug-width/index.html", html)
+
+    # -- Guides index page --
+    def gen_guides_index(self):
+        print("Generating guides index page...")
+        guides = [{
+            "slug": g["slug"],
+            "title": g["title"],
+            "desc": g.get("meta_desc", ""),
+            "count": sum(1 for w in self.watches if g["filter"](w)),
+        } for g in GUIDES]
+        canonical = self.url("guides/index.html")
+        html = self.env.get_template("guides_index.html").render(
+            meta_title="Watch Size Guides — Find a Watch That Fits | DialSize",
+            meta_desc=f"{len(guides)} watch size guides: watches under 40mm, thinnest divers, lightest titanium watches, picks for small wrists, and more.",
+            canonical=canonical,
+            guides=guides,
+        )
+        self.write("guides/index.html", html)
 
     # -- Guide pages --
     def gen_guide_pages(self):
@@ -1995,12 +2184,12 @@ class SiteGenerator:
                     "brand_slug": w["brand_slug"],
                     "collection_slug": w.get("collection_slug", ""),
                     "ref_slug": ref_slug(w["reference"]),
-                    "name": w.get("name", w["reference"]),
+                    "name": w["name"],
                     "reference": w["reference"],
                     "diameter": fmt_mm(d.get("diameter_mm")),
                     "lug_to_lug": fmt_mm(d.get("lug_to_lug_mm")),
                     "thickness": fmt_mm(d.get("thickness_mm")),
-                    "lug_width": fmt_mm(d.get("lug_width_mm")) if d.get("lug_width_mm") else "N/A",
+                    "lug_width": fmt_lug_width(w),
                 })
 
             # FAQ
@@ -2069,16 +2258,18 @@ class SiteGenerator:
 
         # About
         about_content = """<h2>What is DialSize?</h2>
-<p>DialSize is a comprehensive watch dimensions database built for watch enthusiasts, buyers, and researchers. We catalog the exact measurements of hundreds of watches so you can compare sizes, check wrist fit, and make informed purchasing decisions — all without visiting a boutique.</p>
+<p>DialSize is a watch dimensions database built for watch enthusiasts, buyers, and researchers. We catalog the measurements of watches from major brands so you can compare sizes, check wrist fit, and make informed purchasing decisions — all without visiting a boutique.</p>
 <h2>Why Dimensions Matter</h2>
 <p>Watch brands advertise diameter, but that number alone does not tell you how a watch wears. Lug-to-lug distance determines whether a watch overhangs your wrist. Thickness determines how it sits under a shirt cuff. Lug width determines strap compatibility. We track all of these.</p>
 <h2>Our Data</h2>
-<p>All dimensions are sourced from manufacturer specifications, verified against multiple independent sources, and regularly updated. Where manufacturer data is unavailable, we note the source. Each watch entry includes the date it was last verified.</p>
+<p>Dimensions are taken from manufacturer specifications. Each watch page lists diameter, lug-to-lug, thickness, and lug width, along with case, movement, and water resistance details where the manufacturer publishes them. If a measurement is not published, we show it as unavailable rather than estimating it.</p>
+<p>Spotted an error or have a correction? Let us know using the contact details below and we will update the entry.</p>
 <h2>How to Use DialSize</h2>
 <ul>
 <li><strong>Search:</strong> Use the search bar to find any watch by brand, model, or reference number.</li>
-<li><strong>Compare:</strong> Our comparison pages put two watches side by side with differences highlighted.</li>
-<li><strong>Guides:</strong> Browse our curated guides for specific needs — small wrists, thin watches, particular lug widths.</li>
+<li><strong>Compare:</strong> Our <a href="/compare/">comparison pages</a> put two watches side by side with differences highlighted.</li>
+<li><strong>Guides:</strong> Browse our <a href="/guides/">guides</a> for specific needs — small wrists, thin watches, particular sizes.</li>
+<li><strong>Lug Widths:</strong> Find every watch that fits a given strap size on our <a href="/lug-width/">lug width pages</a>.</li>
 <li><strong>Wrist Fit:</strong> Each watch page includes a wrist fit estimate based on lug-to-lug distance.</li>
 </ul>
 <h2>Contact</h2>
@@ -2096,13 +2287,13 @@ class SiteGenerator:
 
         # Affiliate disclosure
         affiliate_content = """<h2>FTC Disclosure</h2>
-<p>DialSize.com is a participant in affiliate programs including, but not limited to, the eBay Partner Network. This means that when you click certain links on our site and make a purchase, we may earn a commission at no additional cost to you.</p>
+<p>DialSize.com may earn a commission when you click certain links on our site and make a purchase, at no additional cost to you.</p>
 <h2>How Affiliate Links Work</h2>
-<p>On our watch reference pages and comparison pages, you will find "Where to Buy" links to retailers such as eBay, Chrono24, Jomashop, and Amazon. These links contain tracking parameters that identify DialSize as the referral source. If you make a purchase through these links, the retailer pays us a small commission.</p>
+<p>On our watch reference pages and comparison pages, you will find "Where to Buy" links to retailers such as Chrono24, Jomashop, and Amazon. Some of these links may be affiliate links that identify DialSize as the referral source. If you make a purchase through an affiliate link, the retailer may pay us a small commission.</p>
 <h2>Our Commitment</h2>
 <ul>
 <li>Affiliate relationships do not influence our data, measurements, or editorial content.</li>
-<li>All dimensions and specifications are sourced from manufacturers and verified independently.</li>
+<li>All dimensions and specifications are taken from manufacturer specifications.</li>
 <li>We never recommend a watch because of its affiliate commission.</li>
 <li>All affiliate links are clearly marked with <code>rel="sponsored"</code> attributes.</li>
 </ul>
@@ -2125,7 +2316,7 @@ class SiteGenerator:
         html = self.env.get_template("error.html").render(
             meta_title="Page Not Found | DialSize",
             meta_desc="The page you requested was not found.",
-            canonical=SITE_URL + "/404.html",
+            canonical=None,
         )
         self.write("404.html", html)
 

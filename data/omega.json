@@ -1058,6 +1058,7 @@
         "weight_bracelet_g": 158,
         "weight_head_g": null
       },
+      "integrated_bracelet": true,
       "case": {
         "material": "Stainless Steel",
         "crystal": "Sapphire (domed, AR both sides)",
@@ -1098,6 +1099,7 @@
         "weight_bracelet_g": 145,
         "weight_head_g": null
       },
+      "integrated_bracelet": true,
       "case": {
         "material": "Stainless Steel",
         "crystal": "Sapphire (domed, AR both sides)",
@@ -1138,6 +1140,7 @@
         "weight_bracelet_g": 158,
         "weight_head_g": null
       },
+      "integrated_bracelet": true,
       "case": {
         "material": "Stainless Steel",
         "crystal": "Sapphire (domed, AR both sides)",
@@ -1178,6 +1181,7 @@
         "weight_bracelet_g": null,
         "weight_head_g": null
       },
+      "integrated_bracelet": true,
       "case": {
         "material": "Stainless Steel",
         "crystal": "Sapphire (domed, AR both sides)",
@@ -1218,6 +1222,7 @@
         "weight_bracelet_g": 145,
         "weight_head_g": null
       },
+      "integrated_bracelet": true,
       "case": {
         "material": "Stainless Steel",
         "crystal": "Sapphire (domed, AR both sides)",
@@ -1258,6 +1263,7 @@
         "weight_bracelet_g": 158,
         "weight_head_g": null
       },
+      "integrated_bracelet": true,
       "case": {
         "material": "Stainless Steel",
         "crystal": "Sapphire (domed, AR both sides)",
@@ -1298,6 +1304,7 @@
         "weight_bracelet_g": 172,
         "weight_head_g": null
       },
+      "integrated_bracelet": true,
       "case": {
         "material": "Stainless Steel",
         "crystal": "Sapphire (domed, AR both sides)",

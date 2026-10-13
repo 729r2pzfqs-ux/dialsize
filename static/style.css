@@ -1,5 +1,6 @@
 /* DialSize.com — Watch Dimensions Database */
 /* Color palette: Navy #1a1f36, Gold #c4a35a, Off-white #f8f7f4 */
+/* Gold (#c4a35a) is for accents on navy; on light backgrounds use --gold-text (WCAG AA). */
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -10,6 +11,7 @@
   --gold: #c4a35a;
   --gold-light: #d4b96a;
   --gold-dark: #a8893e;
+  --gold-text: #7d6020;
   --off-white: #f8f7f4;
   --white: #ffffff;
   --gray-100: #f0efe9;
@@ -20,7 +22,7 @@
   --gray-600: #444;
   --text: #1a1f36;
   --text-light: #555;
-  --text-muted: #888;
+  --text-muted: #666;
   --border: #e0dfd9;
   --shadow: rgba(26,31,54,0.08);
   --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -39,8 +41,31 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-a { color: var(--gold-dark); text-decoration: none; transition: color .15s; }
-a:hover { color: var(--gold); }
+a { color: var(--gold-text); text-decoration: none; transition: color .15s; }
+a:hover { color: var(--navy); text-decoration: underline; }
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  left: .5rem;
+  top: -3rem;
+  z-index: 1000;
+  background: var(--gold);
+  color: var(--navy);
+  padding: .5rem 1rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+}
+.skip-link:focus { top: .5rem; }
+main:focus { outline: none; }
+
+/* Keyboard focus */
+a:focus-visible, button:focus-visible, input:focus-visible, th[tabindex]:focus-visible {
+  outline: 2px solid var(--navy);
+  outline-offset: 2px;
+}
+.site-header :focus-visible, .hero :focus-visible, .site-footer :focus-visible,
+.wrist-fit :focus-visible, .specs-table th:focus-visible { outline-color: var(--gold); }
 
 img, svg { max-width: 100%; height: auto; }
 
@@ -104,7 +129,7 @@ img, svg { max-width: 100%; height: auto; }
   outline: none;
   transition: border-color .2s;
 }
-.search-wrap input::placeholder { color: var(--gray-400); }
+.search-wrap input::placeholder { color: var(--gray-300); }
 .search-wrap input:focus { border-color: var(--gold); background: rgba(255,255,255,.12); }
 .search-icon {
   position: absolute;
@@ -139,6 +164,7 @@ img, svg { max-width: 100%; height: auto; }
 }
 .search-results a:hover { background: var(--gray-100); }
 .search-results .sr-ref { color: var(--text-muted); font-family: var(--font-mono); font-size: .8rem; }
+.search-results .sr-empty { padding: .75rem 1rem; color: var(--text-muted); font-size: .85rem; }
 
 /* Section headings */
 .section-title {
@@ -147,7 +173,7 @@ img, svg { max-width: 100%; height: auto; }
   margin-bottom: 1rem;
   color: var(--navy);
 }
-.section-title span { color: var(--gold); }
+.section-title span { color: var(--gold-text); }
 
 section { padding: 2rem 0; }
 section + section { border-top: 1px solid var(--border); }
@@ -190,7 +216,7 @@ section + section { border-top: 1px solid var(--border); }
 .card:hover { border-color: var(--gold); box-shadow: 0 4px 12px var(--shadow); }
 .card h3 { font-size: 1rem; margin-bottom: .3rem; }
 .card h3 a { color: var(--navy); }
-.card h3 a:hover { color: var(--gold-dark); }
+.card h3 a:hover { color: var(--gold-text); }
 .card p { font-size: .85rem; color: var(--text-light); }
 .card .card-meta {
   font-size: .8rem;
@@ -277,7 +303,7 @@ section + section { border-top: 1px solid var(--border); }
 .specs-table tr:hover td { background: var(--gray-100); }
 .specs-table .mono { font-family: var(--font-mono); font-size: .85rem; }
 .specs-table .highlight { background: rgba(196,163,90,.08); }
-.specs-table .diff { color: var(--gold-dark); font-weight: 600; }
+.specs-table .diff { color: var(--gold-text); font-weight: 600; }
 
 /* Spec pairs (reference page) */
 .spec-grid {
@@ -335,6 +361,8 @@ section + section { border-top: 1px solid var(--border); }
 }
 .wrist-fit h3 { font-size: 1rem; margin-bottom: .5rem; color: var(--gold); }
 .wrist-fit p { font-size: .9rem; line-height: 1.5; color: var(--gray-200); }
+.wrist-fit a { color: var(--gold-light); text-decoration: underline; }
+.wrist-fit a:hover { color: var(--white); }
 
 /* Affiliate / Buy links */
 .buy-section { margin: 1.5rem 0; }
@@ -379,7 +407,7 @@ section + section { border-top: 1px solid var(--border); }
   color: var(--text-muted);
 }
 .breadcrumbs a { color: var(--text-muted); }
-.breadcrumbs a:hover { color: var(--gold-dark); }
+.breadcrumbs a:hover { color: var(--gold-text); }
 .breadcrumbs span { margin: 0 .3rem; }
 
 /* Page header */
@@ -481,7 +509,7 @@ section + section { border-top: 1px solid var(--border); }
 
 /* Compare table highlight */
 .compare-table { width: 100%; }
-.compare-table .winner { color: var(--gold-dark); font-weight: 700; }
+.compare-table .winner { color: var(--gold-text); font-weight: 700; }
 
 /* 404 */
 .error-page { text-align: center; padding: 4rem 1rem; }
@@ -523,12 +551,28 @@ section + section { border-top: 1px solid var(--border); }
   .footer-grid { grid-template-columns: 1fr; }
 }
 
-/* Table wrapper for horizontal scroll */
-.table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+/* Table wrapper for horizontal scroll, with edge fades when more columns are hidden */
+.table-wrap { position: relative; }
+.table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.table-wrap::before, .table-wrap::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2rem;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .2s;
+  z-index: 1;
+}
+.table-wrap::before { left: 0; background: linear-gradient(to right, rgba(26,31,54,.18), transparent); }
+.table-wrap::after { right: 0; background: linear-gradient(to left, rgba(26,31,54,.18), transparent); }
+.table-wrap.fade-left::before, .table-wrap.fade-right::after { opacity: 1; }
 
 /* Sortable table header cursor */
 .specs-table th.sortable { cursor: pointer; user-select: none; }
-.specs-table th.sortable:hover { color: var(--gold); }
+.specs-table th.sortable:hover, .specs-table th.sortable:focus-visible { color: var(--gold); }
+.specs-table th.sortable:focus-visible { outline-offset: -3px; }
 .specs-table th.sortable::after { content: ' ↕'; font-size: .7rem; }
 .specs-table th.sortable.asc::after { content: ' ↑'; }
 .specs-table th.sortable.desc::after { content: ' ↓'; }
