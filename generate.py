@@ -165,12 +165,22 @@ def fmt_lug_width(watch):
 
 
 def affiliate_links(watch):
-    """Retailer search links for a watch (no eBay: not activated for this domain)."""
+    """Retailer search links for a watch."""
     return {
+        "ebay": affiliate_ebay(watch),
         "chrono24": affiliate_chrono24(watch["brand"], watch["reference"]),
         "jomashop": affiliate_jomashop(watch["full_name"]),
         "amazon": affiliate_amazon(watch["full_name"]),
     }
+
+
+def affiliate_ebay(watch):
+    # Skip the reference when it already is the display name ("Casio GA-110-1A")
+    query = (watch["full_name"] if watch["name"] == watch["reference"]
+             else f"{watch['full_name']} {watch['reference']}")
+    q = urllib.parse.quote_plus(query)
+    return (f"https://www.ebay.com/sch/i.html?_nkw={q}"
+            "&mkcid=1&mkrid=711-53200-19255-0&campid=5339221177&toolid=10001")
 
 
 def affiliate_jomashop(query):
@@ -1164,7 +1174,8 @@ REFERENCE_TEMPLATE = r"""{% extends "base.html" %}
 <div class="container">
 <h2 class="section-title">Where to <span>Buy</span></h2>
 <div class="buy-links">
-<a href="{{ affiliate.chrono24 }}" class="buy-link" rel="sponsored nofollow noopener" target="_blank">Chrono24</a>
+<a href="{{ affiliate.ebay }}" class="buy-link" rel="sponsored nofollow noopener" target="_blank">eBay</a>
+<a href="{{ affiliate.chrono24 }}" class="buy-link secondary" rel="sponsored nofollow noopener" target="_blank">Chrono24</a>
 <a href="{{ affiliate.jomashop }}" class="buy-link secondary" rel="sponsored nofollow noopener" target="_blank">Jomashop</a>
 <a href="{{ affiliate.amazon }}" class="buy-link secondary" rel="sponsored nofollow noopener" target="_blank">Amazon</a>
 </div>
@@ -1260,17 +1271,15 @@ COMPARE_TEMPLATE = r"""{% extends "base.html" %}
 <div class="compare-col">
 <h3>{{ w1.short_name }}</h3>
 <div class="buy-links" style="justify-content:center">
-<a href="{{ aff1.chrono24 }}" class="buy-link" rel="sponsored nofollow noopener" target="_blank">Chrono24</a>
-<a href="{{ aff1.jomashop }}" class="buy-link secondary" rel="sponsored nofollow noopener" target="_blank">Jomashop</a>
-<a href="{{ aff1.amazon }}" class="buy-link secondary" rel="sponsored nofollow noopener" target="_blank">Amazon</a>
+<a href="{{ aff1.ebay }}" class="buy-link" rel="sponsored nofollow noopener" target="_blank">eBay</a>
+<a href="{{ aff1.chrono24 }}" class="buy-link secondary" rel="sponsored nofollow noopener" target="_blank">Chrono24</a>
 </div>
 </div>
 <div class="compare-col">
 <h3>{{ w2.short_name }}</h3>
 <div class="buy-links" style="justify-content:center">
-<a href="{{ aff2.chrono24 }}" class="buy-link" rel="sponsored nofollow noopener" target="_blank">Chrono24</a>
-<a href="{{ aff2.jomashop }}" class="buy-link secondary" rel="sponsored nofollow noopener" target="_blank">Jomashop</a>
-<a href="{{ aff2.amazon }}" class="buy-link secondary" rel="sponsored nofollow noopener" target="_blank">Amazon</a>
+<a href="{{ aff2.ebay }}" class="buy-link" rel="sponsored nofollow noopener" target="_blank">eBay</a>
+<a href="{{ aff2.chrono24 }}" class="buy-link secondary" rel="sponsored nofollow noopener" target="_blank">Chrono24</a>
 </div>
 </div>
 </div>
@@ -2289,7 +2298,7 @@ class SiteGenerator:
         affiliate_content = """<h2>FTC Disclosure</h2>
 <p>DialSize.com may earn a commission when you click certain links on our site and make a purchase, at no additional cost to you.</p>
 <h2>How Affiliate Links Work</h2>
-<p>On our watch reference pages and comparison pages, you will find "Where to Buy" links to retailers such as Chrono24, Jomashop, and Amazon. Some of these links may be affiliate links that identify DialSize as the referral source. If you make a purchase through an affiliate link, the retailer may pay us a small commission.</p>
+<p>On our watch reference pages and comparison pages, you will find "Where to Buy" links to retailers such as eBay, Chrono24, Jomashop, and Amazon. Some of these links may be affiliate links that identify DialSize as the referral source. If you make a purchase through an affiliate link, the retailer may pay us a small commission.</p>
 <h2>Our Commitment</h2>
 <ul>
 <li>Affiliate relationships do not influence our data, measurements, or editorial content.</li>
