@@ -2,6 +2,11 @@
   "brand": "Seiko",
   "brand_slug": "seiko",
   "brand_description": "Founded in 1881, Seiko is Japan's most prestigious watchmaker. From the affordable Seiko 5 to the elite Grand Seiko line, the brand spans every price point with innovations like Spring Drive, Hardlex crystal, and the legendary 6R/4R automatic movements.",
+  "sub_brands": {
+    "grand-seiko": {
+      "brand_description": "Grand Seiko is Seiko's luxury line, established in 1960 and an independent brand since 2017. Known for Zaratsu-polished cases, nature-inspired dials, and its Spring Drive, Hi-Beat 36000, and 9F quartz movements, it competes directly with top Swiss makers."
+    }
+  },
   "watches": [
     {
       "brand": "Seiko",

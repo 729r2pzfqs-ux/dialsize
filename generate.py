@@ -416,25 +416,34 @@ def generate_compare_svg(w1, w2):
 # ---------------------------------------------------------------------------
 
 def load_all_data():
-    """Load every brand JSON file and return a flat list of watches + brand list."""
-    brands = []
+    """Load every brand JSON file and return a flat list of watches + brand list.
+
+    A file may contain watches from sub-brands (e.g. Grand Seiko in seiko.json)
+    that set their own brand/brand_slug. Each distinct brand_slug gets its own
+    brand entry; sub-brand descriptions come from the file's "sub_brands" map.
+    """
+    brands = {}
     all_watches = []
     for fn in sorted(os.listdir(DATA_DIR)):
         if not fn.endswith(".json"):
             continue
         with open(os.path.join(DATA_DIR, fn), "r") as f:
             data = json.load(f)
-        brands.append({
-            "brand": data["brand"],
-            "brand_slug": data["brand_slug"],
-            "brand_description": data.get("brand_description", ""),
-            "watch_count": len(data["watches"]),
-        })
+        descriptions = {data["brand_slug"]: data.get("brand_description", "")}
+        for slug, sub in data.get("sub_brands", {}).items():
+            descriptions[slug] = sub.get("brand_description", "")
         for w in data["watches"]:
             w.setdefault("brand", data["brand"])
             w.setdefault("brand_slug", data["brand_slug"])
             all_watches.append(w)
-    return brands, all_watches
+            b = brands.setdefault(w["brand_slug"], {
+                "brand": w["brand"],
+                "brand_slug": w["brand_slug"],
+                "brand_description": descriptions.get(w["brand_slug"], ""),
+                "watch_count": 0,
+            })
+            b["watch_count"] += 1
+    return sorted(brands.values(), key=lambda b: b["brand"]), all_watches
 
 
 def build_collections(watches):
