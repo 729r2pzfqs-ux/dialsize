@@ -821,7 +821,6 @@ gtag('config', '{{ ga_id }}');
 {% block head_extra %}{% endblock %}
 </head>
 <body>
-<a href="#main" class="skip-link">Skip to main content</a>
 <header class="site-header">
 <div class="container">
 <a href="/" class="site-logo">Dial<span>Size</span></a>
@@ -834,7 +833,7 @@ gtag('config', '{{ ga_id }}');
 </nav>
 </div>
 </header>
-<main id="main" tabindex="-1">
+<main id="main">
 {% block body %}{% endblock %}
 </main>
 <footer class="site-footer">
