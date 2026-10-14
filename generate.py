@@ -24,6 +24,7 @@ SITE_URL = "https://dialsize.com"
 DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
 STATIC_DIR = os.path.join(os.path.dirname(__file__), "static")
 FAVICON_DIR = os.path.join(os.path.dirname(__file__), "favicon")
+DISAVOW_FILE = os.path.join(os.path.dirname(__file__), "disavow.txt")
 OUT_DIR = os.path.join(os.path.dirname(__file__), "docs")
 GA_ID = "G-9W8FY82CS3"
 ADSENSE_PUB = "ca-pub-5861928596436289"
@@ -1643,6 +1644,11 @@ class SiteGenerator:
             for name in os.listdir(FAVICON_DIR):
                 shutil.copy2(os.path.join(FAVICON_DIR, name), os.path.join(OUT_DIR, name))
             print("Copied favicon/")
+
+        # Copy the Search Console disavow list (docs/ is wiped on each build)
+        if os.path.exists(DISAVOW_FILE):
+            shutil.copy2(DISAVOW_FILE, os.path.join(OUT_DIR, "disavow.txt"))
+            print("Copied disavow.txt")
 
         self.gen_homepage()
         self.gen_brand_pages()
