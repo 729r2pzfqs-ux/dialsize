@@ -29,6 +29,10 @@ OUT_DIR = os.path.join(os.path.dirname(__file__), "docs")
 GA_ID = "G-9W8FY82CS3"
 ADSENSE_PUB = "ca-pub-5861928596436289"
 OG_IMAGE = SITE_URL + "/static/og-image.png"
+SITE_LOGO = SITE_URL + "/android-chrome-512x512.png"
+SITE_NAME = "DialSize"
+PUBLISHED = "2026-10-13"      # first build of the site
+DATA_UPDATED = "2026-10-13"   # last change to data/*.json; bump when watch data changes
 
 # ---------------------------------------------------------------------------
 # Helpers
@@ -1216,7 +1220,7 @@ REFERENCE_TEMPLATE = r"""{% extends "base.html" %}
 {% endblock %}
 {% block head_extra %}
 <script type="application/ld+json">
-{{ schema_product }}
+{{ schema_article }}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://dialsize.com/"},{"@type":"ListItem","position":2,"name":"{{ w.brand }}","item":"https://dialsize.com/{{ w.brand_slug }}/"},{"@type":"ListItem","position":3,"name":"{{ w.collection }}","item":"https://dialsize.com/{{ w.brand_slug }}/{{ w.collection_slug }}/"},{"@type":"ListItem","position":4,"name":"{{ w.reference }}","item":"{{ canonical }}"}]}
@@ -1934,20 +1938,30 @@ class SiteGenerator:
 
             aff = affiliate_links(w)
 
-            # Schema.org Product (no offers: the site doesn't sell watches)
+            # DialSize sells nothing, so Product markup is wrong here: Google's Product
+            # snippets require offers, review or aggregateRating. A spec page is a
+            # TechArticle about the watch.
+            canonical = self.url(f"{bs}/{cs}/{rs}/index.html")
             schema = {
                 "@context": "https://schema.org",
-                "@type": "Product",
-                "name": w["full_name"],
-                "brand": {"@type": "Brand", "name": w["brand"]},
+                "@type": "TechArticle",
+                "headline": f"{w['short_with_ref']} Dimensions",
                 "description": f"{w['full_name']} — {fmt_mm(d.get('diameter_mm'))} diameter, {fmt_mm(d.get('thickness_mm'))} thick, {fmt_mm(d.get('lug_to_lug_mm'))} lug-to-lug.",
-                "sku": w["reference"],
-                "mpn": w["reference"],
-                "category": "Watches",
+                "about": {"@type": "Thing", "name": w["full_name"]},
+                "author": {"@type": "Organization", "name": SITE_NAME, "url": SITE_URL + "/"},
+                "publisher": {
+                    "@type": "Organization",
+                    "name": SITE_NAME,
+                    "url": SITE_URL + "/",
+                    "logo": {"@type": "ImageObject", "url": SITE_LOGO},
+                },
                 "image": OG_IMAGE,
+                "datePublished": PUBLISHED,
+                "dateModified": DATA_UPDATED,
+                "mainEntityOfPage": {"@type": "WebPage", "@id": canonical},
+                "url": canonical,
             }
 
-            canonical = self.url(f"{bs}/{cs}/{rs}/index.html")
             html = self.env.get_template("reference.html").render(
                 meta_title=f"{w['name_with_ref']} Dimensions | DialSize",
                 meta_desc=f"{w['full_name']} dimensions: {fmt_mm(d.get('diameter_mm'))} diameter, {fmt_mm(d.get('lug_to_lug_mm'))} lug-to-lug, {fmt_mm(d.get('thickness_mm'))} thick. Complete specs and wrist fit guide.",
@@ -1963,7 +1977,7 @@ class SiteGenerator:
                 related=related,
                 compare_links=compare_links,
                 affiliate=aff,
-                schema_product=json.dumps(schema),
+                schema_article=json.dumps(schema),
             )
             self.write(f"{bs}/{cs}/{rs}/index.html", html)
 
