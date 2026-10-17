@@ -829,7 +829,7 @@ gtag('config', '{{ ga_id }}');
 {% if ahrefs_key %}<script src="https://analytics.ahrefs.com/analytics.js" data-key="{{ ahrefs_key }}" async></script>
 {% endif %}</head>
 <body>
-<!-- Cloudflare email obfuscation off: its /cdn-cgi/l/email-protection links 404 on GitHub Pages -->
+<!-- Cloudflare email obfuscation off: its rewritten email links 404 on GitHub Pages -->
 <!--email_off-->
 <header class="site-header">
 <div class="container">
