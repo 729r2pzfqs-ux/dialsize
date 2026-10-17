@@ -28,6 +28,8 @@ DISAVOW_FILE = os.path.join(os.path.dirname(__file__), "disavow.txt")
 OUT_DIR = os.path.join(os.path.dirname(__file__), "docs")
 GA_ID = "G-9W8FY82CS3"
 ADSENSE_PUB = "ca-pub-5861928596436289"
+# Ahrefs Web Analytics (no cookies). Loaded last in <head>, after consent defaults, AdSense and gtag. Blank = tag omitted.
+AHREFS_KEY = "14QN0q+Dzrw0GWQNd44QSQ"
 OG_IMAGE = SITE_URL + "/static/og-image.png"
 SITE_LOGO = SITE_URL + "/android-chrome-512x512.png"
 SITE_NAME = "DialSize"
@@ -824,7 +826,8 @@ gtag('js', new Date());
 gtag('config', '{{ ga_id }}');
 </script>
 {% block head_extra %}{% endblock %}
-</head>
+{% if ahrefs_key %}<script src="https://analytics.ahrefs.com/analytics.js" data-key="{{ ahrefs_key }}" async></script>
+{% endif %}</head>
 <body>
 <header class="site-header">
 <div class="container">
@@ -1576,6 +1579,7 @@ class SiteGenerator:
         self.env.globals["year"] = self.year
         self.env.globals["ga_id"] = GA_ID
         self.env.globals["adsense_pub"] = ADSENSE_PUB
+        self.env.globals["ahrefs_key"] = AHREFS_KEY
         self.env.globals["og_image"] = OG_IMAGE
 
         # Register templates
@@ -2249,10 +2253,11 @@ class SiteGenerator:
         # Privacy
         privacy_content = """<p>Last updated: October 2026</p>
 <h2>Information We Collect</h2>
-<p>DialSize.com does not require an account and does not ask you for personal information. We use two Google services to understand how the site is used and to fund it through advertising:</p>
+<p>DialSize.com does not require an account and does not ask you for personal information. We use these services to understand how the site is used and to fund it through advertising:</p>
 <ul>
 <li><strong>Google Analytics:</strong> Helps us understand how visitors use the site, such as which pages are viewed, time on site, device type, and general geographic region. We do not use Google Analytics to collect information that directly identifies you.</li>
 <li><strong>Google AdSense:</strong> Displays advertisements on the site. Google and its partners may use cookies to show ads based on your visits to this and other websites.</li>
+<li><strong>Ahrefs Web Analytics</strong> counts page views and shows which sites and searches send visitors here. It sets no cookies; your browser loads its script from analytics.ahrefs.com, so Ahrefs receives your IP address and browser details, governed by <a href="https://ahrefs.com/privacy">Ahrefs' privacy policy</a>.</li>
 </ul>
 <p>DialSize.com does not set its own tracking cookies. Analytics and advertising cookies are set by Google.</p>
 <h2>Cookie Consent</h2>
